@@ -12,6 +12,8 @@ from azure.cli.command_modules.storage._client_factory import blob_data_service_
 
 def storage_copy(cmd, source=None,
                  destination=None,
+                 blob_type=None,
+                 content_type=None,
                  put_md5=None,
                  recursive=None,
                  source_account_name=None,
@@ -81,9 +83,15 @@ def storage_copy(cmd, source=None,
     full_destination = get_url_with_sas(destination, destination_account_name, destination_container,
                                         destination_blob, destination_share, destination_file_path,
                                         destination_local_path)
-
+    print(blob_type)
     azcopy = AzCopy()
     flags = []
+    if blob_type is "block":
+        flags.append('--blob-type=BlockBlob')
+    elif blob_type is "page":
+        flags.append('--blob-type=PageBlob')
+    if content_type is not None:
+        flags.append('--content-type=' + content_type)
     if recursive is not None:
         flags.append('--recursive')
     if put_md5 is not None:
