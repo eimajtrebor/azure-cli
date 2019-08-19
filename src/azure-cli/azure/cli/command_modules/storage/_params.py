@@ -91,7 +91,8 @@ def load_arguments(self, _):  # pylint: disable=too-many-locals, too-many-statem
         c.argument('if_match')
         c.argument('if_none_match')
 
-    for item in ['delete', 'show', 'update', 'show-connection-string', 'keys', 'network-rule', 'revoke-delegation-keys']:  # pylint: disable=line-too-long
+    for item in ['delete', 'show', 'update', 'show-connection-string', 'keys', 'network-rule',
+                 'revoke-delegation-keys']:
         with self.argument_context('storage account {}'.format(item)) as c:
             c.argument('account_name', acct_name_type, options_list=['--name', '-n'])
             c.argument('resource_group_name', required=False, validator=process_resource_group)
@@ -364,14 +365,14 @@ def load_arguments(self, _):  # pylint: disable=too-many-locals, too-many-statem
         c.argument('blob_name', arg_type=blob_name_type)
 
     with self.argument_context('storage copy') as c:
-        c.argument('destination', options_list=['--destination', '-d'], help="The path/url of copy destination. \
-            It can be local path, an url to azure storage server. For more imformation, please refer to [link here]. \
-            If you provide destination parameter here, you do not need to provide arguments in copy \
-            destination arguments group and copy destination arguments will be deprecated  in future.")
-        c.argument('source', options_list=['--source', '-s'], help="The path/url of copy source. \
-            It can be local path, an url to azure storage server or AWS S3 buckets. For more imformation, please refer to [link here]. \
-            If you provide source parameter here, you do not need to provide arguments in copy source arguments group and copy source \
-            arguments will be deprecated in future.")
+        c.argument('destination', options_list=['--destination', '-d'],
+                   help='The path/url of copy destination. It can be local path or Azure Storage URL.'
+                        ' It will overwrite arguments in copy destination arguments, which may be'
+                        ' deprecated in future.')
+        c.argument('source', options_list=['--source', '-s'],
+                   help='The path/url of copy source. It can be local path, Azure Storage URL or AWS'
+                        ' S3 buckets URL. It will overwrite arguments in copy source arguments group,'
+                        ' which may be deprecated in future.')
         for item in ['destination', 'source']:
             c.argument('{}_account_name'.format(item), arg_group='Copy {}'.format(item),
                        help='Storage account name of copy {}'.format(item))
@@ -385,10 +386,11 @@ def load_arguments(self, _):  # pylint: disable=too-many-locals, too-many-statem
                        help='File path in file share of copy {} storage account'.format(item))
             c.argument('{}_local_path'.format(item), arg_group='Copy {}'.format(item),
                        help='Local file path')
-        c.argument('recursive', action='store_true', help='Look into sub-directories \
-                    recursively when uploading from local file system.')
-        c.argument('put_md5', action='store_true', help='Create an MD5 hash of each file, and save the hash \
-                    as the Content-MD5 property of the destination blob/file.Only available when uploading.')
+        c.argument('recursive', action='store_true',
+                   help='Look into sub-directories recursively when uploading from local file system.')
+        c.argument('put_md5', action='store_true',
+                   help='Create an MD5 hash of each file, and save the hash as the Content-MD5 property'
+                        ' of the destination blob/file.Only available when uploading.')
 
     with self.argument_context('storage blob copy') as c:
         for item in ['destination', 'source']:
@@ -455,8 +457,8 @@ def load_arguments(self, _):  # pylint: disable=too-many-locals, too-many-statem
     with self.argument_context('storage container delete') as c:
         c.argument('fail_not_exist', help='Throw an exception if the container does not exist.')
         c.argument('bypass_immutability_policy', action='store_true', help='Bypasses upcoming service behavior that '
-                   'will block a container from being deleted if it has a immutability-policy. Specifying this will '
-                   'ignore arguments aside from those used to identify the container ("--name", "--account-name").')
+                                                                           'will block a container from being deleted if it has a immutability-policy. Specifying this will '
+                                                                           'ignore arguments aside from those used to identify the container ("--name", "--account-name").')
         c.argument('lease_id', help="If specified, delete_container only succeeds if the container's lease is active "
                                     "and matches this ID. Required if the container has an active lease.")
         c.ignore('processed_resource_group')
