@@ -139,6 +139,8 @@ def load_arguments(self, _):  # pylint: disable=too-many-locals, too-many-statem
         c.argument('enable_files_aadds', arg_type=get_three_state_flag(), min_api='2018-11-01',
                    help='Enable the identity based authentication settings for Azure Files.')
         c.argument('enable_large_file_share', arg_type=large_file_share_type)
+        c.argument('kind', help='Indicates the type of storage account.',
+                   arg_type=get_enum_type(t_kind))
 
     with self.argument_context('storage account update', arg_group='Customer managed key', min_api='2017-06-01') as c:
         c.extra('encryption_key_name', help='The name of the KeyVault key', )
