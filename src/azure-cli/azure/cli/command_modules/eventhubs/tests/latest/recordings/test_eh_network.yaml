@@ -1,55 +1,5 @@
 interactions:
 - request:
-    body: '{"location": "westus", "tags": {"product": "azurecli", "cause": "automation",
-      "date": "2019-05-30T21:14:36Z"}}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - group create
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '110'
-      Content-Type:
-      - application/json; charset=utf-8
-      ParameterSetName:
-      - --location --name --tag
-      User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 resourcemanagementclient/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
-      accept-language:
-      - en-US
-    method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-05-10
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001","name":"cli_test_eh_network000001","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-05-30T21:14:36Z"},"properties":{"provisioningState":"Succeeded"}}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '384'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 30 May 2019 21:14:38 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      x-content-type-options:
-      - nosniff
-      x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
-    status:
-      code: 201
-      message: Created
-- request:
     body: null
     headers:
       Accept:
@@ -63,24 +13,24 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 resourcemanagementclient/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-05-10
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-07-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001","name":"cli_test_eh_network000001","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-05-30T21:14:36Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001","name":"cli_test_eh_network000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T16:50:51Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '384'
+      - '428'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:38 GMT
+      - Wed, 16 Oct 2019 16:50:53 GMT
       expires:
       - '-1'
       pragma:
@@ -113,8 +63,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
@@ -122,17 +72,17 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1\",\r\n
-        \ \"etag\": \"W/\\\"e39a0d81-b186-43dc-b834-31957fb227f2\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"d2937dd2-f2d9-493a-a210-7002d7f09ad3\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n
-        \   \"resourceGuid\": \"be65e01a-a11b-4f0a-a328-81edab4b7b0c\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"452ea427-a422-4ae6-8f2f-299bf5434b97\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
         false,\r\n    \"enableVmProtection\": false\r\n  }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/bb31a836-69f2-4c14-bfb3-4683e635035a?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/153e155d-1bd4-48cf-b29f-1ada41c5674f?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -140,7 +90,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:40 GMT
+      - Wed, 16 Oct 2019 16:50:57 GMT
       expires:
       - '-1'
       pragma:
@@ -152,8 +102,10 @@ interactions:
       - max-age=31536000; includeSubDomains
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - da47a43c-707a-4b5c-b128-751af0204a81
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1192'
     status:
       code: 201
       message: Created
@@ -171,10 +123,10 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/bb31a836-69f2-4c14-bfb3-4683e635035a?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/153e155d-1bd4-48cf-b29f-1ada41c5674f?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -186,7 +138,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:44 GMT
+      - Wed, 16 Oct 2019 16:51:00 GMT
       expires:
       - '-1'
       pragma:
@@ -202,6 +154,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - b1e3db3a-4d6e-4850-ae42-714a611d0982
     status:
       code: 200
       message: OK
@@ -219,17 +173,17 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1\",\r\n
-        \ \"etag\": \"W/\\\"25c58766-5957-45a0-9778-54358e9b78a2\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"2cf34869-c119-432b-9047-279dd6c1f60b\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"be65e01a-a11b-4f0a-a328-81edab4b7b0c\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"452ea427-a422-4ae6-8f2f-299bf5434b97\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
@@ -242,9 +196,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:44 GMT
+      - Wed, 16 Oct 2019 16:51:01 GMT
       etag:
-      - W/"25c58766-5957-45a0-9778-54358e9b78a2"
+      - W/"2cf34869-c119-432b-9047-279dd6c1f60b"
       expires:
       - '-1'
       pragma:
@@ -260,6 +214,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 971d0664-22fd-48d4-b85a-36b5b45c0a08
     status:
       code: 200
       message: OK
@@ -277,24 +233,24 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 resourcemanagementclient/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-05-10
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-07-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001","name":"cli_test_eh_network000001","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-05-30T21:14:36Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001","name":"cli_test_eh_network000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T16:50:51Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '384'
+      - '428'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:45 GMT
+      - Wed, 16 Oct 2019 16:51:01 GMT
       expires:
       - '-1'
       pragma:
@@ -327,8 +283,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
@@ -336,17 +292,17 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2\",\r\n
-        \ \"etag\": \"W/\\\"59d4f0b2-b034-43c9-b7cc-fe8aeb485000\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"6f0c6dab-5bc5-456f-aea7-cdcfa91c5631\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n
-        \   \"resourceGuid\": \"c72be152-6937-44a1-96d1-d0a261e68909\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"63bdc640-4954-4351-9273-9b8a7b3763ef\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
         false,\r\n    \"enableVmProtection\": false\r\n  }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/ded0082d-033e-4ad8-8f77-e09e2f5b97a6?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/0732e2f5-7500-4ad5-8e49-a0c4e79d3e91?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -354,7 +310,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:48 GMT
+      - Wed, 16 Oct 2019 16:51:04 GMT
       expires:
       - '-1'
       pragma:
@@ -366,8 +322,10 @@ interactions:
       - max-age=31536000; includeSubDomains
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 105bad0b-7c7c-4ed7-9f1f-84b370f4f060
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1190'
     status:
       code: 201
       message: Created
@@ -385,10 +343,10 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/ded0082d-033e-4ad8-8f77-e09e2f5b97a6?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/0732e2f5-7500-4ad5-8e49-a0c4e79d3e91?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -400,7 +358,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:51 GMT
+      - Wed, 16 Oct 2019 16:51:08 GMT
       expires:
       - '-1'
       pragma:
@@ -416,6 +374,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 4193a647-aff8-456c-9a5d-376bebeedeb9
     status:
       code: 200
       message: OK
@@ -433,17 +393,17 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2\",\r\n
-        \ \"etag\": \"W/\\\"f5f8c5cd-437f-4617-a40f-d677b8a856e9\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"d51a07ae-6eae-46f1-a6e4-1f4756537b50\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"c72be152-6937-44a1-96d1-d0a261e68909\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"63bdc640-4954-4351-9273-9b8a7b3763ef\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
@@ -456,9 +416,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:52 GMT
+      - Wed, 16 Oct 2019 16:51:08 GMT
       etag:
-      - W/"f5f8c5cd-437f-4617-a40f-d677b8a856e9"
+      - W/"d51a07ae-6eae-46f1-a6e4-1f4756537b50"
       expires:
       - '-1'
       pragma:
@@ -474,6 +434,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 4437730d-7fae-43c0-8e14-be8f32adb1e7
     status:
       code: 200
       message: OK
@@ -491,8 +453,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
@@ -500,10 +462,10 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1\",\r\n
-        \ \"etag\": \"W/\\\"25c58766-5957-45a0-9778-54358e9b78a2\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"2cf34869-c119-432b-9047-279dd6c1f60b\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"be65e01a-a11b-4f0a-a328-81edab4b7b0c\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"452ea427-a422-4ae6-8f2f-299bf5434b97\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
@@ -516,9 +478,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:53 GMT
+      - Wed, 16 Oct 2019 16:51:09 GMT
       etag:
-      - W/"25c58766-5957-45a0-9778-54358e9b78a2"
+      - W/"2cf34869-c119-432b-9047-279dd6c1f60b"
       expires:
       - '-1'
       pragma:
@@ -534,6 +496,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 42df41a5-4181-473b-8a15-d5672dfe1927
     status:
       code: 200
       message: OK
@@ -542,9 +506,9 @@ interactions:
       "location": "westus", "tags": {}, "properties": {"addressSpace": {"addressPrefixes":
       ["10.0.0.0/16"]}, "dhcpOptions": {"dnsServers": []}, "subnets": [{"properties":
       {"addressPrefix": "10.0.0.0/24"}, "name": "default"}], "virtualNetworkPeerings":
-      [], "resourceGuid": "be65e01a-a11b-4f0a-a328-81edab4b7b0c", "provisioningState":
+      [], "resourceGuid": "452ea427-a422-4ae6-8f2f-299bf5434b97", "provisioningState":
       "Succeeded", "enableDdosProtection": false, "enableVmProtection": false}, "etag":
-      "W/\\"25c58766-5957-45a0-9778-54358e9b78a2\\""}'''
+      "W/\\"2cf34869-c119-432b-9047-279dd6c1f60b\\""}'''
     headers:
       Accept:
       - application/json
@@ -561,8 +525,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
@@ -570,31 +534,32 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1\",\r\n
-        \ \"etag\": \"W/\\\"e2bef757-902b-43e0-888c-585a2d682513\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"9097e948-0bbb-4ba9-ab34-5ff43e4d4cf9\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n
-        \   \"resourceGuid\": \"be65e01a-a11b-4f0a-a328-81edab4b7b0c\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"452ea427-a422-4ae6-8f2f-299bf5434b97\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [\r\n      {\r\n        \"name\": \"default\",\r\n        \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default\",\r\n
-        \       \"etag\": \"W/\\\"e2bef757-902b-43e0-888c-585a2d682513\\\"\",\r\n
+        \       \"etag\": \"W/\\\"9097e948-0bbb-4ba9-ab34-5ff43e4d4cf9\\\"\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Updating\",\r\n
         \         \"addressPrefix\": \"10.0.0.0/24\",\r\n          \"delegations\":
-        []\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
+        [],\r\n          \"privateEndpointNetworkPolicies\": \"Enabled\",\r\n          \"privateLinkServiceNetworkPolicies\":
+        \"Enabled\"\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
         \     }\r\n    ],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
         false,\r\n    \"enableVmProtection\": false\r\n  }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/b65d03ad-bb59-4c5e-9a4a-692cfb671b91?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/d6f2c0af-af95-48dd-8579-f59788701d78?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
-      - '1346'
+      - '1461'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:54 GMT
+      - Wed, 16 Oct 2019 16:51:09 GMT
       expires:
       - '-1'
       pragma:
@@ -610,8 +575,10 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - c318d8ab-d278-475f-bec2-b1d4bc6f6a62
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1191'
     status:
       code: 200
       message: OK
@@ -629,10 +596,10 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/b65d03ad-bb59-4c5e-9a4a-692cfb671b91?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/d6f2c0af-af95-48dd-8579-f59788701d78?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -644,7 +611,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:57 GMT
+      - Wed, 16 Oct 2019 16:51:13 GMT
       expires:
       - '-1'
       pragma:
@@ -660,6 +627,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 79b28932-061a-48c4-86ca-8900250fb458
     status:
       code: 200
       message: OK
@@ -677,38 +646,39 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1\",\r\n
-        \ \"etag\": \"W/\\\"1f15ff38-eb54-495c-b919-b7deeee1bb0e\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"84f00eb5-3857-46da-ad4a-cde3bc4974b7\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"be65e01a-a11b-4f0a-a328-81edab4b7b0c\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"452ea427-a422-4ae6-8f2f-299bf5434b97\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [\r\n      {\r\n        \"name\": \"default\",\r\n        \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default\",\r\n
-        \       \"etag\": \"W/\\\"1f15ff38-eb54-495c-b919-b7deeee1bb0e\\\"\",\r\n
+        \       \"etag\": \"W/\\\"84f00eb5-3857-46da-ad4a-cde3bc4974b7\\\"\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n
         \         \"addressPrefix\": \"10.0.0.0/24\",\r\n          \"delegations\":
-        []\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
+        [],\r\n          \"privateEndpointNetworkPolicies\": \"Enabled\",\r\n          \"privateLinkServiceNetworkPolicies\":
+        \"Enabled\"\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
         \     }\r\n    ],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
         false,\r\n    \"enableVmProtection\": false\r\n  }\r\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1348'
+      - '1463'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:14:59 GMT
+      - Wed, 16 Oct 2019 16:51:14 GMT
       etag:
-      - W/"1f15ff38-eb54-495c-b919-b7deeee1bb0e"
+      - W/"84f00eb5-3857-46da-ad4a-cde3bc4974b7"
       expires:
       - '-1'
       pragma:
@@ -724,6 +694,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 6eaccc7a-6142-422c-8dd9-dce9a10a28cc
     status:
       code: 200
       message: OK
@@ -741,8 +713,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
@@ -750,10 +722,10 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2\",\r\n
-        \ \"etag\": \"W/\\\"f5f8c5cd-437f-4617-a40f-d677b8a856e9\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"d51a07ae-6eae-46f1-a6e4-1f4756537b50\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"c72be152-6937-44a1-96d1-d0a261e68909\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"63bdc640-4954-4351-9273-9b8a7b3763ef\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
@@ -766,9 +738,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:15:00 GMT
+      - Wed, 16 Oct 2019 16:51:14 GMT
       etag:
-      - W/"f5f8c5cd-437f-4617-a40f-d677b8a856e9"
+      - W/"d51a07ae-6eae-46f1-a6e4-1f4756537b50"
       expires:
       - '-1'
       pragma:
@@ -784,6 +756,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 34555e51-d977-4aaa-92dc-67a049e587cd
     status:
       code: 200
       message: OK
@@ -792,9 +766,9 @@ interactions:
       "location": "westus", "tags": {}, "properties": {"addressSpace": {"addressPrefixes":
       ["10.0.0.0/16"]}, "dhcpOptions": {"dnsServers": []}, "subnets": [{"properties":
       {"addressPrefix": "10.0.0.0/24"}, "name": "secondvnet"}], "virtualNetworkPeerings":
-      [], "resourceGuid": "c72be152-6937-44a1-96d1-d0a261e68909", "provisioningState":
+      [], "resourceGuid": "63bdc640-4954-4351-9273-9b8a7b3763ef", "provisioningState":
       "Succeeded", "enableDdosProtection": false, "enableVmProtection": false}, "etag":
-      "W/\\"f5f8c5cd-437f-4617-a40f-d677b8a856e9\\""}'''
+      "W/\\"d51a07ae-6eae-46f1-a6e4-1f4756537b50\\""}'''
     headers:
       Accept:
       - application/json
@@ -811,8 +785,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
@@ -820,31 +794,32 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2\",\r\n
-        \ \"etag\": \"W/\\\"bfca2f43-d5b9-4112-bed7-f2cb86c85ba0\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"57303001-1b2b-4311-98e8-ec96a19e020d\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n
-        \   \"resourceGuid\": \"c72be152-6937-44a1-96d1-d0a261e68909\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"63bdc640-4954-4351-9273-9b8a7b3763ef\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [\r\n      {\r\n        \"name\": \"secondvnet\",\r\n        \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2/subnets/secondvnet\",\r\n
-        \       \"etag\": \"W/\\\"bfca2f43-d5b9-4112-bed7-f2cb86c85ba0\\\"\",\r\n
+        \       \"etag\": \"W/\\\"57303001-1b2b-4311-98e8-ec96a19e020d\\\"\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Updating\",\r\n
         \         \"addressPrefix\": \"10.0.0.0/24\",\r\n          \"delegations\":
-        []\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
+        [],\r\n          \"privateEndpointNetworkPolicies\": \"Enabled\",\r\n          \"privateLinkServiceNetworkPolicies\":
+        \"Enabled\"\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
         \     }\r\n    ],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
         false,\r\n    \"enableVmProtection\": false\r\n  }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/f2e09439-3bde-43b9-8cba-5ff621e748b7?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/3a6eb7c2-f325-496a-90bc-54db256d3e16?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
-      - '1352'
+      - '1467'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:15:00 GMT
+      - Wed, 16 Oct 2019 16:51:15 GMT
       expires:
       - '-1'
       pragma:
@@ -860,8 +835,10 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 1b47b21b-c045-4a75-b31c-537a4f2cce57
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1191'
     status:
       code: 200
       message: OK
@@ -879,10 +856,10 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/f2e09439-3bde-43b9-8cba-5ff621e748b7?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/3a6eb7c2-f325-496a-90bc-54db256d3e16?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -894,7 +871,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:15:04 GMT
+      - Wed, 16 Oct 2019 16:51:19 GMT
       expires:
       - '-1'
       pragma:
@@ -910,6 +887,8 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - a3d4ff20-9b3f-4201-8870-9326c7dd5f14
     status:
       code: 200
       message: OK
@@ -927,38 +906,39 @@ interactions:
       ParameterSetName:
       - --resource-group --name --vnet-name --address-prefixes
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 networkmanagementclient/3.0.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"sbehvnettest2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2\",\r\n
-        \ \"etag\": \"W/\\\"fd9102c4-0d49-420d-aad5-99bd42bbca24\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"57bfb787-4e47-49ed-9e11-b1c0528c7423\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"c72be152-6937-44a1-96d1-d0a261e68909\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"63bdc640-4954-4351-9273-9b8a7b3763ef\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [\r\n      {\r\n        \"name\": \"secondvnet\",\r\n        \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2/subnets/secondvnet\",\r\n
-        \       \"etag\": \"W/\\\"fd9102c4-0d49-420d-aad5-99bd42bbca24\\\"\",\r\n
+        \       \"etag\": \"W/\\\"57bfb787-4e47-49ed-9e11-b1c0528c7423\\\"\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n
         \         \"addressPrefix\": \"10.0.0.0/24\",\r\n          \"delegations\":
-        []\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
+        [],\r\n          \"privateEndpointNetworkPolicies\": \"Enabled\",\r\n          \"privateLinkServiceNetworkPolicies\":
+        \"Enabled\"\r\n        },\r\n        \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n
         \     }\r\n    ],\r\n    \"virtualNetworkPeerings\": [],\r\n    \"enableDdosProtection\":
         false,\r\n    \"enableVmProtection\": false\r\n  }\r\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1354'
+      - '1469'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:15:04 GMT
+      - Wed, 16 Oct 2019 16:51:19 GMT
       etag:
-      - W/"fd9102c4-0d49-420d-aad5-99bd42bbca24"
+      - W/"57bfb787-4e47-49ed-9e11-b1c0528c7423"
       expires:
       - '-1'
       pragma:
@@ -974,11 +954,13 @@ interactions:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
+      x-ms-arm-service-request-id:
+      - 01ceae4e-8d1b-4847-bb90-5a8135709c87
     status:
       code: 200
       message: OK
 - request:
-    body: 'b''{"name": "eventhubs-cli000002"}'''
+    body: '{"name": "eventhubs-cli000002"}'
     headers:
       Accept:
       - application/json
@@ -995,8 +977,8 @@ interactions:
       ParameterSetName:
       - --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: POST
@@ -1012,7 +994,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:15:06 GMT
+      - Wed, 16 Oct 2019 16:51:21 GMT
       expires:
       - '-1'
       pragma:
@@ -1031,7 +1013,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1198'
     status:
       code: 200
       message: OK
@@ -1049,24 +1031,24 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --sku --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 resourcemanagementclient/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-05-10
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-07-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001","name":"cli_test_eh_network000001","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-05-30T21:14:36Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001","name":"cli_test_eh_network000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T16:50:51Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '384'
+      - '428'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:15:39 GMT
+      - Wed, 16 Oct 2019 16:51:21 GMT
       expires:
       - '-1'
       pragma:
@@ -1099,8 +1081,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --sku --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
@@ -1108,25 +1090,25 @@ interactions:
   response:
     body:
       string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Created","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:15:40.593Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Activating"}}'
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Created","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:51:24.837Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Activating"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '759'
+      - '758'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:15:40 GMT
+      - Wed, 16 Oct 2019 16:51:25 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -1136,7 +1118,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1197'
+      - '1193'
     status:
       code: 200
       message: OK
@@ -1154,74 +1136,23 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --sku --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002?api-version=2017-04-01
   response:
     body:
       string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Created","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:15:40.593Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Activating"}}'
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Created","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:51:24.837Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Activating"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '759'
+      - '758'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:16:10 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - Service-Bus-Resource-Provider/SN1
-      - Microsoft-HTTPAPI/2.0
-      server-sb:
-      - Service-Bus-Resource-Provider/SN1
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - eventhubs namespace create
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - --resource-group --name --tags --sku --default-action
-      User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002?api-version=2017-04-01
-  response:
-    body:
-      string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Succeeded","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:16:26.66Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '756'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 30 May 2019 21:16:41 GMT
+      - Wed, 16 Oct 2019 16:51:56 GMT
       expires:
       - '-1'
       pragma:
@@ -1256,25 +1187,76 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --sku --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002?api-version=2017-04-01
+  response:
+    body:
+      string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Succeeded","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:52:12.32Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '755'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 16 Oct 2019 16:52:26 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Service-Bus-Resource-Provider/CH3
+      - Microsoft-HTTPAPI/2.0
+      server-sb:
+      - Service-Bus-Resource-Provider/CH3
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - eventhubs namespace create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --resource-group --name --tags --sku --default-action
+      User-Agent:
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '404'
+      - '405'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:16:42 GMT
+      - Wed, 16 Oct 2019 16:52:28 GMT
       expires:
       - '-1'
       pragma:
@@ -1314,25 +1296,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --sku --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Allow","virtualNetworkRules":[],"ipRules":[]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '405'
+      - '406'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:16:59 GMT
+      - Wed, 16 Oct 2019 16:52:45 GMT
       expires:
       - '-1'
       pragma:
@@ -1351,7 +1333,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1198'
+      - '1189'
     status:
       code: 200
       message: OK
@@ -1369,8 +1351,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --sku --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
@@ -1378,16 +1360,16 @@ interactions:
   response:
     body:
       string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Succeeded","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:16:26.66Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Succeeded","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:52:12.32Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '756'
+      - '755'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:17:00 GMT
+      - Wed, 16 Oct 2019 16:52:46 GMT
       expires:
       - '-1'
       pragma:
@@ -1422,8 +1404,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
@@ -1431,16 +1413,16 @@ interactions:
   response:
     body:
       string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Succeeded","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:16:26.66Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Succeeded","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:52:12.32Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '756'
+      - '755'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:17:00 GMT
+      - Wed, 16 Oct 2019 16:52:46 GMT
       expires:
       - '-1'
       pragma:
@@ -1475,8 +1457,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
@@ -1484,16 +1466,16 @@ interactions:
   response:
     body:
       string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Succeeded","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:16:26.66Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Succeeded","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:52:12.32Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '756'
+      - '755'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:17:01 GMT
+      - Wed, 16 Oct 2019 16:52:47 GMT
       expires:
       - '-1'
       pragma:
@@ -1528,25 +1510,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Allow","virtualNetworkRules":[],"ipRules":[]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '405'
+      - '406'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:17:02 GMT
+      - Wed, 16 Oct 2019 16:52:49 GMT
       expires:
       - '-1'
       pragma:
@@ -1586,25 +1568,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '404'
+      - '405'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:17:19 GMT
+      - Wed, 16 Oct 2019 16:53:07 GMT
       expires:
       - '-1'
       pragma:
@@ -1623,14 +1605,14 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1197'
+      - '1188'
     status:
       code: 200
       message: OK
 - request:
     body: '{"location": "West US", "tags": {"{tag1": "value1}"}, "sku": {"name": "Standard",
       "tier": "Standard", "capacity": 1}, "properties": {"isAutoInflateEnabled": false,
-      "maximumThroughputUnits": 0, "kafkaEnabled": false}}'
+      "maximumThroughputUnits": 0, "kafkaEnabled": true}}'
     headers:
       Accept:
       - application/json
@@ -1641,14 +1623,14 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '216'
+      - '215'
       Content-Type:
       - application/json; charset=utf-8
       ParameterSetName:
       - --resource-group --name --tags --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
@@ -1656,16 +1638,16 @@ interactions:
   response:
     body:
       string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Updating","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:17:35.293Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Activating"}}'
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Updating","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:53:24.52Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Activating"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '760'
+      - '758'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:17:35 GMT
+      - Wed, 16 Oct 2019 16:53:24 GMT
       expires:
       - '-1'
       pragma:
@@ -1684,7 +1666,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1189'
     status:
       code: 200
       message: OK
@@ -1702,23 +1684,23 @@ interactions:
       ParameterSetName:
       - --resource-group --name --tags --default-action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002?api-version=2017-04-01
   response:
     body:
       string: '{"sku":{"name":"Standard","tier":"Standard","capacity":1},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002","name":"eventhubs-cli000002","type":"Microsoft.EventHub/Namespaces","location":"West
-        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":false,"provisioningState":"Succeeded","metricId":"c9cbd920-c00c-427c-852b-8aaf38badaeb:eventhubs-cli000002","createdAt":"2019-05-30T21:15:40.593Z","updatedAt":"2019-05-30T21:17:38.067Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
+        US","tags":{"{tag1":"value1}"},"properties":{"isAutoInflateEnabled":false,"maximumThroughputUnits":0,"kafkaEnabled":true,"provisioningState":"Succeeded","metricId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590:eventhubs-cli000002","createdAt":"2019-10-16T16:51:24.837Z","updatedAt":"2019-10-16T16:53:27.337Z","serviceBusEndpoint":"https://eventhubs-cli000002.servicebus.windows.net:443/","status":"Active"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '757'
+      - '756'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:05 GMT
+      - Wed, 16 Oct 2019 16:53:55 GMT
       expires:
       - '-1'
       pragma:
@@ -1753,25 +1735,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '404'
+      - '405'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:06 GMT
+      - Wed, 16 Oct 2019 16:53:57 GMT
       expires:
       - '-1'
       pragma:
@@ -1806,25 +1788,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --ip-address --action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '404'
+      - '405'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:07 GMT
+      - Wed, 16 Oct 2019 16:53:59 GMT
       expires:
       - '-1'
       pragma:
@@ -1864,25 +1846,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --ip-address --action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '441'
+      - '442'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:24 GMT
+      - Wed, 16 Oct 2019 16:54:16 GMT
       expires:
       - '-1'
       pragma:
@@ -1901,7 +1883,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1188'
     status:
       code: 200
       message: OK
@@ -1919,34 +1901,34 @@ interactions:
       ParameterSetName:
       - --resource-group --name --ip-address --action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '441'
+      - '442'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:25 GMT
+      - Wed, 16 Oct 2019 16:54:19 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -1977,34 +1959,34 @@ interactions:
       ParameterSetName:
       - --resource-group --name --ip-address --action
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"},{"ipMask":"2.2.2.2","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '479'
+      - '480'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:42 GMT
+      - Wed, 16 Oct 2019 16:54:36 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -2014,7 +1996,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1190'
     status:
       code: 200
       message: OK
@@ -2032,34 +2014,34 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"},{"ipMask":"2.2.2.2","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '479'
+      - '480'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:43 GMT
+      - Wed, 16 Oct 2019 16:54:38 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -2085,34 +2067,34 @@ interactions:
       ParameterSetName:
       - --resource-group --name --ip-address
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"},{"ipMask":"2.2.2.2","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '479'
+      - '480'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:18:44 GMT
+      - Wed, 16 Oct 2019 16:54:39 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -2143,34 +2125,34 @@ interactions:
       ParameterSetName:
       - --resource-group --name --ip-address
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '441'
+      - '442'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:19:01 GMT
+      - Wed, 16 Oct 2019 16:54:56 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -2180,7 +2162,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1198'
+      - '1195'
     status:
       code: 200
       message: OK
@@ -2198,34 +2180,34 @@ interactions:
       ParameterSetName:
       - --resource-group --name --subnet --ignore-missing-endpoint
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '441'
+      - '442'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:19:02 GMT
+      - Wed, 16 Oct 2019 16:54:58 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -2258,34 +2240,34 @@ interactions:
       ParameterSetName:
       - --resource-group --name --subnet --ignore-missing-endpoint
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default"},"ignoreMissingVnetServiceEndpoint":true}],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '717'
+      - '718'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:19:31 GMT
+      - Wed, 16 Oct 2019 16:55:27 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
       server:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       - Microsoft-HTTPAPI/2.0
       server-sb:
-      - Service-Bus-Resource-Provider/SN1
+      - Service-Bus-Resource-Provider/CH3
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -2295,7 +2277,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1185'
     status:
       code: 200
       message: OK
@@ -2313,25 +2295,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --subnet --ignore-missing-endpoint
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default"},"ignoreMissingVnetServiceEndpoint":true}],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '717'
+      - '718'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:19:32 GMT
+      - Wed, 16 Oct 2019 16:55:29 GMT
       expires:
       - '-1'
       pragma:
@@ -2374,25 +2356,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --subnet --ignore-missing-endpoint
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default"},"ignoreMissingVnetServiceEndpoint":true},{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2/subnets/secondvnet"},"ignoreMissingVnetServiceEndpoint":true}],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '997'
+      - '998'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:20:00 GMT
+      - Wed, 16 Oct 2019 16:55:56 GMT
       expires:
       - '-1'
       pragma:
@@ -2411,7 +2393,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1186'
     status:
       code: 200
       message: OK
@@ -2429,25 +2411,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default"},"ignoreMissingVnetServiceEndpoint":true},{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2/subnets/secondvnet"},"ignoreMissingVnetServiceEndpoint":true}],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '997'
+      - '998'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:20:02 GMT
+      - Wed, 16 Oct 2019 16:55:58 GMT
       expires:
       - '-1'
       pragma:
@@ -2482,25 +2464,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --subnet
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default"},"ignoreMissingVnetServiceEndpoint":true},{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest2/subnets/secondvnet"},"ignoreMissingVnetServiceEndpoint":true}],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '997'
+      - '998'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:20:03 GMT
+      - Wed, 16 Oct 2019 16:56:00 GMT
       expires:
       - '-1'
       pragma:
@@ -2542,25 +2524,25 @@ interactions:
       ParameterSetName:
       - --resource-group --name --subnet
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default?api-version=2017-04-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSet","location":"West
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/networkRuleSets/default","name":"default","type":"Microsoft.EventHub/Namespaces/NetworkRuleSets","location":"West
         US","properties":{"defaultAction":"Deny","virtualNetworkRules":[{"subnet":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default"},"ignoreMissingVnetServiceEndpoint":true}],"ipRules":[{"ipMask":"1.1.1.1","action":"Allow"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '717'
+      - '718'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 30 May 2019 21:20:21 GMT
+      - Wed, 16 Oct 2019 16:56:19 GMT
       expires:
       - '-1'
       pragma:
@@ -2579,7 +2561,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1189'
     status:
       code: 200
       message: OK
@@ -2599,8 +2581,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: DELETE
@@ -2614,7 +2596,7 @@ interactions:
       content-length:
       - '0'
       date:
-      - Thu, 30 May 2019 21:20:24 GMT
+      - Wed, 16 Oct 2019 16:56:22 GMT
       expires:
       - '-1'
       location:
@@ -2631,7 +2613,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-deletes:
-      - '14999'
+      - '14996'
     status:
       code: 202
       message: Accepted
@@ -2649,8 +2631,8 @@ interactions:
       ParameterSetName:
       - --resource-group --name
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 azure-mgmt-eventhub/2.6.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-eventhub/2.6.0 Azure-SDK-For-Python AZURECLI/2.0.75
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_eh_network000001/providers/Microsoft.EventHub/namespaces/eventhubs-cli000002/operationresults/eventhubs-cli000002?api-version=2017-04-01
   response:
@@ -2662,7 +2644,7 @@ interactions:
       content-length:
       - '0'
       date:
-      - Thu, 30 May 2019 21:20:54 GMT
+      - Wed, 16 Oct 2019 16:56:53 GMT
       expires:
       - '-1'
       pragma:
@@ -2679,51 +2661,4 @@ interactions:
     status:
       code: 200
       message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - group delete
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '0'
-      ParameterSetName:
-      - --name --yes --no-wait
-      User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.6 msrest_azure/0.6.0 resourcemanagementclient/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.65
-      accept-language:
-      - en-US
-    method: DELETE
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_eh_network000001?api-version=2019-05-10
-  response:
-    body:
-      string: ''
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '0'
-      date:
-      - Thu, 30 May 2019 21:20:56 GMT
-      expires:
-      - '-1'
-      location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1DTEk6NUZURVNUOjVGRUg6NUZORVRXT1JLUERMNFBPNDNBTUJSTk9VRTJJTUY3WHw1MDZCQTQ4MjM0NTYwQ0MwLVdFU1RVUyIsImpvYkxvY2F0aW9uIjoid2VzdHVzIn0?api-version=2019-05-10
-      pragma:
-      - no-cache
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      x-content-type-options:
-      - nosniff
-      x-ms-ratelimit-remaining-subscription-deletes:
-      - '14566'
-    status:
-      code: 202
-      message: Accepted
 version: 1

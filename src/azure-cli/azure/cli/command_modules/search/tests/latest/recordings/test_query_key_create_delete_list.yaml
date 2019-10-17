@@ -13,24 +13,24 @@ interactions:
       ParameterSetName:
       - -n -g --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-resource/3.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/azure_search_cli_test000001?api-version=2019-05-10
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/azure_search_cli_test000001?api-version=2019-07-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001","name":"azure_search_cli_test000001","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-08-21T20:55:58Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001","name":"azure_search_cli_test000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T18:27:03Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '384'
+      - '428'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:55:59 GMT
+      - Wed, 16 Oct 2019 18:27:07 GMT
       expires:
       - '-1'
       pragma:
@@ -63,8 +63,8 @@ interactions:
       ParameterSetName:
       - -n -g --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: PUT
@@ -81,23 +81,23 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:21 GMT
+      - Wed, 16 Oct 2019 18:27:37 GMT
       elapsed-time:
-      - '20861'
+      - '27025'
       etag:
-      - W/"datetime'2019-08-21T20%3A56%3A21.5809361Z'"
+      - W/"datetime'2019-10-16T18%3A27%3A36.6974112Z'"
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 145c2c38-c456-11e9-9257-2016b97d2bf8
+      - 8f1ddaae-f042-11e9-a40b-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1197'
+      - '1174'
     status:
       code: 201
       message: Created
@@ -115,15 +115,15 @@ interactions:
       ParameterSetName:
       - --service-name -g
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/listQueryKeys?api-version=2015-08-19
   response:
     body:
-      string: '{"value":[{"name":null,"key":"E058F153085F8ACFA0E316C40CD62396"}],"nextLink":null}'
+      string: '{"value":[{"name":null,"key":"45974DA0748A81550B2DA4A210B4DEEF"}],"nextLink":null}'
     headers:
       cache-control:
       - no-cache
@@ -132,15 +132,15 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:21 GMT
+      - Wed, 16 Oct 2019 18:27:38 GMT
       elapsed-time:
-      - '179'
+      - '132'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 217de3ca-c456-11e9-bbe9-2016b97d2bf8
+      - a13ebc8c-f042-11e9-bc6c-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -168,15 +168,15 @@ interactions:
       ParameterSetName:
       - --service-name -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: POST
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/createQueryKey/test000003?api-version=2015-08-19
   response:
     body:
-      string: '{"name":"test000003","key":"F91B414EF0487357D229BD4B7491FC43"}'
+      string: '{"name":"test000003","key":"D31B4E5FA3C9701E4625ED6FD62BCFA1"}'
     headers:
       cache-control:
       - no-cache
@@ -185,15 +185,15 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:22 GMT
+      - Wed, 16 Oct 2019 18:27:38 GMT
       elapsed-time:
-      - '140'
+      - '159'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 21ec5ccc-c456-11e9-9231-2016b97d2bf8
+      - a1ce0e42-f042-11e9-b5ec-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -203,7 +203,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1198'
+      - '1195'
     status:
       code: 200
       message: OK
@@ -221,15 +221,15 @@ interactions:
       ParameterSetName:
       - --service-name -g
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/listQueryKeys?api-version=2015-08-19
   response:
     body:
-      string: '{"value":[{"name":null,"key":"E058F153085F8ACFA0E316C40CD62396"},{"name":"test000003","key":"F91B414EF0487357D229BD4B7491FC43"}],"nextLink":null}'
+      string: '{"value":[{"name":null,"key":"45974DA0748A81550B2DA4A210B4DEEF"},{"name":"test000003","key":"D31B4E5FA3C9701E4625ED6FD62BCFA1"}],"nextLink":null}'
     headers:
       cache-control:
       - no-cache
@@ -238,15 +238,15 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:23 GMT
+      - Wed, 16 Oct 2019 18:27:40 GMT
       elapsed-time:
-      - '196'
+      - '169'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 22596b7e-c456-11e9-b90a-2016b97d2bf8
+      - a26529e2-f042-11e9-ac90-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -274,15 +274,15 @@ interactions:
       ParameterSetName:
       - --service-name -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: POST
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/createQueryKey/test000004?api-version=2015-08-19
   response:
     body:
-      string: '{"name":"test000004","key":"70329B5E510FBABBD3217ACED5B0C355"}'
+      string: '{"name":"test000004","key":"916BF0F36E7C4B30695D95B9E7EB21AB"}'
     headers:
       cache-control:
       - no-cache
@@ -291,15 +291,15 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:23 GMT
+      - Wed, 16 Oct 2019 18:27:40 GMT
       elapsed-time:
-      - '137'
+      - '155'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 22d628a8-c456-11e9-b1dd-2016b97d2bf8
+      - a3123cb8-f042-11e9-b68a-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -309,7 +309,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1198'
+      - '1195'
     status:
       code: 200
       message: OK
@@ -327,15 +327,15 @@ interactions:
       ParameterSetName:
       - --service-name -g
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/listQueryKeys?api-version=2015-08-19
   response:
     body:
-      string: '{"value":[{"name":null,"key":"E058F153085F8ACFA0E316C40CD62396"},{"name":"test000003","key":"F91B414EF0487357D229BD4B7491FC43"},{"name":"test000004","key":"70329B5E510FBABBD3217ACED5B0C355"}],"nextLink":null}'
+      string: '{"value":[{"name":null,"key":"45974DA0748A81550B2DA4A210B4DEEF"},{"name":"test000003","key":"D31B4E5FA3C9701E4625ED6FD62BCFA1"},{"name":"test000004","key":"916BF0F36E7C4B30695D95B9E7EB21AB"}],"nextLink":null}'
     headers:
       cache-control:
       - no-cache
@@ -344,15 +344,15 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:24 GMT
+      - Wed, 16 Oct 2019 18:27:43 GMT
       elapsed-time:
-      - '156'
+      - '186'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 23442cb0-c456-11e9-8940-2016b97d2bf8
+      - a3a9125c-f042-11e9-a453-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -380,12 +380,12 @@ interactions:
       ParameterSetName:
       - --service-name -g --key-value
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: DELETE
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/deleteQueryKey/F91B414EF0487357D229BD4B7491FC43?api-version=2015-08-19
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/deleteQueryKey/D31B4E5FA3C9701E4625ED6FD62BCFA1?api-version=2015-08-19
   response:
     body:
       string: ''
@@ -393,21 +393,21 @@ interactions:
       cache-control:
       - no-cache
       date:
-      - Wed, 21 Aug 2019 20:56:26 GMT
+      - Wed, 16 Oct 2019 18:27:44 GMT
       elapsed-time:
-      - '186'
+      - '155'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 23a92ffe-c456-11e9-8b4b-2016b97d2bf8
+      - a4b9cfca-f042-11e9-84a5-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-deletes:
-      - '14997'
+      - '14990'
     status:
       code: 204
       message: No Content
@@ -425,15 +425,15 @@ interactions:
       ParameterSetName:
       - --service-name -g
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/listQueryKeys?api-version=2015-08-19
   response:
     body:
-      string: '{"value":[{"name":null,"key":"E058F153085F8ACFA0E316C40CD62396"},{"name":"test000004","key":"70329B5E510FBABBD3217ACED5B0C355"}],"nextLink":null}'
+      string: '{"value":[{"name":null,"key":"45974DA0748A81550B2DA4A210B4DEEF"},{"name":"test000004","key":"916BF0F36E7C4B30695D95B9E7EB21AB"}],"nextLink":null}'
     headers:
       cache-control:
       - no-cache
@@ -442,15 +442,15 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:26 GMT
+      - Wed, 16 Oct 2019 18:27:46 GMT
       elapsed-time:
-      - '292'
+      - '193'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 24527ea6-c456-11e9-9630-2016b97d2bf8
+      - a5f2a402-f042-11e9-a17d-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:
@@ -478,12 +478,12 @@ interactions:
       ParameterSetName:
       - --service-name -g --key-value
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: DELETE
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/deleteQueryKey/70329B5E510FBABBD3217ACED5B0C355?api-version=2015-08-19
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/deleteQueryKey/916BF0F36E7C4B30695D95B9E7EB21AB?api-version=2015-08-19
   response:
     body:
       string: ''
@@ -491,21 +491,21 @@ interactions:
       cache-control:
       - no-cache
       date:
-      - Wed, 21 Aug 2019 20:56:27 GMT
+      - Wed, 16 Oct 2019 18:27:49 GMT
       elapsed-time:
-      - '218'
+      - '151'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 24bba0a2-c456-11e9-80d2-2016b97d2bf8
+      - a6f2a112-f042-11e9-8eb4-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-deletes:
-      - '14998'
+      - '14993'
     status:
       code: 204
       message: No Content
@@ -523,15 +523,15 @@ interactions:
       ParameterSetName:
       - --service-name -g
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-search/2.1.0
-        Azure-SDK-For-Python AZURECLI/2.0.71
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
+        azure-mgmt-search/2.1.0 Azure-SDK-For-Python AZURECLI/2.0.75
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/azure_search_cli_test000001/providers/Microsoft.Search/searchServices/test000002/listQueryKeys?api-version=2015-08-19
   response:
     body:
-      string: '{"value":[{"name":null,"key":"E058F153085F8ACFA0E316C40CD62396"}],"nextLink":null}'
+      string: '{"value":[{"name":null,"key":"45974DA0748A81550B2DA4A210B4DEEF"}],"nextLink":null}'
     headers:
       cache-control:
       - no-cache
@@ -540,15 +540,15 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 21 Aug 2019 20:56:28 GMT
+      - Wed, 16 Oct 2019 18:27:50 GMT
       elapsed-time:
-      - '327'
+      - '166'
       expires:
       - '-1'
       pragma:
       - no-cache
       request-id:
-      - 255a0370-c456-11e9-a469-2016b97d2bf8
+      - a8f795d8-f042-11e9-93e6-f06e0bdcb42e
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       transfer-encoding:

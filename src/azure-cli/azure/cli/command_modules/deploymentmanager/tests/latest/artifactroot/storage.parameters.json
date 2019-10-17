@@ -6,7 +6,7 @@
             "value": "centralus"
         },
         "storageAccountName": {
-            "value": "__STORAGEACCOUNTNAME__"
+            "value": "cliadma4htbqstgtemplate"
         },
         "accountType": {
             "value": "Standard_RAGRS"
