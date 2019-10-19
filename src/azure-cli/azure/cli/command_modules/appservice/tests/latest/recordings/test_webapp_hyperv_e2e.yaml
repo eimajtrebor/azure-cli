@@ -13,15 +13,15 @@ interactions:
       ParameterSetName:
       - -g -n --hyper-v --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-resource/3.1.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T14:47:40Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"date":"2019-09-06T20:38:39Z","cause":"automation","product":"azurecli"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -30,7 +30,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:47:43 GMT
+      - Fri, 06 Sep 2019 20:38:43 GMT
       expires:
       - '-1'
       pragma:
@@ -45,9 +45,8 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"name": "webapp-hyperv-plan000003", "type": "Microsoft.Web/serverfarms",
-      "location": "westus", "properties": {"skuName": "PC2", "capacity": 1, "isXenon":
-      true}}'
+    body: '{"location": "westus", "name": "webapp-hyperv-plan000003", "properties":
+      {"capacity": 1, "skuName": "PC2", "isXenon": true}, "type": "Microsoft.Web/serverfarms"}'
     headers:
       Accept:
       - application/json
@@ -64,8 +63,8 @@ interactions:
       ParameterSetName:
       - -g -n --hyper-v --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: POST
@@ -81,7 +80,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:47:44 GMT
+      - Fri, 06 Sep 2019 20:38:44 GMT
       expires:
       - '-1'
       pragma:
@@ -99,7 +98,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1196'
+      - '1199'
       x-powered-by:
       - ASP.NET
     status:
@@ -119,15 +118,15 @@ interactions:
       ParameterSetName:
       - -g -n --hyper-v --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-resource/3.1.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T14:47:40Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"date":"2019-09-06T20:38:39Z","cause":"automation","product":"azurecli"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -136,7 +135,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:47:45 GMT
+      - Fri, 06 Sep 2019 20:38:44 GMT
       expires:
       - '-1'
       pragma:
@@ -151,9 +150,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"location": "westus", "properties": {"perSiteScaling": false, "isXenon":
-      false, "hyperV": true}, "sku": {"name": "PC2", "tier": "PremiumContainer", "capacity":
-      1}}'
+    body: '{"location": "westus", "sku": {"tier": "PremiumContainer", "name": "PC2",
+      "capacity": 1}, "properties": {"hyperV": true, "perSiteScaling": false, "isXenon":
+      false}}'
     headers:
       Accept:
       - application/json
@@ -170,8 +169,8 @@ interactions:
       ParameterSetName:
       - -g -n --hyper-v --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: PUT
@@ -179,8 +178,8 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","name":"webapp-hyperv-plan000003","type":"Microsoft.Web/serverfarms","kind":"windows","location":"West
-        US","properties":{"serverFarmId":8105,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_8105","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
+        US","properties":{"serverFarmId":7351,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_7351","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
     headers:
       cache-control:
       - no-cache
@@ -189,7 +188,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:47:54 GMT
+      - Fri, 06 Sep 2019 20:38:52 GMT
       expires:
       - '-1'
       pragma:
@@ -207,7 +206,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1154'
+      - '1199'
       x-powered-by:
       - ASP.NET
     status:
@@ -227,8 +226,8 @@ interactions:
       ParameterSetName:
       - -g
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -236,8 +235,8 @@ interactions:
   response:
     body:
       string: '{"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","name":"webapp-hyperv-plan000003","type":"Microsoft.Web/serverfarms","kind":"windows","location":"West
-        US","properties":{"serverFarmId":8105,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_8105","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}],"nextLink":null,"id":null}'
+        US","properties":{"serverFarmId":7351,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_7351","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}],"nextLink":null,"id":null}'
     headers:
       cache-control:
       - no-cache
@@ -246,7 +245,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:47:55 GMT
+      - Fri, 06 Sep 2019 20:38:53 GMT
       expires:
       - '-1'
       pragma:
@@ -280,44 +279,40 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Web/serverfarms?detailed=true&api-version=2018-02-01
   response:
     body:
-      string: '{"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","name":"webapp-hyperv-plan000003","type":"Microsoft.Web/serverfarms","kind":"windows","location":"West
-        US","properties":{"serverFarmId":14566996,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_8105","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg2eazmdjp3hlriqs6hjk3rkmmrq7ikdy753pkjopjk77ntsadxzh6df2fhpqugxkic/providers/Microsoft.Web/serverfarms/swiftplans5ocj6zqplldcgx","name":"swiftplans5ocj6zqplldcgx","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":14533654,"name":"swiftplans5ocj6zqplldcgx","workerSize":"D1","workerSizeId":3,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"D1","currentWorkerSizeId":3,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg2eazmdjp3hlriqs6hjk3rkmmrq7ikdy753pkjopjk77ntsadxzh6df2fhpqugxkic-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rg2eazmdjp3hlriqs6hjk3rkmmrq7ikdy753pkjopjk77ntsadxzh6df2fhpqugxkic","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-089_24379","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"P1v2","tier":"PremiumV2","size":"P1v2","family":"Pv2","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rgh62vxrapxul6kkosxm5uphtk5uvwr3nel6c32ogc7bjojqwc3knao6leurw634ywy/providers/Microsoft.Web/serverfarms/funcappplano2j22msly3q4g","name":"funcappplano2j22msly3q4g","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":14566990,"name":"funcappplano2j22msly3q4g","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rgh62vxrapxul6kkosxm5uphtk5uvwr3nel6c32ogc7bjojqwc3knao6leurw634ywy-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":10,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rgh62vxrapxul6kkosxm5uphtk5uvwr3nel6c32ogc7bjojqwc3knao6leurw634ywy","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-053_20422","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"S1","tier":"Standard","size":"S1","family":"S","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/new-experiences/providers/Microsoft.Web/serverfarms/bookstore-westus2","name":"bookstore-westus2","type":"Microsoft.Web/serverfarms","kind":"linux","location":"West
-        US 2","tags":{},"properties":{"serverFarmId":11450864,"name":"bookstore-westus2","workerSize":"D1","workerSizeId":3,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"D1","currentWorkerSizeId":3,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"new-experiences-WestUS2webspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US 2","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":{},"kind":"linux","resourceGroup":"new-experiences","reserved":true,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-mwh-007_6995","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"P1v2","tier":"PremiumV2","size":"P1v2","family":"Pv2","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/emerald-city-bookstore/providers/Microsoft.Web/serverfarms/emerald-city-bookstore-app-service-plan","name":"emerald-city-bookstore-app-service-plan","type":"Microsoft.Web/serverfarms","kind":"linux","location":"West
-        US 2","properties":{"serverFarmId":12179864,"name":"emerald-city-bookstore-app-service-plan","workerSize":"D1","workerSizeId":3,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"D1","currentWorkerSizeId":3,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"emerald-city-bookstore-WestUS2webspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US 2","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"linux","resourceGroup":"emerald-city-bookstore","reserved":true,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-mwh-029_477","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"P1v2","tier":"PremiumV2","size":"P1v2","family":"Pv2","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rgqfjmfryrurucg7hn5afy2p5lxd2lcw34s2wq5xaehctegni66rgpqfz7gaidby6pm/providers/Microsoft.Web/serverfarms/slot-swap-planuu4wbhxcx3","name":"slot-swap-planuu4wbhxcx3","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":14566975,"name":"slot-swap-planuu4wbhxcx3","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rgqfjmfryrurucg7hn5afy2p5lxd2lcw34s2wq5xaehctegni66rgpqfz7gaidby6pm-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":10,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rgqfjmfryrurucg7hn5afy2p5lxd2lcw34s2wq5xaehctegni66rgpqfz7gaidby6pm","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-045_27156","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"S1","tier":"Standard","size":"S1","family":"S","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rgpuztxvv4yzxvddgra5d2zefuv35wjue6t4og6e3dbacxvweme2pff7wjq3wr6lyxg/providers/Microsoft.Web/serverfarms/slot-test-planqjnhv3zjls","name":"slot-test-planqjnhv3zjls","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":14566948,"name":"slot-test-planqjnhv3zjls","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rgpuztxvv4yzxvddgra5d2zefuv35wjue6t4og6e3dbacxvweme2pff7wjq3wr6lyxg-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":10,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rgpuztxvv4yzxvddgra5d2zefuv35wjue6t4og6e3dbacxvweme2pff7wjq3wr6lyxg","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-073_21048","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"S1","tier":"Standard","size":"S1","family":"S","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rgpcoaoutxr2bjxmb7aqsf7qgp3rkryp23f275q2ihezpnwopujitjkekyrq3zhk5xr/providers/Microsoft.Web/serverfarms/swiftplanqzgsvnqkvhb5cw3","name":"swiftplanqzgsvnqkvhb5cw3","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":14533594,"name":"swiftplanqzgsvnqkvhb5cw3","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rgpcoaoutxr2bjxmb7aqsf7qgp3rkryp23f275q2ihezpnwopujitjkekyrq3zhk5xr-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":10,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rgpcoaoutxr2bjxmb7aqsf7qgp3rkryp23f275q2ihezpnwopujitjkekyrq3zhk5xr","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-061_25939","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"S1","tier":"Standard","size":"S1","family":"S","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rgvisbdwgtimj325radj22kcdt5kkji4vbcjaxggx4betpcnbug4epdv6szudinioi5/providers/Microsoft.Web/serverfarms/slot-traffic-plan3ksyd4l","name":"slot-traffic-plan3ksyd4l","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":14566970,"name":"slot-traffic-plan3ksyd4l","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rgvisbdwgtimj325radj22kcdt5kkji4vbcjaxggx4betpcnbug4epdv6szudinioi5-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":10,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rgvisbdwgtimj325radj22kcdt5kkji4vbcjaxggx4betpcnbug4epdv6szudinioi5","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-061_26143","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"S1","tier":"Standard","size":"S1","family":"S","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/zuh/providers/Microsoft.Web/serverfarms/serviceplan","name":"serviceplan","type":"Microsoft.Web/serverfarms","kind":"app","location":"Central
-        US","properties":{"serverFarmId":152113,"name":"serviceplan","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"zuh-CentralUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":3,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"Central
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"zuh","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-dm1-033_31023","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"B1","tier":"Basic","size":"B1","family":"B","capacity":1}}]}'
+      string: '{"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/nicking_rg_Linux_centralus/providers/Microsoft.Web/serverfarms/nicking_asp_Linux_centralus_0","name":"nicking_asp_Linux_centralus_0","type":"Microsoft.Web/serverfarms","kind":"linux","location":"Central
+        US","properties":{"serverFarmId":13152351,"name":"nicking_asp_Linux_centralus_0","workerSize":"D1","workerSizeId":3,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"D1","currentWorkerSizeId":3,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"nicking_rg_Linux_centralus-CentralUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"Central
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"linux","resourceGroup":"nicking_rg_Linux_centralus","reserved":true,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-dm1-107_15301","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"P1v2","tier":"PremiumV2","size":"P1v2","family":"Pv2","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/web/providers/Microsoft.Web/serverfarms/linuxasp","name":"linuxasp","type":"Microsoft.Web/serverfarms","kind":"linux","location":"West
+        US 2","properties":{"serverFarmId":11774738,"name":"linuxasp","workerSize":"D1","workerSizeId":3,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"D1","currentWorkerSizeId":3,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"web-WestUS2webspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US 2","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":6,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"linux","resourceGroup":"web","reserved":true,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-mwh-029_23","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"P1v2","tier":"PremiumV2","size":"P1v2","family":"Pv2","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cleanupservice/providers/Microsoft.Web/serverfarms/cln3b27b6f1-d41e-4218-a5f5-d5974a15a69d","name":"cln3b27b6f1-d41e-4218-a5f5-d5974a15a69d","type":"Microsoft.Web/serverfarms","kind":"app","location":"East
+        US 2","properties":{"serverFarmId":12731732,"name":"cln3b27b6f1-d41e-4218-a5f5-d5974a15a69d","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"cleanupservice-EastUS2webspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":10,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"East
+        US 2","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"cleanupservice","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bn1-027_17365","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"S1","tier":"Standard","size":"S1","family":"S","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/nickingcy4001/providers/Microsoft.Web/serverfarms/nickingcy4001plan","name":"nickingcy4001plan","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
+        Central US","tags":{},"properties":{"serverFarmId":13005044,"name":"nickingcy4001plan","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":0,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":0,"status":"Ready","webSpace":"nickingcy4001-WestCentralUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":1,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Shared","siteMode":"Limited","geoRegion":"West
+        Central US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":{},"kind":"app","resourceGroup":"nickingcy4001","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-cy4-003_15272","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"F1","tier":"Free","size":"F1","family":"F","capacity":0}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","name":"webapp-hyperv-plan000003","type":"Microsoft.Web/serverfarms","kind":"windows","location":"West
+        US","properties":{"serverFarmId":14075209,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_7351","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/web2/providers/Microsoft.Web/serverfarms/nickingbasicasp","name":"nickingbasicasp","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
+        US 2","properties":{"serverFarmId":12771216,"name":"nickingbasicasp","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"web2-WestUS2webspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":3,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US 2","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"web2","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-mwh-027_15054","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"B1","tier":"Basic","size":"B1","family":"B","capacity":1}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/web2/providers/Microsoft.Web/serverfarms/premiumasp","name":"premiumasp","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
+        US 2","tags":{"Team":"AppService"},"properties":{"serverFarmId":11971115,"name":"premiumasp","workerSize":"D1","workerSizeId":3,"workerTierName":null,"numberOfWorkers":2,"currentWorkerSize":"D1","currentWorkerSizeId":3,"currentNumberOfWorkers":2,"status":"Ready","webSpace":"web2-WestUS2webspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US 2","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":3,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":{"Team":"AppService"},"kind":"app","resourceGroup":"web2","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-mwh-027_10604","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"P1v2","tier":"PremiumV2","size":"P1v2","family":"Pv2","capacity":2}},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/web/providers/Microsoft.Web/serverfarms/cy4plan","name":"cy4plan","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
+        Central US","properties":{"serverFarmId":4783,"name":"cy4plan","workerSize":"D1","workerSizeId":3,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"D1","currentWorkerSizeId":3,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"web-WestCentralUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        Central US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":1,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"web","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-cy4-003_15393","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":null,"webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"P1v2","tier":"PremiumV2","size":"P1v2","family":"Pv2","capacity":1}}]}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '14722'
+      - '10833'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:47:59 GMT
+      - Fri, 06 Sep 2019 20:38:55 GMT
       expires:
       - '-1'
       pragma:
@@ -329,8 +324,8 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-original-request-ids:
-      - 0c64ea09-5b27-45ac-8d4b-c16f3747badf
-      - feeb59cc-5745-4d12-a6b1-b72f21a21339
+      - 946c896a-f542-46a7-a173-586f911a497f
+      - 35dd0e5b-47cb-431d-8d0d-68938c78b9e1
     status:
       code: 200
       message: OK
@@ -348,8 +343,8 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -357,8 +352,8 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","name":"webapp-hyperv-plan000003","type":"Microsoft.Web/serverfarms","kind":"windows","location":"West
-        US","properties":{"serverFarmId":8105,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_8105","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
+        US","properties":{"serverFarmId":7351,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_7351","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
     headers:
       cache-control:
       - no-cache
@@ -367,7 +362,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:01 GMT
+      - Fri, 06 Sep 2019 20:38:54 GMT
       expires:
       - '-1'
       pragma:
@@ -403,8 +398,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -412,8 +407,8 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","name":"webapp-hyperv-plan000003","type":"Microsoft.Web/serverfarms","kind":"windows","location":"West
-        US","properties":{"serverFarmId":8105,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_8105","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
+        US","properties":{"serverFarmId":7351,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_7351","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
     headers:
       cache-control:
       - no-cache
@@ -422,7 +417,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:01 GMT
+      - Fri, 06 Sep 2019 20:38:56 GMT
       expires:
       - '-1'
       pragma:
@@ -445,8 +440,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: 'b''{"name": "webapp-hyperv-e2e000002", "type": "Microsoft.Web/sites", "location":
-      "West US", "properties": {"serverFarmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003"}}'''
+    body: 'b''{"location": "West US", "name": "webapp-hyperv-e2e000002", "properties":
+      {"serverFarmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003"},
+      "type": "Microsoft.Web/sites"}'''
     headers:
       Accept:
       - application/json
@@ -463,8 +459,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: POST
@@ -480,7 +476,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:02 GMT
+      - Fri, 06 Sep 2019 20:38:57 GMT
       expires:
       - '-1'
       pragma:
@@ -498,7 +494,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1195'
+      - '1199'
       x-powered-by:
       - ASP.NET
     status:
@@ -518,8 +514,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -527,8 +523,8 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","name":"webapp-hyperv-plan000003","type":"Microsoft.Web/serverfarms","kind":"windows","location":"West
-        US","properties":{"serverFarmId":8105,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_8105","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
+        US","properties":{"serverFarmId":7351,"name":"webapp-hyperv-plan000003","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"798436ab-a054-4fbf-ba01-f9f8cce4e65f","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":20,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"windows","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":true,"hyperV":true,"mdmId":"waws-prod-bay-099_7351","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"PC2","tier":"PremiumContainer","size":"PC2","family":"PC","capacity":1}}'
     headers:
       cache-control:
       - no-cache
@@ -537,7 +533,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:03 GMT
+      - Fri, 06 Sep 2019 20:38:57 GMT
       expires:
       - '-1'
       pragma:
@@ -560,10 +556,11 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: 'b''{"location": "West US", "properties": {"serverFarmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003",
-      "reserved": false, "isXenon": false, "hyperV": false, "siteConfig": {"netFrameworkVersion":
-      "v4.6", "windowsFxVersion": "DOCKER|microsoft/iis:nanoserver-sac2016", "appSettings":
-      [], "alwaysOn": true, "localMySqlEnabled": false, "http20Enabled": true}, "scmSiteAlsoStopped":
+    body: 'b''{"location": "West US", "properties": {"siteConfig": {"windowsFxVersion":
+      "DOCKER|microsoft/iis:nanoserver-sac2016", "localMySqlEnabled": false, "http20Enabled":
+      true, "netFrameworkVersion": "v4.6", "appSettings": [], "alwaysOn": true}, "serverFarmId":
+      "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003",
+      "reserved": false, "hyperV": false, "scmSiteAlsoStopped": false, "isXenon":
       false}}'''
     headers:
       Accept:
@@ -581,8 +578,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: PUT
@@ -590,18 +587,18 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/sites/webapp-hyperv-e2e000002","name":"webapp-hyperv-e2e000002","type":"Microsoft.Web/sites","kind":"app,container,windows","location":"West
-        US","properties":{"name":"webapp-hyperv-e2e000002","state":"Running","hostNames":["webapp-hyperv-e2e000002.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-099.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/webapp-hyperv-e2e000002","repositorySiteName":"webapp-hyperv-e2e000002","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["webapp-hyperv-e2e000002.azurewebsites.net","webapp-hyperv-e2e000002.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":"DOCKER|microsoft/iis:nanoserver-sac2016"}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"webapp-hyperv-e2e000002.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"webapp-hyperv-e2e000002.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","reserved":false,"isXenon":true,"hyperV":true,"lastModifiedTimeUtc":"2019-10-16T14:48:07.8433333","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"webapp-hyperv-e2e000002","trafficManagerHostNames":null,"sku":"PremiumContainer","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":true,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"app,container,windows","inboundIpAddress":"40.112.165.44","possibleInboundIpAddresses":"40.112.165.44","outboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41","possibleOutboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41,104.42.181.196,104.42.182.217,104.42.179.95","containerSize":0,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-099","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"webapp-hyperv-e2e000002.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":null,"buildVersion":null,"targetBuildVersion":null}}'
+        US","properties":{"name":"webapp-hyperv-e2e000002","state":"Running","hostNames":["webapp-hyperv-e2e000002.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-099.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/webapp-hyperv-e2e000002","repositorySiteName":"webapp-hyperv-e2e000002","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["webapp-hyperv-e2e000002.azurewebsites.net","webapp-hyperv-e2e000002.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":"DOCKER|microsoft/iis:nanoserver-sac2016"}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"webapp-hyperv-e2e000002.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"webapp-hyperv-e2e000002.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","reserved":false,"isXenon":true,"hyperV":true,"lastModifiedTimeUtc":"2019-09-06T20:39:00.6766667","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"webapp-hyperv-e2e000002","trafficManagerHostNames":null,"sku":"PremiumContainer","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":true,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"app,container,windows","inboundIpAddress":"40.112.165.44","possibleInboundIpAddresses":"40.112.165.44","outboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41","possibleOutboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41,104.42.181.196,104.42.182.217,104.42.179.95","containerSize":0,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-099","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"webapp-hyperv-e2e000002.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":null}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3654'
+      - '3608'
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:24 GMT
+      - Fri, 06 Sep 2019 20:39:15 GMT
       etag:
-      - '"1D58430BAD237D5"'
+      - '"1D564F31E703BC0"'
       expires:
       - '-1'
       pragma:
@@ -619,7 +616,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-resource-requests:
-      - '493'
+      - '499'
       x-powered-by:
       - ASP.NET
     status:
@@ -643,8 +640,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: POST
@@ -654,19 +651,19 @@ interactions:
       string: <publishData><publishProfile profileName="webapp-hyperv-e2e000002 -
         Web Deploy" publishMethod="MSDeploy" publishUrl="webapp-hyperv-e2e000002.scm.azurewebsites.net:443"
         msdeploySite="webapp-hyperv-e2e000002" userName="$webapp-hyperv-e2e000002"
-        userPWD="t2zsaeQGnvkCiXMgX4HF9e60CiWhwvjmDdlaF28nXoanZwC1ElPe5adizY5l" destinationAppUrl="http://webapp-hyperv-e2e000002.azurewebsites.net"
+        userPWD="ZB4jeor61ZmmbJpFpD2h4gwGwsSlX58ovtGRgtt7t0vXHir83B3rydfcbFrg" destinationAppUrl="http://webapp-hyperv-e2e000002.azurewebsites.net"
         SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink=""
         controlPanelLink="http://windows.azure.com" webSystem="WebSites"><databases
         /></publishProfile><publishProfile profileName="webapp-hyperv-e2e000002 -
         FTP" publishMethod="FTP" publishUrl="ftp://waws-prod-bay-099.ftp.azurewebsites.windows.net/site/wwwroot"
         ftpPassiveMode="True" userName="webapp-hyperv-e2e000002\$webapp-hyperv-e2e000002"
-        userPWD="t2zsaeQGnvkCiXMgX4HF9e60CiWhwvjmDdlaF28nXoanZwC1ElPe5adizY5l" destinationAppUrl="http://webapp-hyperv-e2e000002.azurewebsites.net"
+        userPWD="ZB4jeor61ZmmbJpFpD2h4gwGwsSlX58ovtGRgtt7t0vXHir83B3rydfcbFrg" destinationAppUrl="http://webapp-hyperv-e2e000002.azurewebsites.net"
         SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink=""
         controlPanelLink="http://windows.azure.com" webSystem="WebSites"><databases
         /></publishProfile><publishProfile profileName="webapp-hyperv-e2e000002 -
         ReadOnly - FTP" publishMethod="FTP" publishUrl="ftp://waws-prod-bay-099dr.ftp.azurewebsites.windows.net/site/wwwroot"
         ftpPassiveMode="True" userName="webapp-hyperv-e2e000002\$webapp-hyperv-e2e000002"
-        userPWD="t2zsaeQGnvkCiXMgX4HF9e60CiWhwvjmDdlaF28nXoanZwC1ElPe5adizY5l" destinationAppUrl="http://webapp-hyperv-e2e000002.azurewebsites.net"
+        userPWD="ZB4jeor61ZmmbJpFpD2h4gwGwsSlX58ovtGRgtt7t0vXHir83B3rydfcbFrg" destinationAppUrl="http://webapp-hyperv-e2e000002.azurewebsites.net"
         SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink=""
         controlPanelLink="http://windows.azure.com" webSystem="WebSites"><databases
         /></publishProfile></publishData>
@@ -678,7 +675,7 @@ interactions:
       content-type:
       - application/xml
       date:
-      - Wed, 16 Oct 2019 14:48:26 GMT
+      - Fri, 06 Sep 2019 20:39:16 GMT
       expires:
       - '-1'
       pragma:
@@ -692,7 +689,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-resource-requests:
-      - '11994'
+      - '11999'
       x-powered-by:
       - ASP.NET
     status:
@@ -712,8 +709,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -721,18 +718,18 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/sites/webapp-hyperv-e2e000002","name":"webapp-hyperv-e2e000002","type":"Microsoft.Web/sites","kind":"app,container,windows","location":"West
-        US","properties":{"name":"webapp-hyperv-e2e000002","state":"Running","hostNames":["webapp-hyperv-e2e000002.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-099.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/webapp-hyperv-e2e000002","repositorySiteName":"webapp-hyperv-e2e000002","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["webapp-hyperv-e2e000002.azurewebsites.net","webapp-hyperv-e2e000002.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":"DOCKER|microsoft/iis:nanoserver-sac2016"}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"webapp-hyperv-e2e000002.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"webapp-hyperv-e2e000002.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","reserved":false,"isXenon":true,"hyperV":true,"lastModifiedTimeUtc":"2019-10-16T14:48:10.4933333","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"webapp-hyperv-e2e000002","trafficManagerHostNames":null,"sku":"PremiumContainer","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":true,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"app,container,windows","inboundIpAddress":"40.112.165.44","possibleInboundIpAddresses":"40.112.165.44","outboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41","possibleOutboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41,104.42.181.196,104.42.182.217,104.42.179.95","containerSize":0,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-099","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"webapp-hyperv-e2e000002.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":[],"buildVersion":null,"targetBuildVersion":null}}'
+        US","properties":{"name":"webapp-hyperv-e2e000002","state":"Running","hostNames":["webapp-hyperv-e2e000002.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-099.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/webapp-hyperv-e2e000002","repositorySiteName":"webapp-hyperv-e2e000002","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["webapp-hyperv-e2e000002.azurewebsites.net","webapp-hyperv-e2e000002.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":"DOCKER|microsoft/iis:nanoserver-sac2016"}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"webapp-hyperv-e2e000002.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"webapp-hyperv-e2e000002.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","reserved":false,"isXenon":true,"hyperV":true,"lastModifiedTimeUtc":"2019-09-06T20:39:02.78","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"webapp-hyperv-e2e000002","trafficManagerHostNames":null,"sku":"PremiumContainer","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":true,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"app,container,windows","inboundIpAddress":"40.112.165.44","possibleInboundIpAddresses":"40.112.165.44","outboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41","possibleOutboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41,104.42.181.196,104.42.182.217,104.42.179.95","containerSize":0,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-099","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"webapp-hyperv-e2e000002.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":[]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3652'
+      - '3601'
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:27 GMT
+      - Fri, 06 Sep 2019 20:39:17 GMT
       etag:
-      - '"1D58430BAD237D5"'
+      - '"1D564F31E703BC0"'
       expires:
       - '-1'
       pragma:
@@ -768,8 +765,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -788,7 +785,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:27 GMT
+      - Fri, 06 Sep 2019 20:39:17 GMT
       expires:
       - '-1'
       pragma:
@@ -811,24 +808,23 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"properties": {"numberOfWorkers": 1, "defaultDocuments": ["Default.htm",
-      "Default.html", "Default.asp", "index.htm", "index.html", "iisstart.htm", "default.aspx",
-      "index.php", "hostingstart.html"], "netFrameworkVersion": "v4.0", "phpVersion":
-      "", "pythonVersion": "", "nodeVersion": "", "linuxFxVersion": "", "windowsFxVersion":
-      "DOCKER|microsoft/iis:nanoserver-sac2016", "requestTracingEnabled": false, "remoteDebuggingEnabled":
-      false, "httpLoggingEnabled": false, "logsDirectorySizeLimit": 35, "detailedErrorLoggingEnabled":
-      false, "publishingUsername": "$webapp-hyperv-e2e000002", "scmType": "None",
-      "use32BitWorkerProcess": false, "webSocketsEnabled": false, "alwaysOn": true,
-      "appCommandLine": "", "managedPipelineMode": "Integrated", "virtualApplications":
-      [{"virtualPath": "/", "physicalPath": "site\\wwwroot", "preloadEnabled": true}],
-      "loadBalancing": "LeastRequests", "experiments": {"rampUpRules": []}, "autoHealEnabled":
-      false, "vnetName": "", "localMySqlEnabled": false, "ipSecurityRestrictions":
-      [{"ipAddress": "Any", "action": "Allow", "priority": 1, "name": "Allow all",
-      "description": "Allow all access"}], "scmIpSecurityRestrictions": [{"ipAddress":
-      "Any", "action": "Allow", "priority": 1, "name": "Allow all", "description":
-      "Allow all access"}], "scmIpSecurityRestrictionsUseMain": false, "http20Enabled":
-      true, "minTlsVersion": "1.2", "ftpsState": "AllAllowed", "reservedInstanceCount":
-      0}}'
+    body: '{"properties": {"windowsFxVersion": "DOCKER|microsoft/iis:nanoserver-sac2016",
+      "localMySqlEnabled": false, "http20Enabled": true, "phpVersion": "", "experiments":
+      {"rampUpRules": []}, "numberOfWorkers": 1, "requestTracingEnabled": false, "loadBalancing":
+      "LeastRequests", "httpLoggingEnabled": false, "netFrameworkVersion": "v4.0",
+      "autoHealEnabled": false, "ftpsState": "AllAllowed", "minTlsVersion": "1.2",
+      "virtualApplications": [{"preloadEnabled": true, "virtualPath": "/", "physicalPath":
+      "site\\wwwroot"}], "managedPipelineMode": "Integrated", "scmIpSecurityRestrictionsUseMain":
+      false, "reservedInstanceCount": 0, "nodeVersion": "", "appCommandLine": "",
+      "webSocketsEnabled": false, "scmIpSecurityRestrictions": [{"priority": 1, "name":
+      "Allow all", "ipAddress": "Any", "action": "Allow", "description": "Allow all
+      access"}], "pythonVersion": "", "remoteDebuggingEnabled": false, "use32BitWorkerProcess":
+      false, "publishingUsername": "$webapp-hyperv-e2e000002", "vnetName": "", "linuxFxVersion":
+      "", "detailedErrorLoggingEnabled": false, "alwaysOn": true, "ipSecurityRestrictions":
+      [{"priority": 1, "name": "Allow all", "ipAddress": "Any", "action": "Allow",
+      "description": "Allow all access"}], "scmType": "None", "logsDirectorySizeLimit":
+      35, "defaultDocuments": ["Default.htm", "Default.html", "Default.asp", "index.htm",
+      "index.html", "iisstart.htm", "default.aspx", "index.php", "hostingstart.html"]}}'
     headers:
       Accept:
       - application/json
@@ -845,8 +841,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: PATCH
@@ -865,9 +861,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:32 GMT
+      - Fri, 06 Sep 2019 20:39:21 GMT
       etag:
-      - '"1D58430BAD237D5"'
+      - '"1D564F31E703BC0"'
       expires:
       - '-1'
       pragma:
@@ -885,7 +881,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1174'
+      - '1199'
       x-powered-by:
       - ASP.NET
     status:
@@ -907,8 +903,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: POST
@@ -925,7 +921,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:33 GMT
+      - Fri, 06 Sep 2019 20:39:22 GMT
       expires:
       - '-1'
       pragma:
@@ -943,7 +939,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-resource-requests:
-      - '11997'
+      - '11999'
       x-powered-by:
       - ASP.NET
     status:
@@ -963,8 +959,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -981,7 +977,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:33 GMT
+      - Fri, 06 Sep 2019 20:39:22 GMT
       expires:
       - '-1'
       pragma:
@@ -1017,8 +1013,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan --deployment-container-image-name
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -1037,7 +1033,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:34 GMT
+      - Fri, 06 Sep 2019 20:39:24 GMT
       expires:
       - '-1'
       pragma:
@@ -1073,8 +1069,8 @@ interactions:
       ParameterSetName:
       - -g
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -1082,16 +1078,16 @@ interactions:
   response:
     body:
       string: '{"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/sites/webapp-hyperv-e2e000002","name":"webapp-hyperv-e2e000002","type":"Microsoft.Web/sites","kind":"app,container,windows","location":"West
-        US","properties":{"name":"webapp-hyperv-e2e000002","state":"Running","hostNames":["webapp-hyperv-e2e000002.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-099.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/webapp-hyperv-e2e000002","repositorySiteName":"webapp-hyperv-e2e000002","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["webapp-hyperv-e2e000002.azurewebsites.net","webapp-hyperv-e2e000002.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":"DOCKER|microsoft/iis:nanoserver-sac2016"}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"webapp-hyperv-e2e000002.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"webapp-hyperv-e2e000002.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","reserved":false,"isXenon":true,"hyperV":true,"lastModifiedTimeUtc":"2019-10-16T14:48:32.1266667","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"webapp-hyperv-e2e000002","trafficManagerHostNames":null,"sku":"PremiumContainer","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":true,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"app,container,windows","inboundIpAddress":"40.112.165.44","possibleInboundIpAddresses":"40.112.165.44","outboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41","possibleOutboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41,104.42.181.196,104.42.182.217,104.42.179.95","containerSize":0,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-099","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"webapp-hyperv-e2e000002.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":null,"buildVersion":null,"targetBuildVersion":null}}],"nextLink":null,"id":null}'
+        US","properties":{"name":"webapp-hyperv-e2e000002","state":"Running","hostNames":["webapp-hyperv-e2e000002.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-099.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/webapp-hyperv-e2e000002","repositorySiteName":"webapp-hyperv-e2e000002","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["webapp-hyperv-e2e000002.azurewebsites.net","webapp-hyperv-e2e000002.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":"DOCKER|microsoft/iis:nanoserver-sac2016"}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"webapp-hyperv-e2e000002.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"webapp-hyperv-e2e000002.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/webapp-hyperv-plan000003","reserved":false,"isXenon":true,"hyperV":true,"lastModifiedTimeUtc":"2019-09-06T20:39:20.8766667","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"webapp-hyperv-e2e000002","trafficManagerHostNames":null,"sku":"PremiumContainer","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":true,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"app,container,windows","inboundIpAddress":"40.112.165.44","possibleInboundIpAddresses":"40.112.165.44","outboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41","possibleOutboundIpAddresses":"40.112.165.44,104.42.180.82,104.42.170.46,104.42.178.117,104.42.41.195,104.42.171.126,104.42.171.41,104.42.181.196,104.42.182.217,104.42.179.95","containerSize":0,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-099","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"webapp-hyperv-e2e000002.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":null}}],"nextLink":null,"id":null}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3692'
+      - '3646'
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:35 GMT
+      - Fri, 06 Sep 2019 20:39:25 GMT
       expires:
       - '-1'
       pragma:
@@ -1127,8 +1123,8 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -1147,7 +1143,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:35 GMT
+      - Fri, 06 Sep 2019 20:39:26 GMT
       expires:
       - '-1'
       pragma:
@@ -1183,8 +1179,8 @@ interactions:
       ParameterSetName:
       - -g -n --windows-fx-version
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -1203,7 +1199,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:36 GMT
+      - Fri, 06 Sep 2019 20:39:27 GMT
       expires:
       - '-1'
       pragma:
@@ -1226,24 +1222,24 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"properties": {"numberOfWorkers": 1, "defaultDocuments": ["Default.htm",
+    body: '{"properties": {"windowsFxVersion": "DOCKER|microsoft/iis", "localMySqlEnabled":
+      false, "http20Enabled": true, "phpVersion": "", "experiments": {"rampUpRules":
+      []}, "numberOfWorkers": 1, "requestTracingEnabled": false, "loadBalancing":
+      "LeastRequests", "httpLoggingEnabled": false, "netFrameworkVersion": "v4.0",
+      "autoHealEnabled": false, "remoteDebuggingVersion": "VS2017", "ftpsState": "AllAllowed",
+      "minTlsVersion": "1.2", "virtualApplications": [{"preloadEnabled": true, "virtualPath":
+      "/", "physicalPath": "site\\wwwroot"}], "managedPipelineMode": "Integrated",
+      "scmIpSecurityRestrictionsUseMain": false, "reservedInstanceCount": 0, "nodeVersion":
+      "", "appCommandLine": "", "webSocketsEnabled": false, "scmIpSecurityRestrictions":
+      [{"priority": 1, "name": "Allow all", "ipAddress": "Any", "action": "Allow",
+      "description": "Allow all access"}], "pythonVersion": "", "remoteDebuggingEnabled":
+      false, "use32BitWorkerProcess": false, "publishingUsername": "$webapp-hyperv-e2e000002",
+      "vnetName": "", "linuxFxVersion": "", "detailedErrorLoggingEnabled": false,
+      "alwaysOn": true, "ipSecurityRestrictions": [{"priority": 1, "name": "Allow
+      all", "ipAddress": "Any", "action": "Allow", "description": "Allow all access"}],
+      "scmType": "None", "logsDirectorySizeLimit": 35, "defaultDocuments": ["Default.htm",
       "Default.html", "Default.asp", "index.htm", "index.html", "iisstart.htm", "default.aspx",
-      "index.php", "hostingstart.html"], "netFrameworkVersion": "v4.0", "phpVersion":
-      "", "pythonVersion": "", "nodeVersion": "", "linuxFxVersion": "", "windowsFxVersion":
-      "DOCKER|microsoft/iis", "requestTracingEnabled": false, "remoteDebuggingEnabled":
-      false, "remoteDebuggingVersion": "VS2017", "httpLoggingEnabled": false, "logsDirectorySizeLimit":
-      35, "detailedErrorLoggingEnabled": false, "publishingUsername": "$webapp-hyperv-e2e000002",
-      "scmType": "None", "use32BitWorkerProcess": false, "webSocketsEnabled": false,
-      "alwaysOn": true, "appCommandLine": "", "managedPipelineMode": "Integrated",
-      "virtualApplications": [{"virtualPath": "/", "physicalPath": "site\\wwwroot",
-      "preloadEnabled": true}], "loadBalancing": "LeastRequests", "experiments": {"rampUpRules":
-      []}, "autoHealEnabled": false, "vnetName": "", "localMySqlEnabled": false, "ipSecurityRestrictions":
-      [{"ipAddress": "Any", "action": "Allow", "priority": 1, "name": "Allow all",
-      "description": "Allow all access"}], "scmIpSecurityRestrictions": [{"ipAddress":
-      "Any", "action": "Allow", "priority": 1, "name": "Allow all", "description":
-      "Allow all access"}], "scmIpSecurityRestrictionsUseMain": false, "http20Enabled":
-      true, "minTlsVersion": "1.2", "ftpsState": "AllAllowed", "reservedInstanceCount":
-      0}}'
+      "index.php", "hostingstart.html"]}}'
     headers:
       Accept:
       - application/json
@@ -1260,8 +1256,8 @@ interactions:
       ParameterSetName:
       - -g -n --windows-fx-version
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: PATCH
@@ -1280,9 +1276,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:40 GMT
+      - Fri, 06 Sep 2019 20:39:30 GMT
       etag:
-      - '"1D58430C7B733EB"'
+      - '"1D564F3293990CB"'
       expires:
       - '-1'
       pragma:
@@ -1300,7 +1296,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1185'
+      - '1199'
       x-powered-by:
       - ASP.NET
     status:
@@ -1320,8 +1316,8 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.5.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.72
       accept-language:
       - en-US
     method: GET
@@ -1340,7 +1336,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:48:42 GMT
+      - Fri, 06 Sep 2019 20:39:31 GMT
       expires:
       - '-1'
       pragma:

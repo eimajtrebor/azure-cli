@@ -15,14 +15,14 @@ interactions:
         --admin-username --generate-ssh-keys
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T20:03:33Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-13T13:39:23Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -31,7 +31,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:03:38 GMT
+      - Sun, 13 Oct 2019 13:39:27 GMT
       expires:
       - '-1'
       pragma:
@@ -110,13 +110,13 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:03:39 GMT
+      - Sun, 13 Oct 2019 13:39:29 GMT
       etag:
       - W/"5d5b1214d514a7d1af3a6606ac1a74d9cadc7bb5"
       expires:
-      - Wed, 16 Oct 2019 20:08:39 GMT
+      - Sun, 13 Oct 2019 13:44:29 GMT
       source-age:
-      - '216'
+      - '0'
       strict-transport-security:
       - max-age=31536000
       vary:
@@ -124,23 +124,23 @@ interactions:
       via:
       - 1.1 varnish
       x-cache:
-      - HIT
+      - MISS
       x-cache-hits:
-      - '1'
+      - '0'
       x-content-type-options:
       - nosniff
       x-fastly-request-id:
-      - 18aed9145350819948f0806046aba32838c0021d
+      - fc8f880268899c562530fbf68368f95813580403
       x-frame-options:
       - deny
       x-geo-block-list:
       - ''
       x-github-request-id:
-      - 9774:7BB9:6721C6:6DDFEE:5DA776C2
+      - DAE2:3BC9:8F734:A0C07:5DA3290F
       x-served-by:
-      - cache-tyo19928-TYO
+      - cache-sin18047-SIN
       x-timer:
-      - S1571256220.616085,VS0,VE0
+      - S1570973969.871683,VS0,VE275
       x-xss-protection:
       - 1; mode=block
     status:
@@ -162,7 +162,7 @@ interactions:
         --admin-username --generate-ssh-keys
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
@@ -178,7 +178,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:03:39 GMT
+      - Sun, 13 Oct 2019 13:39:29 GMT
       expires:
       - '-1'
       pragma:
@@ -229,13 +229,13 @@ interactions:
       "manual"}, "virtualMachineProfile": {"storageProfile": {"osDisk": {"createOption":
       "FromImage", "caching": "ReadWrite", "managedDisk": {"storageAccountType": null}},
       "imageReference": {"publisher": "Canonical", "offer": "UbuntuServer", "sku":
-      "18.04-LTS", "version": "latest"}}, "osProfile": {"computerNamePrefix": "vmss136af",
+      "18.04-LTS", "version": "latest"}}, "osProfile": {"computerNamePrefix": "vmss162c2",
       "adminUsername": "ubuntuadmin", "linuxConfiguration": {"disablePasswordAuthentication":
       true, "ssh": {"publicKeys": [{"path": "/home/ubuntuadmin/.ssh/authorized_keys",
-      "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvTtP1u3l8RX9SKxYybbsMpU97QHx4YlI4BdQJpEnvvlfXMVUm+fFiutRmCZyX3067/wEbhvAmYyUs5BGPxXRuWs8hKqtkryxqGuoB2aYJcTIgd5waFOc74H2k6uUAFCUAwIuSLIDCLIHsNN/Izss2afAbDCjpVSl7BqLiBIPboDvnTlU11nDuGbKcRr4vaM+ftia4dXB/joli8livZXFY1gk6BvwltpGxdzAzR2FpFnHwPmS6azzI356pgKBYAE6gXL14EjbSEiGLECCEQxJ37dD4fQbmFWKfeE7I5QrissLY/iTd6+QPvPwvYPZHObfrZv/2o5jLdCdboxCiK88h
-      zuh@microsoft.com\\n"}]}}}, "networkProfile": {"networkInterfaceConfigurations":
-      [{"name": "vmss136afNic", "properties": {"primary": "true", "ipConfigurations":
-      [{"name": "vmss136afIPConfig", "properties": {"subnet": {"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/vmss1VNET/subnets/vmss1Subnet"},
+      "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA4/w6+4x94vWRAvhQlDYBplbYODih6XktwyKJagSKUe7ya9OhGbTjMCsA7siSWEzdYM9MgVppBN8Z362JizzANvm6Cg968jgk0SdG2fH48Peu5oq49c3aXPUTFm8DDb9EDDBRG8fgJHJPphHx6X9fbXFDrYdWmmvGcFTD/+R1bMdEqrrBq1kYRbFshXjNbMHQl/A/UUvWPn4dzN06rUG0OV4jX/NpNgsuY9M9p0YPE7HN91z7hA7MmNurJ7yepzocLHtXudEYDbvtdDupWn2Y/giEfsP7dx0zC7Dz0ZVfFjBMAypScCkwIjklKMtTXvMXZtqW2jh6heImpXgLeYdv5w=="}]}}},
+      "networkProfile": {"networkInterfaceConfigurations": [{"name": "vmss162c2Nic",
+      "properties": {"primary": "true", "ipConfigurations": [{"name": "vmss162c2IPConfig",
+      "properties": {"subnet": {"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/vmss1VNET/subnets/vmss1Subnet"},
       "loadBalancerBackendAddressPools": [{"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/loadBalancers/vmss1LB/backendAddressPools/vmss1LBBEPool"}],
       "loadBalancerInboundNatPools": [{"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/loadBalancers/vmss1LB/inboundNatPools/vmss1LBNatPool"}]}}],
       "networkSecurityGroup": {"id": "[resourceId(\''Microsoft.Network/networkSecurityGroups\'',
@@ -253,7 +253,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '5304'
+      - '5284'
       Content-Type:
       - application/json; charset=utf-8
       ParameterSetName:
@@ -261,19 +261,19 @@ interactions:
         --admin-username --generate-ssh-keys
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: POST
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001/providers/Microsoft.Resources/deployments/mock-deployment/validate?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001/providers/Microsoft.Resources/deployments/mock-deployment/validate?api-version=2019-05-10
   response:
     body:
       string: '{"error":{"code":"InvalidTemplateDeployment","message":"The template
-        deployment ''vmss_deploy_TvqvnFR8DAGkJ2V956jWkocYAWZGETc1'' is not valid according
-        to the validation procedure. The tracking id is ''ad184936-831c-4588-b2bd-0d37a593a1a6''.
+        deployment ''vmss_deploy_kTTk3WGkFdSFExT33EB0WRsLQkRleCdU'' is not valid according
+        to the validation procedure. The tracking id is ''e9d60cc4-34c4-4e39-81fd-e2a54b294db8''.
         See inner errors for details.","details":[{"code":"QuotaExceeded","message":"The
         operation couldn''t be completed as it results in exceeding quota limit of
-        Core. Maximum allowed: 100, Current in use: 32, Additional requested: 101.
+        Core. Maximum allowed: 100, Current in use: 52, Additional requested: 101.
         Read more about quota limits at https://aka.ms/AzurePerVMQuotaLimits. Submit
         a request for Quota increase using the link https://aka.ms/ProdportalCRP/?#create/Microsoft.Support/Parameters/%7B%22subId%22:%220b1f6471-1bf0-4dda-aec3-cb9272f09590%22,%22pesId%22:%2206bfd9d3-516b-d5c6-5802-169c800dec89%22,%22supportTopicId%22:%22e12e3d1d-7fa0-af33-c6d0-3c50df9658a3%22%7D."}]}}'
     headers:
@@ -284,7 +284,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:03:42 GMT
+      - Sun, 13 Oct 2019 13:39:31 GMT
       expires:
       - '-1'
       pragma:

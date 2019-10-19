@@ -13,15 +13,15 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-resource/3.1.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T14:36:03Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-09-17T11:42:07Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -30,7 +30,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:36:30 GMT
+      - Tue, 17 Sep 2019 11:42:49 GMT
       expires:
       - '-1'
       pragma:
@@ -63,8 +63,8 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: POST
@@ -80,7 +80,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:36:30 GMT
+      - Tue, 17 Sep 2019 11:42:52 GMT
       expires:
       - '-1'
       pragma:
@@ -118,15 +118,15 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-resource/3.1.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T14:36:03Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-09-17T11:42:07Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -135,7 +135,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:36:30 GMT
+      - Tue, 17 Sep 2019 11:42:53 GMT
       expires:
       - '-1'
       pragma:
@@ -168,8 +168,8 @@ interactions:
       ParameterSetName:
       - -g -n
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
@@ -177,17 +177,17 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/cli-plan-nwr000004","name":"cli-plan-nwr000004","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":25824,"name":"cli-plan-nwr000004","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":3,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-057_25824","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"B1","tier":"Basic","size":"B1","family":"B","capacity":1}}'
+        US","properties":{"serverFarmId":1901,"name":"cli-plan-nwr000004","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"a6f7834d-3304-4890-82af-ec04cb382539","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":3,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-133_1901","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"B1","tier":"Basic","size":"B1","family":"B","capacity":1}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1524'
+      - '1522'
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:36:39 GMT
+      - Tue, 17 Sep 2019 11:43:02 GMT
       expires:
       - '-1'
       pragma:
@@ -205,7 +205,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1195'
+      - '1198'
       x-powered-by:
       - ASP.NET
     status:
@@ -225,8 +225,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan -s
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
@@ -234,17 +234,17 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/cli-plan-nwr000004","name":"cli-plan-nwr000004","type":"Microsoft.Web/serverfarms","kind":"app","location":"West
-        US","properties":{"serverFarmId":25824,"name":"cli-plan-nwr000004","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":3,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
-        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-057_25824","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"B1","tier":"Basic","size":"B1","family":"B","capacity":1}}'
+        US","properties":{"serverFarmId":1901,"name":"cli-plan-nwr000004","workerSize":"Default","workerSizeId":0,"workerTierName":null,"numberOfWorkers":1,"currentWorkerSize":"Default","currentWorkerSizeId":0,"currentNumberOfWorkers":1,"status":"Ready","webSpace":"clitest.rg000001-WestUSwebspace","subscription":"a6f7834d-3304-4890-82af-ec04cb382539","adminSiteName":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"maximumNumberOfWorkers":3,"planName":"VirtualDedicatedPlan","adminRuntimeSiteName":null,"computeMode":"Dedicated","siteMode":null,"geoRegion":"West
+        US","perSiteScaling":false,"maximumElasticWorkerCount":1,"numberOfSites":0,"hostingEnvironmentId":null,"isSpot":false,"spotExpirationTime":null,"freeOfferExpirationTime":null,"tags":null,"kind":"app","resourceGroup":"clitest.rg000001","reserved":false,"isXenon":false,"hyperV":false,"mdmId":"waws-prod-bay-133_1901","targetWorkerCount":0,"targetWorkerSizeId":0,"provisioningState":"Succeeded","webSiteId":null,"existingServerFarmIds":null},"sku":{"name":"B1","tier":"Basic","size":"B1","family":"B","capacity":1}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1524'
+      - '1522'
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:36:40 GMT
+      - Tue, 17 Sep 2019 11:43:06 GMT
       expires:
       - '-1'
       pragma:
@@ -280,15 +280,15 @@ interactions:
       ParameterSetName:
       - -g -n --plan -s
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-storage/4.2.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-storage/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Storage/storageAccounts/clitest000002?api-version=2019-04-01
   response:
     body:
-      string: '{"sku":{"name":"Standard_LRS","tier":"Standard"},"kind":"Storage","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Storage/storageAccounts/clitest000002","name":"clitest000002","type":"Microsoft.Storage/storageAccounts","location":"westus","tags":{},"properties":{"networkAcls":{"bypass":"AzureServices","virtualNetworkRules":[],"ipRules":[],"defaultAction":"Allow"},"supportsHttpsTrafficOnly":true,"encryption":{"services":{"file":{"enabled":true,"lastEnabledTime":"2019-10-16T14:36:11.0110418Z"},"blob":{"enabled":true,"lastEnabledTime":"2019-10-16T14:36:11.0110418Z"}},"keySource":"Microsoft.Storage"},"provisioningState":"Succeeded","creationTime":"2019-10-16T14:36:10.9485696Z","primaryEndpoints":{"blob":"https://clitest000002.blob.core.windows.net/","queue":"https://clitest000002.queue.core.windows.net/","table":"https://clitest000002.table.core.windows.net/","file":"https://clitest000002.file.core.windows.net/"},"primaryLocation":"westus","statusOfPrimary":"available"}}'
+      string: '{"sku":{"name":"Standard_LRS","tier":"Standard"},"kind":"Storage","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Storage/storageAccounts/clitest000002","name":"clitest000002","type":"Microsoft.Storage/storageAccounts","location":"westus","tags":{},"properties":{"networkAcls":{"bypass":"AzureServices","virtualNetworkRules":[],"ipRules":[],"defaultAction":"Allow"},"supportsHttpsTrafficOnly":true,"encryption":{"services":{"file":{"enabled":true,"lastEnabledTime":"2019-09-17T11:42:16.5795459Z"},"blob":{"enabled":true,"lastEnabledTime":"2019-09-17T11:42:16.5795459Z"}},"keySource":"Microsoft.Storage"},"provisioningState":"Succeeded","creationTime":"2019-09-17T11:42:16.5170255Z","primaryEndpoints":{"blob":"https://clitest000002.blob.core.windows.net/","queue":"https://clitest000002.queue.core.windows.net/","table":"https://clitest000002.table.core.windows.net/","file":"https://clitest000002.file.core.windows.net/"},"primaryLocation":"westus","statusOfPrimary":"available"}}'
     headers:
       cache-control:
       - no-cache
@@ -297,7 +297,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:36:40 GMT
+      - Tue, 17 Sep 2019 11:43:08 GMT
       expires:
       - '-1'
       pragma:
@@ -331,8 +331,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan -s
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-storage/4.2.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-storage/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: POST
@@ -348,7 +348,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:36:41 GMT
+      - Tue, 17 Sep 2019 11:43:09 GMT
       expires:
       - '-1'
       pragma:
@@ -364,7 +364,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1198'
     status:
       code: 200
       message: OK
@@ -392,8 +392,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan -s
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
@@ -401,18 +401,18 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/sites/cli-funcapp-nwr000003","name":"cli-funcapp-nwr000003","type":"Microsoft.Web/sites","kind":"functionapp","location":"West
-        US","properties":{"name":"cli-funcapp-nwr000003","state":"Running","hostNames":["cli-funcapp-nwr000003.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-057.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/cli-funcapp-nwr000003","repositorySiteName":"cli-funcapp-nwr000003","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["cli-funcapp-nwr000003.azurewebsites.net","cli-funcapp-nwr000003.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":null}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"cli-funcapp-nwr000003.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"cli-funcapp-nwr000003.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/cli-plan-nwr000004","reserved":false,"isXenon":false,"hyperV":false,"lastModifiedTimeUtc":"2019-10-16T14:36:48.213","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"cli-funcapp-nwr000003","trafficManagerHostNames":null,"sku":"Basic","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":false,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"functionapp","inboundIpAddress":"13.91.40.166","possibleInboundIpAddresses":"13.91.40.166","outboundIpAddresses":"13.91.42.207,13.91.44.111,13.91.40.156,13.91.41.150","possibleOutboundIpAddresses":"13.91.42.207,13.91.44.111,13.91.40.156,13.91.41.150","containerSize":1536,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-057","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"cli-funcapp-nwr000003.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":null,"buildVersion":null,"targetBuildVersion":null}}'
+        US","properties":{"name":"cli-funcapp-nwr000003","state":"Running","hostNames":["cli-funcapp-nwr000003.azurewebsites.net"],"webSpace":"clitest.rg000001-WestUSwebspace","selfLink":"https://waws-prod-bay-133.api.azurewebsites.windows.net:454/subscriptions/00000000-0000-0000-0000-000000000000/webspaces/clitest.rg000001-WestUSwebspace/sites/cli-funcapp-nwr000003","repositorySiteName":"cli-funcapp-nwr000003","owner":null,"usageState":"Normal","enabled":true,"adminEnabled":true,"enabledHostNames":["cli-funcapp-nwr000003.azurewebsites.net","cli-funcapp-nwr000003.scm.azurewebsites.net"],"siteProperties":{"metadata":null,"properties":[{"name":"LinuxFxVersion","value":""},{"name":"WindowsFxVersion","value":null}],"appSettings":null},"availabilityState":"Normal","sslCertificates":null,"csrs":[],"cers":null,"siteMode":null,"hostNameSslStates":[{"name":"cli-funcapp-nwr000003.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Standard"},{"name":"cli-funcapp-nwr000003.scm.azurewebsites.net","sslState":"Disabled","ipBasedSslResult":null,"virtualIP":null,"thumbprint":null,"toUpdate":null,"toUpdateIpBasedSsl":null,"ipBasedSslState":"NotConfigured","hostType":"Repository"}],"computeMode":null,"serverFarm":null,"serverFarmId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/serverfarms/cli-plan-nwr000004","reserved":false,"isXenon":false,"hyperV":false,"lastModifiedTimeUtc":"2019-09-17T11:43:15.8666667","storageRecoveryDefaultState":"Running","contentAvailabilityState":"Normal","runtimeAvailabilityState":"Normal","siteConfig":null,"deploymentId":"cli-funcapp-nwr000003","trafficManagerHostNames":null,"sku":"Basic","scmSiteAlsoStopped":false,"targetSwapSlot":null,"hostingEnvironment":null,"hostingEnvironmentProfile":null,"clientAffinityEnabled":false,"clientCertEnabled":false,"clientCertExclusionPaths":null,"hostNamesDisabled":false,"domainVerificationIdentifiers":null,"kind":"functionapp","inboundIpAddress":"40.112.243.5","possibleInboundIpAddresses":"40.112.243.5","outboundIpAddresses":"40.112.243.5,168.61.67.173,137.117.16.243,23.100.47.193,104.42.125.202","possibleOutboundIpAddresses":"40.112.243.5,168.61.67.173,137.117.16.243,23.100.47.193,104.42.125.202,23.99.67.170,104.210.54.177,104.45.237.237,23.99.68.138,137.117.12.227","containerSize":1536,"dailyMemoryTimeQuota":0,"suspendedTill":null,"siteDisabledReason":0,"functionExecutionUnitsCache":null,"maxNumberOfWorkers":null,"homeStamp":"waws-prod-bay-133","cloningInfo":null,"hostingEnvironmentId":null,"tags":null,"resourceGroup":"clitest.rg000001","defaultHostName":"cli-funcapp-nwr000003.azurewebsites.net","slotSwapStatus":null,"httpsOnly":false,"redundancyMode":"None","inProgressOperationId":null,"geoDistributions":null,"privateEndpointConnections":null}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3446'
+      - '3513'
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:37:05 GMT
+      - Tue, 17 Sep 2019 11:43:32 GMT
       etag:
-      - '"1D5842F2476EA40"'
+      - '"1D56D4D18316F60"'
       expires:
       - '-1'
       pragma:
@@ -455,26 +455,146 @@ interactions:
       ParameterSetName:
       - -g -n --plan -s
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-applicationinsights/0.1.1 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-applicationinsights/0.1.1
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/microsoft.insights/components/cli-funcapp-nwr000003?api-version=2015-05-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/microsoft.insights/components/cli-funcapp-nwr000003","name":"cli-funcapp-nwr000003","type":"microsoft.insights/components","location":"westus","tags":{},"kind":"web","etag":"\"47000018-0000-0700-0000-5da72b160000\"","properties":{"Ver":"v2","ApplicationId":"cli-funcapp-nwr000003","AppId":"dba1f576-97d0-4bde-9b2f-9da0cbadc592","Application_Type":"web","Flow_Type":null,"Request_Source":null,"InstrumentationKey":"80faf089-0a5d-4d6a-845c-55006267f6a6","ConnectionString":"InstrumentationKey=80faf089-0a5d-4d6a-845c-55006267f6a6","Name":"cli-funcapp-nwr000003","CreationDate":"2019-10-16T14:37:09.999945+00:00","TenantId":"0b1f6471-1bf0-4dda-aec3-cb9272f09590","provisioningState":"Succeeded","SamplingPercentage":null}}'
+      string: '{"code":"InternalServerError","message":"A task was canceled.","innererror":{"diagnosticcontext":"4ef822b0-d940-11e9-8dab-e4a7a016557a","time":"2019-09-17T11:44:12.6258439Z"}}'
+    headers:
+      access-control-expose-headers:
+      - Request-Context
+      cache-control:
+      - no-cache
+      connection:
+      - close
+      content-length:
+      - '175'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 17 Sep 2019 11:44:11 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      request-context:
+      - appId=cid-v1:920e14b1-13f3-461a-a4bb-b4fe6f1a4525
+      server:
+      - Microsoft-IIS/10.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-failure-cause:
+      - service
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1198'
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: '{"location": "West US", "kind": "web", "properties": {"Application_Type":
+      "web"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - functionapp create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '81'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - -g -n --plan -s
+      User-Agent:
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-applicationinsights/0.1.1
+        Azure-SDK-For-Python AZURECLI/2.0.73
+      accept-language:
+      - en-US
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/microsoft.insights/components/cli-funcapp-nwr000003?api-version=2015-05-01
+  response:
+    body:
+      string: '{"code":"InternalServerError","message":"A task was canceled.","innererror":{"diagnosticcontext":"4ef822b0-d940-11e9-8dab-e4a7a016557a","time":"2019-09-17T11:44:51.6686970Z"}}'
+    headers:
+      access-control-expose-headers:
+      - Request-Context
+      cache-control:
+      - no-cache
+      connection:
+      - close
+      content-length:
+      - '175'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 17 Sep 2019 11:44:51 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      request-context:
+      - appId=cid-v1:920e14b1-13f3-461a-a4bb-b4fe6f1a4525
+      server:
+      - Microsoft-IIS/10.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-failure-cause:
+      - service
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1197'
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: '{"location": "West US", "kind": "web", "properties": {"Application_Type":
+      "web"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - functionapp create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '81'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - -g -n --plan -s
+      User-Agent:
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-applicationinsights/0.1.1
+        Azure-SDK-For-Python AZURECLI/2.0.73
+      accept-language:
+      - en-US
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/microsoft.insights/components/cli-funcapp-nwr000003?api-version=2015-05-01
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/microsoft.insights/components/cli-funcapp-nwr000003","name":"cli-funcapp-nwr000003","type":"microsoft.insights/components","location":"westus","tags":{},"kind":"web","etag":"\"4c007232-0000-0700-0000-5d80c7520000\"","properties":{"Ver":"v2","ApplicationId":"cli-funcapp-nwr000003","AppId":"6c2da710-1f7f-4d58-896c-30253a77f9fb","Application_Type":"web","Flow_Type":null,"Request_Source":null,"InstrumentationKey":"5380da02-0622-4792-bc78-7f268d1e2aea","Name":"cli-funcapp-nwr000003","CreationDate":"2019-09-17T11:45:22.0714701+00:00","TenantId":"a6f7834d-3304-4890-82af-ec04cb382539","provisioningState":"Succeeded","SamplingPercentage":null}}'
     headers:
       access-control-expose-headers:
       - Request-Context
       cache-control:
       - no-cache
       content-length:
-      - '891'
+      - '815'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:12 GMT
+      - Tue, 17 Sep 2019 11:45:24 GMT
       expires:
       - '-1'
       pragma:
@@ -492,7 +612,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1197'
+      - '1199'
       x-powered-by:
       - ASP.NET
     status:
@@ -514,8 +634,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan -s
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: POST
@@ -532,7 +652,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:37:14 GMT
+      - Tue, 17 Sep 2019 11:45:25 GMT
       expires:
       - '-1'
       pragma:
@@ -561,7 +681,7 @@ interactions:
       "~2", "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=clitest000002;AccountKey=veryFakedStorageAccountKey==",
       "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=clitest000002;AccountKey=veryFakedStorageAccountKey==",
       "WEBSITE_NODE_DEFAULT_VERSION": "10.14.1", "APPINSIGHTS_INSTRUMENTATIONKEY":
-      "80faf089-0a5d-4d6a-845c-55006267f6a6"}}'''
+      "5380da02-0622-4792-bc78-7f268d1e2aea"}}'''
     headers:
       Accept:
       - application/json
@@ -578,8 +698,8 @@ interactions:
       ParameterSetName:
       - -g -n --plan -s
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
@@ -587,7 +707,7 @@ interactions:
   response:
     body:
       string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Web/sites/cli-funcapp-nwr000003/config/appsettings","name":"appsettings","type":"Microsoft.Web/sites/config","location":"West
-        US","properties":{"FUNCTIONS_EXTENSION_VERSION":"~2","AzureWebJobsStorage":"DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=clitest000002;AccountKey=veryFakedStorageAccountKey==","AzureWebJobsDashboard":"DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=clitest000002;AccountKey=veryFakedStorageAccountKey==","WEBSITE_NODE_DEFAULT_VERSION":"10.14.1","APPINSIGHTS_INSTRUMENTATIONKEY":"80faf089-0a5d-4d6a-845c-55006267f6a6"}}'
+        US","properties":{"FUNCTIONS_EXTENSION_VERSION":"~2","AzureWebJobsStorage":"DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=clitest000002;AccountKey=veryFakedStorageAccountKey==","AzureWebJobsDashboard":"DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=clitest000002;AccountKey=veryFakedStorageAccountKey==","WEBSITE_NODE_DEFAULT_VERSION":"10.14.1","APPINSIGHTS_INSTRUMENTATIONKEY":"5380da02-0622-4792-bc78-7f268d1e2aea"}}'
     headers:
       cache-control:
       - no-cache
@@ -596,9 +716,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:37:14 GMT
+      - Tue, 17 Sep 2019 11:45:28 GMT
       etag:
-      - '"1D5842F33FC4DC0"'
+      - '"1D56D4D6680F0D5"'
       expires:
       - '-1'
       pragma:
@@ -616,7 +736,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1165'
+      - '1196'
       x-powered-by:
       - ASP.NET
     status:
@@ -636,15 +756,15 @@ interactions:
       ParameterSetName:
       - -g -n --address-prefixes --subnet-name --subnet-prefixes
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-resource/3.1.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/clitest.rg000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T14:36:03Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001","name":"clitest.rg000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2019-09-17T11:42:07Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -653,7 +773,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:15 GMT
+      - Tue, 17 Sep 2019 11:45:29 GMT
       expires:
       - '-1'
       pragma:
@@ -687,8 +807,8 @@ interactions:
       ParameterSetName:
       - -g -n --address-prefixes --subnet-name --subnet-prefixes
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-network/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
@@ -696,15 +816,15 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"cli-vnet-nwr000005\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005\",\r\n
-        \ \"etag\": \"W/\\\"57c65fa7-d045-4511-a817-986a40840d5a\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"8677fc78-e203-4a55-a88f-e9ede0c8db3f\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n
-        \   \"resourceGuid\": \"d4189e10-32be-4987-b6ec-a9a2f9491519\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"72ea7f5b-6c0d-40c0-8294-dd4737e701a9\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [\r\n      {\r\n        \"name\": \"endpoint-subnet\",\r\n
         \       \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005/subnets/endpoint-subnet\",\r\n
-        \       \"etag\": \"W/\\\"57c65fa7-d045-4511-a817-986a40840d5a\\\"\",\r\n
+        \       \"etag\": \"W/\\\"8677fc78-e203-4a55-a88f-e9ede0c8db3f\\\"\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Updating\",\r\n
         \         \"addressPrefix\": \"10.0.0.0/24\",\r\n          \"delegations\":
         [],\r\n          \"privateEndpointNetworkPolicies\": \"Enabled\",\r\n          \"privateLinkServiceNetworkPolicies\":
@@ -713,7 +833,7 @@ interactions:
         false,\r\n    \"enableVmProtection\": false\r\n  }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/1321d3cc-3053-4f79-88d3-979c6ccc151b?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/648c619e-eb09-484f-b7d9-afa270920649?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -721,7 +841,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:18 GMT
+      - Tue, 17 Sep 2019 11:45:33 GMT
       expires:
       - '-1'
       pragma:
@@ -734,7 +854,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 7535b490-9caf-4283-b0c3-8fa5773cc938
+      - 1c47b74a-8335-4969-9ef6-83cd04e6269e
       x-ms-ratelimit-remaining-subscription-writes:
       - '1195'
     status:
@@ -754,10 +874,10 @@ interactions:
       ParameterSetName:
       - -g -n --address-prefixes --subnet-name --subnet-prefixes
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-network/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/1321d3cc-3053-4f79-88d3-979c6ccc151b?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/648c619e-eb09-484f-b7d9-afa270920649?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -769,7 +889,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:22 GMT
+      - Tue, 17 Sep 2019 11:45:39 GMT
       expires:
       - '-1'
       pragma:
@@ -786,7 +906,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - e2e541cc-54bf-4b4f-9597-848bbde64c88
+      - eea1a387-86b6-4620-bf60-3f81c0c617c7
     status:
       code: 200
       message: OK
@@ -804,22 +924,22 @@ interactions:
       ParameterSetName:
       - -g -n --address-prefixes --subnet-name --subnet-prefixes
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-network/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"cli-vnet-nwr000005\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005\",\r\n
-        \ \"etag\": \"W/\\\"992054c5-ec3f-4989-998f-1d7450aa539e\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"50522587-1dd5-496a-b408-cac5819036da\\\"\",\r\n  \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westus\",\r\n
         \ \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"d4189e10-32be-4987-b6ec-a9a2f9491519\",\r\n    \"addressSpace\":
+        \   \"resourceGuid\": \"72ea7f5b-6c0d-40c0-8294-dd4737e701a9\",\r\n    \"addressSpace\":
         {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n
         \   },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n
         \   \"subnets\": [\r\n      {\r\n        \"name\": \"endpoint-subnet\",\r\n
         \       \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005/subnets/endpoint-subnet\",\r\n
-        \       \"etag\": \"W/\\\"992054c5-ec3f-4989-998f-1d7450aa539e\\\"\",\r\n
+        \       \"etag\": \"W/\\\"50522587-1dd5-496a-b408-cac5819036da\\\"\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n
         \         \"addressPrefix\": \"10.0.0.0/24\",\r\n          \"delegations\":
         [],\r\n          \"privateEndpointNetworkPolicies\": \"Enabled\",\r\n          \"privateLinkServiceNetworkPolicies\":
@@ -834,9 +954,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:22 GMT
+      - Tue, 17 Sep 2019 11:45:39 GMT
       etag:
-      - W/"992054c5-ec3f-4989-998f-1d7450aa539e"
+      - W/"50522587-1dd5-496a-b408-cac5819036da"
       expires:
       - '-1'
       pragma:
@@ -853,7 +973,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 36cb692b-6d2d-450d-89df-d3133b5ddce7
+      - a9252be3-de9e-4a9b-a98e-a3d69e651fa2
     status:
       code: 200
       message: OK
@@ -871,8 +991,8 @@ interactions:
       ParameterSetName:
       - -g -n --rule-name --action --subnet --priority
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
@@ -891,7 +1011,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:37:23 GMT
+      - Tue, 17 Sep 2019 11:45:42 GMT
       expires:
       - '-1'
       pragma:
@@ -927,8 +1047,8 @@ interactions:
       ParameterSetName:
       - -g -n --rule-name --action --vnet-name --subnet --priority
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
@@ -947,7 +1067,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:37:24 GMT
+      - Tue, 17 Sep 2019 11:45:44 GMT
       expires:
       - '-1'
       pragma:
@@ -983,8 +1103,8 @@ interactions:
       ParameterSetName:
       - -g -n --rule-name --action --vnet-name --subnet --priority
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-network/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
@@ -992,7 +1112,7 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"endpoint-subnet\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005/subnets/endpoint-subnet\",\r\n
-        \ \"etag\": \"W/\\\"992054c5-ec3f-4989-998f-1d7450aa539e\\\"\",\r\n  \"properties\":
+        \ \"etag\": \"W/\\\"50522587-1dd5-496a-b408-cac5819036da\\\"\",\r\n  \"properties\":
         {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n
         \   \"delegations\": [],\r\n    \"privateEndpointNetworkPolicies\": \"Enabled\",\r\n
         \   \"privateLinkServiceNetworkPolicies\": \"Enabled\"\r\n  },\r\n  \"type\":
@@ -1005,9 +1125,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:24 GMT
+      - Tue, 17 Sep 2019 11:45:45 GMT
       etag:
-      - W/"992054c5-ec3f-4989-998f-1d7450aa539e"
+      - W/"50522587-1dd5-496a-b408-cac5819036da"
       expires:
       - '-1'
       pragma:
@@ -1024,7 +1144,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 3a30e57f-5fc2-4e4a-99d4-02fc9d03429c
+      - 8b8ee02d-4128-4987-b63c-e9e84e745410
     status:
       code: 200
       message: OK
@@ -1033,7 +1153,7 @@ interactions:
       "properties": {"addressPrefix": "10.0.0.0/24", "serviceEndpoints": [{"service":
       "Microsoft.Web"}], "delegations": [], "provisioningState": "Succeeded", "privateEndpointNetworkPolicies":
       "Enabled", "privateLinkServiceNetworkPolicies": "Enabled"}, "name": "endpoint-subnet",
-      "etag": "W/\\"992054c5-ec3f-4989-998f-1d7450aa539e\\""}'''
+      "etag": "W/\\"50522587-1dd5-496a-b408-cac5819036da\\""}'''
     headers:
       Accept:
       - application/json
@@ -1050,8 +1170,8 @@ interactions:
       ParameterSetName:
       - -g -n --rule-name --action --vnet-name --subnet --priority
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-network/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
@@ -1059,7 +1179,7 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"endpoint-subnet\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005/subnets/endpoint-subnet\",\r\n
-        \ \"etag\": \"W/\\\"f93cdda4-303c-493d-9883-83f7dd9c6263\\\"\",\r\n  \"properties\":
+        \ \"etag\": \"W/\\\"ba930660-f0cf-4778-b40f-3c3ea93a4f87\\\"\",\r\n  \"properties\":
         {\r\n    \"provisioningState\": \"Updating\",\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n
         \   \"serviceEndpoints\": [\r\n      {\r\n        \"provisioningState\": \"Updating\",\r\n
         \       \"service\": \"Microsoft.Web\",\r\n        \"locations\": [\r\n          \"*\"\r\n
@@ -1068,7 +1188,7 @@ interactions:
         \ },\r\n  \"type\": \"Microsoft.Network/virtualNetworks/subnets\"\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/390160ae-88ac-446a-8ba2-a50b202cb36f?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/f24fd1ee-c525-4d83-8ec2-b2a7318731c9?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -1076,7 +1196,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:25 GMT
+      - Tue, 17 Sep 2019 11:45:46 GMT
       expires:
       - '-1'
       pragma:
@@ -1093,9 +1213,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 6969ec8e-34cd-4bec-b045-c9f2171f15ca
+      - 67d4219c-e9da-44ae-927d-4d19298ad741
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1195'
+      - '1198'
     status:
       code: 200
       message: OK
@@ -1113,10 +1233,10 @@ interactions:
       ParameterSetName:
       - -g -n --rule-name --action --vnet-name --subnet --priority
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-network/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/390160ae-88ac-446a-8ba2-a50b202cb36f?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/operations/f24fd1ee-c525-4d83-8ec2-b2a7318731c9?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -1128,7 +1248,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:28 GMT
+      - Tue, 17 Sep 2019 11:45:52 GMT
       expires:
       - '-1'
       pragma:
@@ -1145,7 +1265,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 291bb050-ffae-4e7d-b3d1-99985467eaff
+      - f34f2151-3e45-4696-94a5-12470bff83d5
     status:
       code: 200
       message: OK
@@ -1163,14 +1283,14 @@ interactions:
       ParameterSetName:
       - -g -n --rule-name --action --vnet-name --subnet --priority
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-network/4.0.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005/subnets/endpoint-subnet?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"endpoint-subnet\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Network/virtualNetworks/cli-vnet-nwr000005/subnets/endpoint-subnet\",\r\n
-        \ \"etag\": \"W/\\\"52a34f97-7f15-430e-86b5-942dcc2ecdb9\\\"\",\r\n  \"properties\":
+        \ \"etag\": \"W/\\\"1e14003b-0698-429a-879f-e271f4ec04e6\\\"\",\r\n  \"properties\":
         {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"addressPrefix\": \"10.0.0.0/24\",\r\n
         \   \"serviceEndpoints\": [\r\n      {\r\n        \"provisioningState\": \"Succeeded\",\r\n
         \       \"service\": \"Microsoft.Web\",\r\n        \"locations\": [\r\n          \"*\"\r\n
@@ -1185,9 +1305,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 14:37:28 GMT
+      - Tue, 17 Sep 2019 11:45:52 GMT
       etag:
-      - W/"52a34f97-7f15-430e-86b5-942dcc2ecdb9"
+      - W/"1e14003b-0698-429a-879f-e271f4ec04e6"
       expires:
       - '-1'
       pragma:
@@ -1204,7 +1324,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 3717f6ff-a11c-4636-a787-3034b5ea4c7e
+      - 4ee8c547-2c97-4d0f-be33-48299a56d225
     status:
       code: 200
       message: OK
@@ -1245,8 +1365,8 @@ interactions:
       ParameterSetName:
       - -g -n --rule-name --action --vnet-name --subnet --priority
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-web/0.42.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.1 azure-mgmt-web/0.42.0
+        Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PATCH
@@ -1265,9 +1385,9 @@ interactions:
       content-type:
       - application/json
       date:
-      - Wed, 16 Oct 2019 14:37:34 GMT
+      - Tue, 17 Sep 2019 11:46:00 GMT
       etag:
-      - '"1D5842F33FC4DC0"'
+      - '"1D56D4D6680F0D5"'
       expires:
       - '-1'
       pragma:
@@ -1285,7 +1405,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1138'
+      - '1197'
       x-powered-by:
       - ASP.NET
     status:

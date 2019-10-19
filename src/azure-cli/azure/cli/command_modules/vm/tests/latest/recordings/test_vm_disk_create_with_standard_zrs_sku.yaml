@@ -13,15 +13,15 @@ interactions:
       ParameterSetName:
       - -g -n --size-gb
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-resource/3.1.0 Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli-test-std_zrs000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli-test-std_zrs000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001","name":"cli-test-std_zrs000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T20:33:20Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001","name":"cli-test-std_zrs000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-09-17T08:11:50Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -30,7 +30,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:35 GMT
+      - Tue, 17 Sep 2019 08:11:58 GMT
       expires:
       - '-1'
       pragma:
@@ -64,8 +64,8 @@ interactions:
       ParameterSetName:
       - -g -n --size-gb
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
@@ -79,7 +79,7 @@ interactions:
         \"Updating\",\r\n    \"isArmResource\": true\r\n  }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/7ac2fcaa-1bba-4467-9a0f-d8993f0a59c5?api-version=2019-03-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/9a72487f-6939-4568-ab02-d81722959780?api-version=2019-03-01
       cache-control:
       - no-cache
       content-length:
@@ -87,11 +87,11 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:41 GMT
+      - Tue, 17 Sep 2019 08:12:03 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/7ac2fcaa-1bba-4467-9a0f-d8993f0a59c5?monitor=true&api-version=2019-03-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/9a72487f-6939-4568-ab02-d81722959780?monitor=true&api-version=2019-03-01
       pragma:
       - no-cache
       server:
@@ -104,7 +104,7 @@ interactions:
       x-ms-ratelimit-remaining-resource:
       - Microsoft.Compute/CreateUpdateDisks3Min;999,Microsoft.Compute/CreateUpdateDisks30Min;7999
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1195'
     status:
       code: 202
       message: Accepted
@@ -122,14 +122,14 @@ interactions:
       ParameterSetName:
       - -g -n --size-gb
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/7ac2fcaa-1bba-4467-9a0f-d8993f0a59c5?api-version=2019-03-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/9a72487f-6939-4568-ab02-d81722959780?api-version=2019-03-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2019-10-16T20:33:41.6802512+00:00\",\r\n  \"endTime\":
-        \"2019-10-16T20:33:41.867757+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
+      string: "{\r\n  \"startTime\": \"2019-09-17T08:12:03.9203596+00:00\",\r\n  \"endTime\":
+        \"2019-09-17T08:12:04.0609808+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
         \ \"properties\": {\r\n    \"output\": {\r\n  \"name\": \"d1\",\r\n  \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001/providers/Microsoft.Compute/disks/d1\",\r\n
         \ \"type\": \"Microsoft.Compute/disks\",\r\n  \"location\": \"eastus2\",\r\n
@@ -137,19 +137,19 @@ interactions:
         \"Premium\"\r\n  },\r\n  \"properties\": {\r\n    \"hyperVGeneration\": \"V1\",\r\n
         \   \"creationData\": {\r\n      \"createOption\": \"Empty\"\r\n    },\r\n
         \   \"diskSizeGB\": 4,\r\n    \"diskIOPSReadWrite\": 120,\r\n    \"diskMBpsReadWrite\":
-        25,\r\n    \"timeCreated\": \"2019-10-16T20:33:41.6802512+00:00\",\r\n    \"provisioningState\":
+        25,\r\n    \"timeCreated\": \"2019-09-17T08:12:03.9359841+00:00\",\r\n    \"provisioningState\":
         \"Succeeded\",\r\n    \"diskState\": \"Unattached\",\r\n    \"diskSizeBytes\":
-        4294967296,\r\n    \"uniqueId\": \"255cefd6-b56e-46cb-bca8-ba91f44b5f2f\"\r\n
-        \ }\r\n}\r\n  },\r\n  \"name\": \"7ac2fcaa-1bba-4467-9a0f-d8993f0a59c5\"\r\n}"
+        4294967296,\r\n    \"uniqueId\": \"1854d668-8fb5-47bc-a371-5741f14277c3\"\r\n
+        \ }\r\n}\r\n  },\r\n  \"name\": \"9a72487f-6939-4568-ab02-d81722959780\"\r\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1003'
+      - '1004'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:44 GMT
+      - Tue, 17 Sep 2019 08:12:06 GMT
       expires:
       - '-1'
       pragma:
@@ -166,7 +166,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;49999,Microsoft.Compute/GetOperation30Min;399990
+      - Microsoft.Compute/GetOperation3Min;49999,Microsoft.Compute/GetOperation30Min;399999
     status:
       code: 200
       message: OK
@@ -184,8 +184,8 @@ interactions:
       ParameterSetName:
       - -g -n --size-gb
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001/providers/Microsoft.Compute/disks/d1?api-version=2019-03-01
   response:
@@ -196,9 +196,9 @@ interactions:
         \"Premium\"\r\n  },\r\n  \"properties\": {\r\n    \"hyperVGeneration\": \"V1\",\r\n
         \   \"creationData\": {\r\n      \"createOption\": \"Empty\"\r\n    },\r\n
         \   \"diskSizeGB\": 4,\r\n    \"diskIOPSReadWrite\": 120,\r\n    \"diskMBpsReadWrite\":
-        25,\r\n    \"timeCreated\": \"2019-10-16T20:33:41.6802512+00:00\",\r\n    \"provisioningState\":
+        25,\r\n    \"timeCreated\": \"2019-09-17T08:12:03.9359841+00:00\",\r\n    \"provisioningState\":
         \"Succeeded\",\r\n    \"diskState\": \"Unattached\",\r\n    \"diskSizeBytes\":
-        4294967296,\r\n    \"uniqueId\": \"255cefd6-b56e-46cb-bca8-ba91f44b5f2f\"\r\n
+        4294967296,\r\n    \"uniqueId\": \"1854d668-8fb5-47bc-a371-5741f14277c3\"\r\n
         \ }\r\n}"
     headers:
       cache-control:
@@ -208,7 +208,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:44 GMT
+      - Tue, 17 Sep 2019 08:12:06 GMT
       expires:
       - '-1'
       pragma:
@@ -225,7 +225,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/LowCostGet3Min;4999,Microsoft.Compute/LowCostGet30Min;39985
+      - Microsoft.Compute/LowCostGet3Min;4999,Microsoft.Compute/LowCostGet30Min;39977
     status:
       code: 200
       message: OK
@@ -243,8 +243,8 @@ interactions:
       ParameterSetName:
       - -g -n --source --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
@@ -261,7 +261,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:46 GMT
+      - Tue, 17 Sep 2019 08:12:07 GMT
       expires:
       - '-1'
       pragma:
@@ -289,8 +289,8 @@ interactions:
       ParameterSetName:
       - -g -n --source --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
@@ -303,9 +303,9 @@ interactions:
         \"Premium\"\r\n  },\r\n  \"properties\": {\r\n    \"hyperVGeneration\": \"V1\",\r\n
         \   \"creationData\": {\r\n      \"createOption\": \"Empty\"\r\n    },\r\n
         \   \"diskSizeGB\": 4,\r\n    \"diskIOPSReadWrite\": 120,\r\n    \"diskMBpsReadWrite\":
-        25,\r\n    \"timeCreated\": \"2019-10-16T20:33:41.6802512+00:00\",\r\n    \"provisioningState\":
+        25,\r\n    \"timeCreated\": \"2019-09-17T08:12:03.9359841+00:00\",\r\n    \"provisioningState\":
         \"Succeeded\",\r\n    \"diskState\": \"Unattached\",\r\n    \"diskSizeBytes\":
-        4294967296,\r\n    \"uniqueId\": \"255cefd6-b56e-46cb-bca8-ba91f44b5f2f\"\r\n
+        4294967296,\r\n    \"uniqueId\": \"1854d668-8fb5-47bc-a371-5741f14277c3\"\r\n
         \ }\r\n}"
     headers:
       cache-control:
@@ -315,7 +315,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:47 GMT
+      - Tue, 17 Sep 2019 08:12:07 GMT
       expires:
       - '-1'
       pragma:
@@ -332,7 +332,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/LowCostGet3Min;4998,Microsoft.Compute/LowCostGet30Min;39984
+      - Microsoft.Compute/LowCostGet3Min;4998,Microsoft.Compute/LowCostGet30Min;39976
     status:
       code: 200
       message: OK
@@ -350,15 +350,15 @@ interactions:
       ParameterSetName:
       - -g -n --source --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-resource/3.1.0 Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli-test-std_zrs000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli-test-std_zrs000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001","name":"cli-test-std_zrs000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T20:33:20Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001","name":"cli-test-std_zrs000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-09-17T08:11:50Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -367,7 +367,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:48 GMT
+      - Tue, 17 Sep 2019 08:12:08 GMT
       expires:
       - '-1'
       pragma:
@@ -401,8 +401,8 @@ interactions:
       ParameterSetName:
       - -g -n --source --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
       accept-language:
       - en-US
     method: PUT
@@ -413,12 +413,12 @@ interactions:
         {\r\n    \"name\": \"Standard_ZRS\"\r\n  },\r\n  \"properties\": {\r\n    \"hyperVGeneration\":
         \"V1\",\r\n    \"creationData\": {\r\n      \"createOption\": \"Copy\",\r\n
         \     \"sourceResourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001/providers/Microsoft.Compute/disks/d1\",\r\n
-        \     \"sourceUniqueId\": \"255cefd6-b56e-46cb-bca8-ba91f44b5f2f\"\r\n    },\r\n
+        \     \"sourceUniqueId\": \"1854d668-8fb5-47bc-a371-5741f14277c3\"\r\n    },\r\n
         \   \"provisioningState\": \"Updating\",\r\n    \"isArmResource\": true\r\n
         \ }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/c790587f-6f1f-497e-a380-0bd7dfc8d0c4?api-version=2019-03-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/ed2226cb-50ac-4967-bda7-b8a1eab9350f?api-version=2019-03-01
       cache-control:
       - no-cache
       content-length:
@@ -426,11 +426,11 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:51 GMT
+      - Tue, 17 Sep 2019 08:12:11 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/c790587f-6f1f-497e-a380-0bd7dfc8d0c4?monitor=true&api-version=2019-03-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/ed2226cb-50ac-4967-bda7-b8a1eab9350f?monitor=true&api-version=2019-03-01
       pragma:
       - no-cache
       server:
@@ -443,7 +443,7 @@ interactions:
       x-ms-ratelimit-remaining-resource:
       - Microsoft.Compute/HighCostSnapshotCreateHydrate3Min;239,Microsoft.Compute/HighCostSnapshotCreateHydrate30Min;1919
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1180'
     status:
       code: 202
       message: Accepted
@@ -461,14 +461,14 @@ interactions:
       ParameterSetName:
       - -g -n --source --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/c790587f-6f1f-497e-a380-0bd7dfc8d0c4?api-version=2019-03-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/eastus2/DiskOperations/ed2226cb-50ac-4967-bda7-b8a1eab9350f?api-version=2019-03-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2019-10-16T20:33:51.8994527+00:00\",\r\n  \"endTime\":
-        \"2019-10-16T20:33:53.8057921+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
+      string: "{\r\n  \"startTime\": \"2019-09-17T08:12:11.6704166+00:00\",\r\n  \"endTime\":
+        \"2019-09-17T08:12:12.6704257+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
         \ \"properties\": {\r\n    \"output\": {\r\n  \"name\": \"s1\",\r\n  \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001/providers/Microsoft.Compute/snapshots/s1\",\r\n
         \ \"type\": \"Microsoft.Compute/snapshots\",\r\n  \"location\": \"eastus2\",\r\n
@@ -476,12 +476,12 @@ interactions:
         \"Standard\"\r\n  },\r\n  \"properties\": {\r\n    \"hyperVGeneration\": \"V1\",\r\n
         \   \"creationData\": {\r\n      \"createOption\": \"Copy\",\r\n      \"sourceResourceId\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001/providers/Microsoft.Compute/disks/d1\",\r\n
-        \     \"sourceUniqueId\": \"255cefd6-b56e-46cb-bca8-ba91f44b5f2f\"\r\n    },\r\n
+        \     \"sourceUniqueId\": \"1854d668-8fb5-47bc-a371-5741f14277c3\"\r\n    },\r\n
         \   \"diskSizeGB\": 4,\r\n    \"incremental\": false,\r\n    \"timeCreated\":
-        \"2019-10-16T20:33:51.9150757+00:00\",\r\n    \"provisioningState\": \"Succeeded\",\r\n
+        \"2019-09-17T08:12:11.6704166+00:00\",\r\n    \"provisioningState\": \"Succeeded\",\r\n
         \   \"diskState\": \"Unattached\",\r\n    \"diskSizeBytes\": 4294967296,\r\n
-        \   \"uniqueId\": \"73b01d8d-dca6-4b56-8dbc-c15f2357fa3d\"\r\n  }\r\n}\r\n
-        \ },\r\n  \"name\": \"c790587f-6f1f-497e-a380-0bd7dfc8d0c4\"\r\n}"
+        \   \"uniqueId\": \"50cfd73e-69e1-47f9-a70b-b1a57d551c67\"\r\n  }\r\n}\r\n
+        \ },\r\n  \"name\": \"ed2226cb-50ac-4967-bda7-b8a1eab9350f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -490,7 +490,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:54 GMT
+      - Tue, 17 Sep 2019 08:12:14 GMT
       expires:
       - '-1'
       pragma:
@@ -507,7 +507,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;49997,Microsoft.Compute/GetOperation30Min;399988
+      - Microsoft.Compute/GetOperation3Min;49997,Microsoft.Compute/GetOperation30Min;399997
     status:
       code: 200
       message: OK
@@ -525,8 +525,8 @@ interactions:
       ParameterSetName:
       - -g -n --source --sku
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.1
+        azure-mgmt-compute/8.0.0 Azure-SDK-For-Python AZURECLI/2.0.73
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001/providers/Microsoft.Compute/snapshots/s1?api-version=2019-03-01
   response:
@@ -537,11 +537,11 @@ interactions:
         \"Standard\"\r\n  },\r\n  \"properties\": {\r\n    \"hyperVGeneration\": \"V1\",\r\n
         \   \"creationData\": {\r\n      \"createOption\": \"Copy\",\r\n      \"sourceResourceId\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli-test-std_zrs000001/providers/Microsoft.Compute/disks/d1\",\r\n
-        \     \"sourceUniqueId\": \"255cefd6-b56e-46cb-bca8-ba91f44b5f2f\"\r\n    },\r\n
+        \     \"sourceUniqueId\": \"1854d668-8fb5-47bc-a371-5741f14277c3\"\r\n    },\r\n
         \   \"diskSizeGB\": 4,\r\n    \"incremental\": false,\r\n    \"timeCreated\":
-        \"2019-10-16T20:33:51.9150757+00:00\",\r\n    \"provisioningState\": \"Succeeded\",\r\n
+        \"2019-09-17T08:12:11.6704166+00:00\",\r\n    \"provisioningState\": \"Succeeded\",\r\n
         \   \"diskState\": \"Unattached\",\r\n    \"diskSizeBytes\": 4294967296,\r\n
-        \   \"uniqueId\": \"73b01d8d-dca6-4b56-8dbc-c15f2357fa3d\"\r\n  }\r\n}"
+        \   \"uniqueId\": \"50cfd73e-69e1-47f9-a70b-b1a57d551c67\"\r\n  }\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -550,7 +550,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 20:33:54 GMT
+      - Tue, 17 Sep 2019 08:12:14 GMT
       expires:
       - '-1'
       pragma:
@@ -567,7 +567,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/LowCostGet3Min;4996,Microsoft.Compute/LowCostGet30Min;39982
+      - Microsoft.Compute/LowCostGet3Min;4996,Microsoft.Compute/LowCostGet30Min;39974
     status:
       code: 200
       message: OK

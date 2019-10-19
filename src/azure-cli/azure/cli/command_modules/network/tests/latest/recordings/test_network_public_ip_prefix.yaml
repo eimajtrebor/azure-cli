@@ -14,14 +14,14 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T17:03:37Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-15T05:34:49Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -30,7 +30,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:03:43 GMT
+      - Tue, 15 Oct 2019 05:34:54 GMT
       expires:
       - '-1'
       pragma:
@@ -64,7 +64,7 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: PUT
@@ -72,16 +72,16 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"prefix1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \ \"etag\": \"W/\\\"fd6f94d7-2662-4771-8d83-f63f04a9e480\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"eb42c01d-5f8d-4e3e-9448-d87cfbc11a8f\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\":
-        \"61b56d7b-c160-48e6-9588-3e1fdd0c9e73\",\r\n    \"prefixLength\": 30,\r\n
+        \"79eac448-9854-4a3e-9a66-4caf50dd386b\",\r\n    \"prefixLength\": 30,\r\n
         \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipTags\": []\r\n  },\r\n
         \ \"sku\": {\r\n    \"name\": \"Standard\",\r\n    \"tier\": \"Regional\"\r\n
         \ }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/aa479623-fae6-46e7-b7a9-e67fd3e01601?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/66396997-ed04-4c30-9a43-c718ef58a583?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -89,7 +89,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:03:47 GMT
+      - Tue, 15 Oct 2019 05:34:58 GMT
       expires:
       - '-1'
       pragma:
@@ -102,9 +102,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 7eac77a0-9300-4f6b-b769-9c6e001ac5a9
+      - d547840e-415a-4c69-814d-8eb40c2409bf
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1182'
+      - '1194'
     status:
       code: 201
       message: Created
@@ -123,9 +123,9 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/aa479623-fae6-46e7-b7a9-e67fd3e01601?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/66396997-ed04-4c30-9a43-c718ef58a583?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"InProgress\"\r\n}"
@@ -137,7 +137,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:03:52 GMT
+      - Tue, 15 Oct 2019 05:35:03 GMT
       expires:
       - '-1'
       pragma:
@@ -154,7 +154,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 9c927d18-7023-4eef-b112-936bcc5b40d2
+      - a84d8f8f-516a-4fab-9134-34bd9b8de7f0
     status:
       code: 200
       message: OK
@@ -173,9 +173,9 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/aa479623-fae6-46e7-b7a9-e67fd3e01601?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/66396997-ed04-4c30-9a43-c718ef58a583?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -187,7 +187,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:02 GMT
+      - Tue, 15 Oct 2019 05:35:13 GMT
       expires:
       - '-1'
       pragma:
@@ -204,7 +204,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 8a9794b3-5bbf-4c55-86ce-b1f0224d7fea
+      - 268b3e5f-606f-4c3c-80c3-297a10dc830e
     status:
       code: 200
       message: OK
@@ -223,17 +223,17 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"prefix1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \ \"etag\": \"W/\\\"bb881010-ba4c-4e35-99e8-26898cbb9284\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"cd28092c-08b8-4a36-94ed-791d32129586\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\":
-        \"61b56d7b-c160-48e6-9588-3e1fdd0c9e73\",\r\n    \"prefixLength\": 30,\r\n
-        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.65.233.188/30\",\r\n
+        \"79eac448-9854-4a3e-9a66-4caf50dd386b\",\r\n    \"prefixLength\": 30,\r\n
+        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.70.156.164/30\",\r\n
         \   \"ipTags\": []\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"Standard\",\r\n
         \   \"tier\": \"Regional\"\r\n  }\r\n}"
     headers:
@@ -244,9 +244,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:02 GMT
+      - Tue, 15 Oct 2019 05:35:13 GMT
       etag:
-      - W/"bb881010-ba4c-4e35-99e8-26898cbb9284"
+      - W/"cd28092c-08b8-4a36-94ed-791d32129586"
       expires:
       - '-1'
       pragma:
@@ -263,7 +263,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - f719b90f-6830-4555-b180-f6c7093220e0
+      - 916c29b7-e5fe-4f43-be32-84124cd027cd
     status:
       code: 200
       message: OK
@@ -282,7 +282,7 @@ interactions:
       - -g -n --tags
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
@@ -290,11 +290,11 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"prefix1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \ \"etag\": \"W/\\\"bb881010-ba4c-4e35-99e8-26898cbb9284\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"cd28092c-08b8-4a36-94ed-791d32129586\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\":
-        \"61b56d7b-c160-48e6-9588-3e1fdd0c9e73\",\r\n    \"prefixLength\": 30,\r\n
-        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.65.233.188/30\",\r\n
+        \"79eac448-9854-4a3e-9a66-4caf50dd386b\",\r\n    \"prefixLength\": 30,\r\n
+        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.70.156.164/30\",\r\n
         \   \"ipTags\": []\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"Standard\",\r\n
         \   \"tier\": \"Regional\"\r\n  }\r\n}"
     headers:
@@ -305,9 +305,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:04 GMT
+      - Tue, 15 Oct 2019 05:35:15 GMT
       etag:
-      - W/"bb881010-ba4c-4e35-99e8-26898cbb9284"
+      - W/"cd28092c-08b8-4a36-94ed-791d32129586"
       expires:
       - '-1'
       pragma:
@@ -324,7 +324,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 61892386-b48a-4624-bfa3-ed4aae751544
+      - 65fcc18e-ff5a-437f-9488-86e82108a360
     status:
       code: 200
       message: OK
@@ -332,8 +332,8 @@ interactions:
     body: 'b''{"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1",
       "location": "eastus2", "tags": {"foo": "doo"}, "sku": {"name": "Standard"},
       "properties": {"publicIPAddressVersion": "IPv4", "ipTags": [], "prefixLength":
-      30, "ipPrefix": "40.65.233.188/30", "resourceGuid": "61b56d7b-c160-48e6-9588-3e1fdd0c9e73",
-      "provisioningState": "Succeeded"}, "etag": "W/\\"bb881010-ba4c-4e35-99e8-26898cbb9284\\""}'''
+      30, "ipPrefix": "40.70.156.164/30", "resourceGuid": "79eac448-9854-4a3e-9a66-4caf50dd386b",
+      "provisioningState": "Succeeded"}, "etag": "W/\\"cd28092c-08b8-4a36-94ed-791d32129586\\""}'''
     headers:
       Accept:
       - application/json
@@ -351,7 +351,7 @@ interactions:
       - -g -n --tags
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: PUT
@@ -359,17 +359,17 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"prefix1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \ \"etag\": \"W/\\\"cef30e5c-aea9-4bf9-82d3-d42d8dd86cde\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"3b4eb698-6c0b-4116-a9cd-cbd70ac6b918\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"tags\": {\r\n    \"foo\": \"doo\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\",\r\n    \"resourceGuid\": \"61b56d7b-c160-48e6-9588-3e1fdd0c9e73\",\r\n
+        \"Succeeded\",\r\n    \"resourceGuid\": \"79eac448-9854-4a3e-9a66-4caf50dd386b\",\r\n
         \   \"prefixLength\": 30,\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n
-        \   \"ipPrefix\": \"40.65.233.188/30\",\r\n    \"ipTags\": []\r\n  },\r\n
+        \   \"ipPrefix\": \"40.70.156.164/30\",\r\n    \"ipTags\": []\r\n  },\r\n
         \ \"sku\": {\r\n    \"name\": \"Standard\",\r\n    \"tier\": \"Regional\"\r\n
         \ }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/c5bb5c1f-67d8-4760-9d37-ed80cf629fd1?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/7fe1c2aa-3cbd-4449-8327-0be1590b4903?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -377,7 +377,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:08 GMT
+      - Tue, 15 Oct 2019 05:35:18 GMT
       expires:
       - '-1'
       pragma:
@@ -394,9 +394,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - c519bd79-29ed-4194-a2cf-ad9e12930801
+      - 63095249-3bf5-4254-845e-bad05bbc7091
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1187'
+      - '1197'
     status:
       code: 200
       message: OK
@@ -415,9 +415,9 @@ interactions:
       - -g -n --tags
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/c5bb5c1f-67d8-4760-9d37-ed80cf629fd1?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/7fe1c2aa-3cbd-4449-8327-0be1590b4903?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -429,7 +429,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:40 GMT
+      - Tue, 15 Oct 2019 05:35:49 GMT
       expires:
       - '-1'
       pragma:
@@ -446,7 +446,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 2bd7fdea-7f64-433b-abe5-a2f51e0de81c
+      - 6537be83-0778-4d54-bf2e-ffcf3dda5694
     status:
       code: 200
       message: OK
@@ -465,18 +465,18 @@ interactions:
       - -g -n --tags
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"prefix1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \ \"etag\": \"W/\\\"cef30e5c-aea9-4bf9-82d3-d42d8dd86cde\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"3b4eb698-6c0b-4116-a9cd-cbd70ac6b918\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"tags\": {\r\n    \"foo\": \"doo\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\",\r\n    \"resourceGuid\": \"61b56d7b-c160-48e6-9588-3e1fdd0c9e73\",\r\n
+        \"Succeeded\",\r\n    \"resourceGuid\": \"79eac448-9854-4a3e-9a66-4caf50dd386b\",\r\n
         \   \"prefixLength\": 30,\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n
-        \   \"ipPrefix\": \"40.65.233.188/30\",\r\n    \"ipTags\": []\r\n  },\r\n
+        \   \"ipPrefix\": \"40.70.156.164/30\",\r\n    \"ipTags\": []\r\n  },\r\n
         \ \"sku\": {\r\n    \"name\": \"Standard\",\r\n    \"tier\": \"Regional\"\r\n
         \ }\r\n}"
     headers:
@@ -487,9 +487,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:40 GMT
+      - Tue, 15 Oct 2019 05:35:50 GMT
       etag:
-      - W/"cef30e5c-aea9-4bf9-82d3-d42d8dd86cde"
+      - W/"3b4eb698-6c0b-4116-a9cd-cbd70ac6b918"
       expires:
       - '-1'
       pragma:
@@ -506,7 +506,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 4c982df2-e0a3-494a-aa7a-f70516d3f2a2
+      - 846af5ef-b985-4587-b14d-aa75fc61f0bc
     status:
       code: 200
       message: OK
@@ -525,7 +525,7 @@ interactions:
       - -g
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
@@ -534,12 +534,12 @@ interactions:
     body:
       string: "{\r\n  \"value\": [\r\n    {\r\n      \"name\": \"prefix1\",\r\n      \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \     \"etag\": \"W/\\\"cef30e5c-aea9-4bf9-82d3-d42d8dd86cde\\\"\",\r\n      \"type\":
+        \     \"etag\": \"W/\\\"3b4eb698-6c0b-4116-a9cd-cbd70ac6b918\\\"\",\r\n      \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n      \"location\": \"eastus2\",\r\n
         \     \"tags\": {\r\n        \"foo\": \"doo\"\r\n      },\r\n      \"properties\":
         {\r\n        \"provisioningState\": \"Succeeded\",\r\n        \"resourceGuid\":
-        \"61b56d7b-c160-48e6-9588-3e1fdd0c9e73\",\r\n        \"prefixLength\": 30,\r\n
-        \       \"publicIPAddressVersion\": \"IPv4\",\r\n        \"ipPrefix\": \"40.65.233.188/30\",\r\n
+        \"79eac448-9854-4a3e-9a66-4caf50dd386b\",\r\n        \"prefixLength\": 30,\r\n
+        \       \"publicIPAddressVersion\": \"IPv4\",\r\n        \"ipPrefix\": \"40.70.156.164/30\",\r\n
         \       \"ipTags\": []\r\n      },\r\n      \"sku\": {\r\n        \"name\":
         \"Standard\",\r\n        \"tier\": \"Regional\"\r\n      }\r\n    }\r\n  ]\r\n}"
     headers:
@@ -550,7 +550,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:41 GMT
+      - Tue, 15 Oct 2019 05:35:50 GMT
       expires:
       - '-1'
       pragma:
@@ -567,7 +567,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 8f730eda-ea9c-4d4a-bb06-9a35957bf849
+      - aec556ea-874d-4e64-ac03-05d51401f95a
     status:
       code: 200
       message: OK
@@ -588,7 +588,7 @@ interactions:
       - -g -n
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: DELETE
@@ -598,17 +598,17 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/6acfa87f-4c79-4a83-a584-e5dd228252b2?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/cc2bf9d4-716a-4f1e-9770-c87e4678f809?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
       - '0'
       date:
-      - Wed, 16 Oct 2019 17:04:43 GMT
+      - Tue, 15 Oct 2019 05:35:52 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operationResults/6acfa87f-4c79-4a83-a584-e5dd228252b2?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operationResults/cc2bf9d4-716a-4f1e-9770-c87e4678f809?api-version=2019-08-01
       pragma:
       - no-cache
       server:
@@ -619,9 +619,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - d2cbd572-b828-4103-87ca-cd3b29544350
+      - d69462ea-dcbc-480d-a874-c8ceffd4f2f6
       x-ms-ratelimit-remaining-subscription-deletes:
-      - '14995'
+      - '14999'
     status:
       code: 202
       message: Accepted
@@ -640,9 +640,9 @@ interactions:
       - -g -n
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/6acfa87f-4c79-4a83-a584-e5dd228252b2?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/cc2bf9d4-716a-4f1e-9770-c87e4678f809?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -654,7 +654,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:55 GMT
+      - Tue, 15 Oct 2019 05:36:05 GMT
       expires:
       - '-1'
       pragma:
@@ -671,7 +671,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 53f91f2b-3506-4669-a52f-6dc33d3b041a
+      - 24f6ba2a-82a2-49a6-8809-cfc2f8a0a13c
     status:
       code: 200
       message: OK
@@ -690,40 +690,33 @@ interactions:
       - -g
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes?api-version=2019-08-01
   response:
     body:
-      string: "{\r\n  \"value\": []\r\n}"
+      string: '{"value":[]}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '19'
+      - '12'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:56 GMT
+      - Tue, 15 Oct 2019 05:36:05 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - Microsoft-HTTPAPI/2.0
-      - Microsoft-HTTPAPI/2.0
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
       vary:
       - Accept-Encoding
       x-content-type-options:
       - nosniff
-      x-ms-arm-service-request-id:
-      - 909cfc87-388b-4e3d-89ee-01cb29f170ac
     status:
       code: 200
       message: OK
@@ -742,14 +735,14 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T17:03:37Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-15T05:34:49Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -758,7 +751,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:04:56 GMT
+      - Tue, 15 Oct 2019 05:36:06 GMT
       expires:
       - '-1'
       pragma:
@@ -792,7 +785,7 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: PUT
@@ -800,16 +793,16 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"prefix1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \ \"etag\": \"W/\\\"a0785616-a295-4493-9cc1-9c8471d1a7c4\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"a6dcbd2f-9b64-4db9-8410-deebe07e6cf8\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\":
-        \"26c75cf4-dda7-4fa3-b181-9bf4b507312e\",\r\n    \"prefixLength\": 30,\r\n
+        \"6d37f321-fdc5-44cc-a43a-e311a6de52ea\",\r\n    \"prefixLength\": 30,\r\n
         \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipTags\": []\r\n  },\r\n
         \ \"sku\": {\r\n    \"name\": \"Standard\",\r\n    \"tier\": \"Regional\"\r\n
         \ }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/b73848f1-206f-4296-a903-6709a2e2a491?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/80e901fd-efd8-4532-aa6b-2612fd80b8e3?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -817,7 +810,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:01 GMT
+      - Tue, 15 Oct 2019 05:36:10 GMT
       expires:
       - '-1'
       pragma:
@@ -830,9 +823,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - ded9280a-52dd-4f15-87ee-74a86c32c90c
+      - b79c2a04-543c-497e-8a04-3b88243e53f0
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1190'
+      - '1193'
     status:
       code: 201
       message: Created
@@ -851,9 +844,9 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/b73848f1-206f-4296-a903-6709a2e2a491?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/80e901fd-efd8-4532-aa6b-2612fd80b8e3?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -865,7 +858,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:06 GMT
+      - Tue, 15 Oct 2019 05:36:15 GMT
       expires:
       - '-1'
       pragma:
@@ -882,7 +875,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 17450976-20d5-4971-b3f2-8915977a3ce3
+      - e7d2a790-f30c-4463-9ec6-81c9046388a1
     status:
       code: 200
       message: OK
@@ -901,30 +894,30 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"prefix1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\",\r\n
-        \ \"etag\": \"W/\\\"641d8fc6-0e6d-4a7b-a257-aead51a30ebb\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"7188d12b-2d81-4742-916f-128bad26f2ab\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\":
-        \"26c75cf4-dda7-4fa3-b181-9bf4b507312e\",\r\n    \"prefixLength\": 30,\r\n
-        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.65.236.8/30\",\r\n
+        \"6d37f321-fdc5-44cc-a43a-e311a6de52ea\",\r\n    \"prefixLength\": 30,\r\n
+        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.70.156.164/30\",\r\n
         \   \"ipTags\": []\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"Standard\",\r\n
         \   \"tier\": \"Regional\"\r\n  }\r\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '674'
+      - '676'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:06 GMT
+      - Tue, 15 Oct 2019 05:36:15 GMT
       etag:
-      - W/"641d8fc6-0e6d-4a7b-a257-aead51a30ebb"
+      - W/"7188d12b-2d81-4742-916f-128bad26f2ab"
       expires:
       - '-1'
       pragma:
@@ -941,7 +934,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 92ea1895-5c5d-49ad-ac41-b096757abc33
+      - 2078ab34-f6a2-4c46-a8f9-b3877791cc74
     status:
       code: 200
       message: OK
@@ -960,14 +953,14 @@ interactions:
       - -g -n --public-ip-prefix --sku
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T17:03:37Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-15T05:34:49Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -976,7 +969,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:08 GMT
+      - Tue, 15 Oct 2019 05:36:16 GMT
       expires:
       - '-1'
       pragma:
@@ -1011,7 +1004,7 @@ interactions:
       - -g -n --public-ip-prefix --sku
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: PUT
@@ -1019,9 +1012,9 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"pip1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPAddresses/pip1\",\r\n
-        \ \"etag\": \"W/\\\"61e55784-30cf-42d9-9f7b-0281a35f4520\\\"\",\r\n  \"location\":
+        \ \"etag\": \"W/\\\"79dbc8b9-54a4-41c5-b8f0-e24d999fef2e\\\"\",\r\n  \"location\":
         \"eastus2\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n
-        \   \"resourceGuid\": \"54e54bcd-bff9-4b3f-ab23-9c244ed5a72c\",\r\n    \"publicIPAddressVersion\":
+        \   \"resourceGuid\": \"0614bb4f-9f45-4d0c-81aa-21f1af0fa2f9\",\r\n    \"publicIPAddressVersion\":
         \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Static\",\r\n    \"idleTimeoutInMinutes\":
         4,\r\n    \"ipTags\": [],\r\n    \"publicIPPrefix\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\"\r\n
         \   }\r\n  },\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n
@@ -1029,7 +1022,7 @@ interactions:
         \ }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/831e1316-cbb0-4070-bab7-7b2db48b58eb?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/5cd0611c-b228-479b-ba0f-d7a648db7f81?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -1037,7 +1030,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:12 GMT
+      - Tue, 15 Oct 2019 05:36:21 GMT
       expires:
       - '-1'
       pragma:
@@ -1050,9 +1043,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - e4f11272-ecaf-42a8-a061-36577045bd53
+      - 80bc61fc-aa44-4e2e-a9fa-fa9624c424a1
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1187'
+      - '1194'
     status:
       code: 201
       message: Created
@@ -1071,9 +1064,9 @@ interactions:
       - -g -n --public-ip-prefix --sku
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/831e1316-cbb0-4070-bab7-7b2db48b58eb?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/5cd0611c-b228-479b-ba0f-d7a648db7f81?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -1085,7 +1078,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:14 GMT
+      - Tue, 15 Oct 2019 05:36:23 GMT
       expires:
       - '-1'
       pragma:
@@ -1102,7 +1095,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 9a4e54c7-902e-4b4c-8cad-b26291069a79
+      - c7e73992-92a8-4b47-83ab-37d00ceba331
     status:
       code: 200
       message: OK
@@ -1121,16 +1114,16 @@ interactions:
       - -g -n --public-ip-prefix --sku
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPAddresses/pip1?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"pip1\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPAddresses/pip1\",\r\n
-        \ \"etag\": \"W/\\\"9d2b8b0e-74cd-4363-a530-4f5ca3188747\\\"\",\r\n  \"location\":
+        \ \"etag\": \"W/\\\"0a7d92cf-48b8-4175-afe0-544c7d5dd3be\\\"\",\r\n  \"location\":
         \"eastus2\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n
-        \   \"resourceGuid\": \"54e54bcd-bff9-4b3f-ab23-9c244ed5a72c\",\r\n    \"ipAddress\":
-        \"40.65.236.8\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\":
+        \   \"resourceGuid\": \"0614bb4f-9f45-4d0c-81aa-21f1af0fa2f9\",\r\n    \"ipAddress\":
+        \"40.70.156.164\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\":
         \"Static\",\r\n    \"idleTimeoutInMinutes\": 4,\r\n    \"ipTags\": [],\r\n
         \   \"publicIPPrefix\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/prefix1\"\r\n
         \   }\r\n  },\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n
@@ -1140,13 +1133,13 @@ interactions:
       cache-control:
       - no-cache
       content-length:
-      - '962'
+      - '964'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:16 GMT
+      - Tue, 15 Oct 2019 05:36:23 GMT
       etag:
-      - W/"9d2b8b0e-74cd-4363-a530-4f5ca3188747"
+      - W/"0a7d92cf-48b8-4175-afe0-544c7d5dd3be"
       expires:
       - '-1'
       pragma:
@@ -1163,7 +1156,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 3c5897ef-6a07-45c7-ac86-a81351a7d21f
+      - a6bf5885-36ae-4ce9-8905-8a8fa43a4519
     status:
       code: 200
       message: OK
@@ -1182,14 +1175,14 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T17:03:37Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-15T05:34:49Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -1198,7 +1191,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:17 GMT
+      - Tue, 15 Oct 2019 05:36:24 GMT
       expires:
       - '-1'
       pragma:
@@ -1232,7 +1225,7 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: PUT
@@ -1240,16 +1233,16 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"public_ip_prefix_0\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/public_ip_prefix_0\",\r\n
-        \ \"etag\": \"W/\\\"c264e9aa-49fd-423b-b9e4-8af5986175d6\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"416e79f9-da06-48f6-8962-ade91428fd49\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\":
-        \"016971ae-9c1e-4630-bad1-1365a2f8c84c\",\r\n    \"prefixLength\": 30,\r\n
+        \"e88ca204-f05d-4cc9-9696-f8d8380e3f9f\",\r\n    \"prefixLength\": 30,\r\n
         \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipTags\": []\r\n  },\r\n
         \ \"sku\": {\r\n    \"name\": \"Standard\",\r\n    \"tier\": \"Regional\"\r\n
         \ }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/753a6aee-6eca-437c-aff5-7447dade8a38?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/6907de42-0823-4c16-8458-7736e89415a0?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -1257,7 +1250,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:21 GMT
+      - Tue, 15 Oct 2019 05:36:28 GMT
       expires:
       - '-1'
       pragma:
@@ -1270,9 +1263,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 0daf87ae-4d05-4e5c-a284-3fbc116196c5
+      - c7f83816-333d-4720-89c0-108fc3da103f
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1186'
+      - '1197'
     status:
       code: 201
       message: Created
@@ -1291,9 +1284,9 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/753a6aee-6eca-437c-aff5-7447dade8a38?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/6907de42-0823-4c16-8458-7736e89415a0?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -1305,7 +1298,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:24 GMT
+      - Tue, 15 Oct 2019 05:36:32 GMT
       expires:
       - '-1'
       pragma:
@@ -1322,7 +1315,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 1b6f5254-755e-4dae-9327-7ed32823ceb1
+      - 29bbca84-d283-4662-a104-39023b036f01
     status:
       code: 200
       message: OK
@@ -1341,30 +1334,30 @@ interactions:
       - -g -n --length
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/public_ip_prefix_0?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"public_ip_prefix_0\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/public_ip_prefix_0\",\r\n
-        \ \"etag\": \"W/\\\"c7850ea0-1d38-4f0e-8287-217c360d6248\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"7e21f478-feae-4f98-b5a0-51dcaac88639\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\":
-        \"016971ae-9c1e-4630-bad1-1365a2f8c84c\",\r\n    \"prefixLength\": 30,\r\n
-        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.65.236.52/30\",\r\n
+        \"e88ca204-f05d-4cc9-9696-f8d8380e3f9f\",\r\n    \"prefixLength\": 30,\r\n
+        \   \"publicIPAddressVersion\": \"IPv4\",\r\n    \"ipPrefix\": \"40.70.156.172/30\",\r\n
         \   \"ipTags\": []\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"Standard\",\r\n
         \   \"tier\": \"Regional\"\r\n  }\r\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '697'
+      - '698'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:25 GMT
+      - Tue, 15 Oct 2019 05:36:33 GMT
       etag:
-      - W/"c7850ea0-1d38-4f0e-8287-217c360d6248"
+      - W/"7e21f478-feae-4f98-b5a0-51dcaac88639"
       expires:
       - '-1'
       pragma:
@@ -1381,7 +1374,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 52709637-be04-4ace-89a3-dd6a3fdc996d
+      - 9ec1d08d-5ed8-4e26-a80f-7ec1ada27060
     status:
       code: 200
       message: OK
@@ -1400,14 +1393,14 @@ interactions:
       - -g -n --length --version
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-resource/4.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-07-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_network_public_ip_prefix000001?api-version=2019-05-10
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-16T17:03:37Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001","name":"cli_test_network_public_ip_prefix000001","type":"Microsoft.Resources/resourceGroups","location":"eastus2","tags":{"product":"azurecli","cause":"automation","date":"2019-10-15T05:34:49Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -1416,7 +1409,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:27 GMT
+      - Tue, 15 Oct 2019 05:36:34 GMT
       expires:
       - '-1'
       pragma:
@@ -1450,7 +1443,7 @@ interactions:
       - -g -n --length --version
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
       accept-language:
       - en-US
     method: PUT
@@ -1458,16 +1451,16 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"public_ip_prefix_2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/public_ip_prefix_2\",\r\n
-        \ \"etag\": \"W/\\\"00a1d896-db5d-436c-89ef-2c2214a97071\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"80faaf16-98a5-4720-81dd-1898ba6074b3\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\":
-        \"08cf4b90-4c79-4ee0-9d03-5be26efe7134\",\r\n    \"prefixLength\": 127,\r\n
+        \"20c220f9-085e-42cc-86ae-54f014b60f0e\",\r\n    \"prefixLength\": 127,\r\n
         \   \"publicIPAddressVersion\": \"IPv6\",\r\n    \"ipTags\": []\r\n  },\r\n
         \ \"sku\": {\r\n    \"name\": \"Standard\",\r\n    \"tier\": \"Regional\"\r\n
         \ }\r\n}"
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/0c5ac387-4f6c-4117-bfa0-08475cd274b8?api-version=2019-08-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/ce0a377f-0d78-42f0-8a91-62dc9b0bf6f3?api-version=2019-08-01
       cache-control:
       - no-cache
       content-length:
@@ -1475,7 +1468,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:31 GMT
+      - Tue, 15 Oct 2019 05:36:39 GMT
       expires:
       - '-1'
       pragma:
@@ -1488,9 +1481,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 061c0275-a710-4994-a0e5-f8cbcdfd8cda
+      - eeea5de8-87b2-435d-a28a-709518643cd0
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1189'
+      - '1199'
     status:
       code: 201
       message: Created
@@ -1509,9 +1502,9 @@ interactions:
       - -g -n --length --version
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/0c5ac387-4f6c-4117-bfa0-08475cd274b8?api-version=2019-08-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/eastus2/operations/ce0a377f-0d78-42f0-8a91-62dc9b0bf6f3?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"status\": \"Succeeded\"\r\n}"
@@ -1523,7 +1516,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:36 GMT
+      - Tue, 15 Oct 2019 05:36:43 GMT
       expires:
       - '-1'
       pragma:
@@ -1540,7 +1533,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 9a5a2429-4689-4959-a59c-5a63699baf77
+      - 7acadd23-7d3d-4a7a-9d66-0a25c1fd75e3
     status:
       code: 200
       message: OK
@@ -1559,16 +1552,16 @@ interactions:
       - -g -n --length --version
       User-Agent:
       - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.10 msrest_azure/0.6.2
-        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.75
+        azure-mgmt-network/6.0.0 Azure-SDK-For-Python AZURECLI/2.0.74
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/public_ip_prefix_2?api-version=2019-08-01
   response:
     body:
       string: "{\r\n  \"name\": \"public_ip_prefix_2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_network_public_ip_prefix000001/providers/Microsoft.Network/publicIPPrefixes/public_ip_prefix_2\",\r\n
-        \ \"etag\": \"W/\\\"d4fb096d-eeda-40e2-8902-2073e0aff29f\\\"\",\r\n  \"type\":
+        \ \"etag\": \"W/\\\"8002550c-4a90-4068-aab4-50e8e4ef4cd7\\\"\",\r\n  \"type\":
         \"Microsoft.Network/publicIPPrefixes\",\r\n  \"location\": \"eastus2\",\r\n
         \ \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\":
-        \"08cf4b90-4c79-4ee0-9d03-5be26efe7134\",\r\n    \"prefixLength\": 127,\r\n
+        \"20c220f9-085e-42cc-86ae-54f014b60f0e\",\r\n    \"prefixLength\": 127,\r\n
         \   \"publicIPAddressVersion\": \"IPv6\",\r\n    \"ipPrefix\": \"2603:1030:403:3::12/127\",\r\n
         \   \"ipTags\": []\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"Standard\",\r\n
         \   \"tier\": \"Regional\"\r\n  }\r\n}"
@@ -1580,9 +1573,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 16 Oct 2019 17:05:36 GMT
+      - Tue, 15 Oct 2019 05:36:43 GMT
       etag:
-      - W/"d4fb096d-eeda-40e2-8902-2073e0aff29f"
+      - W/"8002550c-4a90-4068-aab4-50e8e4ef4cd7"
       expires:
       - '-1'
       pragma:
@@ -1599,7 +1592,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - d47904c7-8540-43dd-814a-f72ddfd3448c
+      - a76f4d81-d05d-429e-a6b2-9ef01f542707
     status:
       code: 200
       message: OK
