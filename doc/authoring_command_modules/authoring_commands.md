@@ -840,7 +840,6 @@ class ResourceType(Enum):
   ...
 ```
 
-
 2. In the `AZURE_API_PROFILES` dictionary in that same file, for each profile your service applies to, add an entry for it like this:
 
 ```Python
@@ -856,8 +855,32 @@ AZURE_API_PROFILES = {
   ...
 }
 ```
+### Usages of `ResourceType`
 
-3. Update imports in your files. They must use the API profile-aware "get_models" method and have access to a command or CLI object.
+#### Initialize the command module
+```Python
+class StorageCommandsLoader(AzCommandsLoader):
+    def __init__(self, cli_ctx=None):
+        from azure.cli.core.commands import CliCommandType
+
+        storage_custom = CliCommandType(operations_tmpl='azure.cli.command_modules.storage.custom#{}')
+        super(StorageCommandsLoader, self).__init__(cli_ctx=cli_ctx,
+                                                    resource_type=ResourceType.DATA_STORAGE,
+                                                    custom_command_type=storage_custom,
+                                                    command_group_cls=StorageCommandGroup,
+                                                    argument_context_cls=StorageArgumentContext)
+```
+
+#### Initialize CLICommandType for commands
+```Python
+storage_account_sdk = CliCommandType(
+    operations_tmpl='azure.mgmt.storage.operations#StorageAccountsOperations.{}',
+    client_factory=cf_sa,
+    resource_type=ResourceType.MGMT_STORAGE
+)
+```
+#### Update imports in your files. 
+They must use the API profile-aware "get_models" method and have access to a command or CLI object.
 
 Example:
 ```Python
@@ -872,6 +895,10 @@ Converted:
 def my_command(cmd, ...):
   Foo, Boo = cmd.get_models('Foo', 'Boo')
   # do stuff
+```
+In other modules:
+```Python
+DeploymentProperties = cmd.get_models('DeploymentProperties', resource_type=ResourceType.MGMT_RESOURCE_RESOURCES)
 ```
 
 4. Use appropriate conditionals to ensure your command can run on all supported profiles:
