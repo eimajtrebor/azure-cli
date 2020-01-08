@@ -122,7 +122,7 @@ g.storage_custom_command_oauth('upload', 'upload_blob',
 - Help structure suggestion:
     - _help.py
         - Long summary, short summary and examples for command and group 
-        - [Profile specific help](#Profile specific help)
+        - [Profile specific help](#profile-specific-help)
     - _params.py
         - Command argument details
         - Try to utilize arg_group, CLIArgumentType, get_enum_type(), preview flag ...
