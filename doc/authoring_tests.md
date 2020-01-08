@@ -35,6 +35,8 @@ It is a requirement for the command owner to maintain their test in live mode.
 * Tests __MUST__ be included for all new command modules and any new commands to existing test modules. PRs will be rejected outright if they do not include tests.
 * Name test methods in the following format: `test_<module>_<feature>`.
 * The scenario test must be able to run repeatedly in live mode. The feature owner is responsible of maintaining their scenario tests.
+* Please make sure you have test against different profiles when command module support multiapi
+* DO NOT try to write all features in one test function
 
 ## Recording Tests
 
@@ -78,8 +80,9 @@ Here are some issues that may occur when authoring tests that you should be awar
  If your command makes use of concurrency, consider using unit tests, LiveScenarioTest, or, if practical, forcing the test to operate on a single thread for recording and playback.
 * **Paths**: When including paths in your tests as parameter values, always wrap them in double quotes. While this isn't necessary when running from the command line (depending on your shell environment), it will likely cause issues with the test framework.
 * **Defaults**: Ensure you don't have any defaults configured with `az configure` prior to running tests. Defaults can interfere with the expected test flow.
+Note: I will incline to making authors add full parameters e.g. -g for test commands.
 
-## Sample Scenario Tests
+## Write Scenario Tests
 
 ### Sample 1. Basic fixture
 
@@ -96,6 +99,92 @@ Notes:
 1. When the test is run and no recording file is available, the test will be run in live mode. A recording file will be created at `recording/<test_method_name>.yaml`.
 2. Wrap the command in the `self.cmd` method. It will assert that the exit code of the command is zero.
 3. All the functions and classes you need for writing tests are included in the `azure.cli.testsdk` namespace. It is recommended __not__ to import from a sub-namespace to avoid breaking changes.
+
+Advanced
+```Python
+class StorageAccountTests(StorageScenarioMixin, ScenarioTest):
+    @api_version_constraint(ResourceType.MGMT_STORAGE, min_api='2017-06-01')
+    @ResourceGroupPreparer(name_prefix='cli_test_storage_service_endpoints')
+    @StorageAccountPreparer(parameter_name='account_1')
+    @StorageAccountPreparer(parameter_name='account_2')
+    def test_storage_account_service_endpoints(self, resource_group, account_1, account_2):
+        kwargs = {
+            'rg': resource_group,
+            'acc1': account_1,
+            'acc2': account_2,
+            'vnet': 'vnet1',
+            'subnet': 'subnet1'
+        }
+        self.cmd('storage account create -g {rg} -n {acc1} --bypass Metrics --default-action Deny'.format(**kwargs),
+                 checks=[
+                     JMESPathCheck('networkRuleSet.bypass', 'Metrics'),
+                     JMESPathCheck('networkRuleSet.defaultAction', 'Deny')])
+```
+Notes:
+0. The test will be run only when api constraint is satisfied.
+1. The preparers are executed before each test in the test class when `setUp` is executed. Any resources created in this way will be cleaned up after testing. Unless you specify that a preparer use an existing resource via its associated environment variable. See [Test-Related Environment Variables](#test-related-environment-variables).
+2. The resource group name is injected into the test method as a parameter. By default `ResourceGroupPreparer` passes the value as the `resource_group` parameter. The target parameter can be customized (see following samples).
+3. The resource group will be deleted asynchronously for performance reason.
+4. The resource group will automatically be registered into the tests keyword arguments (`self.kwargs`) with the key default key of `rg`. This can then be directly plugged into the command string in `cmd` and into the verification step of the `check` method. The test infrastructure will automatically replace the values.
+5. Creation of a storage account requires a resource group. Therefore `ResourceGroupPrepare` must be placed above `StorageAccountPreparer`, since preparers are designed to be executed from top to bottom.
+6. Prepare multiple storage accounts for tests 
+7. More preparers are in https://github.com/Azure/azure-cli/blob/dev/src/azure-cli-testsdk/azure/cli/testsdk/preparers.py.
+8. Please try to use preparers as possible as you can if not required, because it will not be recorded.
+
+```Python
+class ManagedServicesTests(ScenarioTest):
+
+    @record_only()
+    def test_managedservices_commands(self):
+        self.kwargs = {
+            'name': self.create_random_name(prefix=name_prefix, length=24),
+            'tenant-id': tenant_id,
+            'principal-id': principal_id,
+            'role-definition-id': role_definition_id,
+            'header_parameters': {},
+            'definition-id': definition_id,
+            'subscription-id': msp_sub_id
+        }
+```
+Note:
+1. The test will be run against the recording in the CI and will be skipped in live mode.
+2. It will be used when re-recording test is hard for others, for example, service is not ready in other subs or with limited roles, or it is too expensive for resource/time...
+
+```Python
+@live_only()
+@ResourceGroupPreparer(random_name_length=17, name_prefix='clitestosa', location='eastus')
+@ManagedApplicationPreparer()
+def test_openshift_create_default_service(self, resource_group, resource_group_location, aad_client_app_id, aad_client_app_secret):
+    # kwargs for string formatting
+    osa_name = self.create_random_name('clitestosa', 15)
+    self.kwargs.update({
+        'resource_group': resource_group,
+        'name': osa_name,
+        'location': resource_group_location,
+        'aad_client_app_id': aad_client_app_id,
+        'aad_client_app_secret': aad_client_app_secret,
+        'resource_type': "Microsoft.ContainerService/OpenShiftManagedClusters"
+    })
+
+```
+Note:
+1. The test will be skipped in replay mode and only run in live mode.
+
+```Python
+@AllowLargeResponse(4096)
+def test_vm_image_list_publishers(self):
+    self.kwargs.update({
+        'loc': 'westus'
+    })
+    self.cmd('vm image list-publishers --location {loc}', checks=[
+        self.check('type(@)', 'array'),
+        self.check("length([?location == '{loc}']) == length(@)", True),
+    ])
+```
+Note:
+1. Yaml storage limit 1M. If your response is very large, it can be processed using this function
+2. Allow large response with default maximum size 1024 kb, but you can specified the size in kb.
+
 
 ### Sample 2. Validate the return value in JSON
 
@@ -311,7 +400,37 @@ with self.assertRaisesRegexp(CLIError, "usage error: --vnet NAME --subnet NAME |
 
 The above syntax is the recommended way to test that a specific error occurs. You must pass the type of the error as well as a string used to match the error message. If the error is encountered, the text will be validated and, if matching, the command will be deemed a success (for testing purposes) and execution will continue. If the command does not yield the expected error, the test will fail.
 
+## [RecordingProcessor](https://github.com/Azure/azure-python-devtools/blob/master/src/azure_devtools/scenario_tests/recording_processors.py)
+``` Python
+class ScenarioTest(ReplayableTest, CheckerMixin, unittest.TestCase):
+    def __init__(self, method_name, config_file=None, recording_name=None,
+                 recording_processors=None, replay_processors=None, recording_patches=None, replay_patches=None):
+        self.cli_ctx = get_dummy_cli()
+        self.name_replacer = GeneralNameReplacer()
+        self.kwargs = {}
+        self.test_guid_count = 0
+        self._processors_to_reset = [StorageAccountKeyReplacer(), GraphClientPasswordReplacer()]
+        default_recording_processors = [
+            SubscriptionRecordingProcessor(MOCKED_SUBSCRIPTION_ID),
+            OAuthRequestResponsesFilter(),
+            LargeRequestBodyProcessor(),
+            LargeResponseBodyProcessor(),
+            DeploymentNameReplacer(),
+            RequestUrlNormalizer(),
+            self.name_replacer
+        ] + self._processors_to_reset
 
+        default_replay_processors = [
+            LargeResponseBodyReplacer(),
+            DeploymentNameReplacer(),
+            RequestUrlNormalizer(),
+        ]
+```
+- In recording or in playback
+- Normalize subscription id
+- Normalize resource group
+- Role assignment will need GUID which will cause inconsistent
+- It can be used to trim or leak some information
 
 ## Test-Related Environment Variables
 
