@@ -74,14 +74,6 @@ helps['account'] = """
             """
 </pre>
 
-# Tips to write effective help for your command
-
-- Make sure the doc contains all the details that someone unfamiliar with the API needs to use the command.
-- Examples are worth a thousand words. Provide examples that cover common use cases.
-- Don't use "etc". Sometimes it makes sense to spell out a list completely. Sometimes it works to say "like ..." instead of "..., etc".
-- Use active voice. For example, say "Update web app configurations" instead of "Updates web app congfigurations" or "Updating web app configurations".
-- Don't use highly formal language. If you imagine that another dev sat down with you and you were telling him what he needs to know to use the command, that's exactly what you need to write, in those words.
-
 # Testing Authored Help #
 
 To verify the YAML help is correctly formatted, the command/group's help command must be executed at runtime.  For example, to verify "az account clear", run the command "az account clear -h" and verify the text.  
@@ -107,6 +99,34 @@ Here are the layers of Project Az help, with each layer overriding the layer bel
 | Docstring                     |
 | SDK Text                      |
 
+### Examples
+1. Code Specified via _params.py
+```Python
+c.argument('metadata', nargs='+',
+           help='Metadata in space-separated key=value pairs. This overwrites any existing metadata.',
+           validator=validate_metadata)
+```
+2. Docstring
+```Python
+g.storage_custom_command_oauth('upload', 'upload_blob',
+                               doc_string_source='blob#BlockBlobService.create_blob_from_path')
+```
+
+# Tips to write effective help for your command
+
+- Make sure the doc contains all the details that someone unfamiliar with the API needs to use the command.
+- Examples are worth a thousand words. Provide examples that cover common use cases.
+- Don't use "etc". Sometimes it makes sense to spell out a list completely. Sometimes it works to say "like ..." instead of "..., etc".
+- Use active voice. For example, say "Update web app configurations" instead of "Updates web app congfigurations" or "Updating web app configurations".
+- Don't use highly formal language. If you imagine that another dev sat down with you and you were telling him what he needs to know to use the command, that's exactly what you need to write, in those words.
+- Help structure suggestion:
+    - _help.py
+        - Long summary, short summary and examples for command and group 
+        - [Profile specific help](#Profile specific help)
+    - _params.py
+        - Command argument details
+        - Try to utilize arg_group, CLIArgumentType, get_enum_type(), preview flag ...
+  
 ## Page titles for command groups ##
 
 Page titles for your command groups as generated from the source are simply the command syntax, "az vm", but we use friendly titles on the published pages - "Virtual machines - az vm". To do that, ee add the friendly part of the page title to [titlemapping.json](https://github.com/Azure/azure-docs-cli/blob/master/titleMapping.json) in the azure-docs-cli repo. When you add a new command group, make sure to update the mapping.
