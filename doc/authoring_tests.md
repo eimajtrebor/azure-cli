@@ -102,6 +102,10 @@ Notes:
 
 Advanced
 ```Python
+from ..storage_test_util import StorageScenarioMixin
+from azure.cli.testsdk import (
+    ScenarioTest, LiveScenarioTest, api_version_constraint, ResourceGroupPreparer, StorageAccountPreparer, JMESPathCheck)
+ 
 class StorageAccountTests(StorageScenarioMixin, ScenarioTest):
     @api_version_constraint(ResourceType.MGMT_STORAGE, min_api='2017-06-01')
     @ResourceGroupPreparer(name_prefix='cli_test_storage_service_endpoints')
@@ -121,17 +125,19 @@ class StorageAccountTests(StorageScenarioMixin, ScenarioTest):
                      JMESPathCheck('networkRuleSet.defaultAction', 'Deny')])
 ```
 Notes:
-0. The test will be run only when api constraint is satisfied.
-1. The preparers are executed before each test in the test class when `setUp` is executed. Any resources created in this way will be cleaned up after testing. Unless you specify that a preparer use an existing resource via its associated environment variable. See [Test-Related Environment Variables](#test-related-environment-variables).
-2. The resource group name is injected into the test method as a parameter. By default `ResourceGroupPreparer` passes the value as the `resource_group` parameter. The target parameter can be customized (see following samples).
-3. The resource group will be deleted asynchronously for performance reason.
-4. The resource group will automatically be registered into the tests keyword arguments (`self.kwargs`) with the key default key of `rg`. This can then be directly plugged into the command string in `cmd` and into the verification step of the `check` method. The test infrastructure will automatically replace the values.
-5. Creation of a storage account requires a resource group. Therefore `ResourceGroupPrepare` must be placed above `StorageAccountPreparer`, since preparers are designed to be executed from top to bottom.
-6. Prepare multiple storage accounts for tests 
-7. More preparers are in https://github.com/Azure/azure-cli/blob/dev/src/azure-cli-testsdk/azure/cli/testsdk/preparers.py.
-8. Please try to use preparers as possible as you can if not required, because it will not be recorded.
+1. The test will be run only when api constraint is satisfied.
+2. The preparers are executed before each test in the test class when `setUp` is executed. Any resources created in this way will be cleaned up after testing. Unless you specify that a preparer use an existing resource via its associated environment variable. See [Test-Related Environment Variables](#test-related-environment-variables).
+3. The resource group name is injected into the test method as a parameter. By default `ResourceGroupPreparer` passes the value as the `resource_group` parameter. The target parameter can be customized (see following samples).
+4. The resource group will be deleted asynchronously for performance reason.
+5. The resource group will automatically be registered into the tests keyword arguments (`self.kwargs`) with the key default key of `rg`. This can then be directly plugged into the command string in `cmd` and into the verification step of the `check` method. The test infrastructure will automatically replace the values.
+6. Creation of a storage account requires a resource group. Therefore `ResourceGroupPrepare` must be placed above `StorageAccountPreparer`, since preparers are designed to be executed from top to bottom.
+7. Prepare multiple storage accounts for tests 
+8. More preparers are in https://github.com/Azure/azure-cli/blob/dev/src/azure-cli-testsdk/azure/cli/testsdk/preparers.py.
+9. Please try to use preparers as possible as you can if not required, because it will not be recorded.
 
 ```Python
+from azure_devtools.scenario_tests import record_only
+
 class ManagedServicesTests(ScenarioTest):
 
     @record_only()
@@ -151,6 +157,8 @@ Note:
 2. It will be used when re-recording test is hard for others, for example, service is not ready in other subs or with limited roles, or it is too expensive for resource/time...
 
 ```Python
+from azure_devtools.scenario_tests import live_only
+
 @live_only()
 @ResourceGroupPreparer(random_name_length=17, name_prefix='clitestosa', location='eastus')
 @ManagedApplicationPreparer()
@@ -171,6 +179,8 @@ Note:
 1. The test will be skipped in replay mode and only run in live mode.
 
 ```Python
+from azure_devtools.scenario_tests import AllowLargeResponse
+
 @AllowLargeResponse(4096)
 def test_vm_image_list_publishers(self):
     self.kwargs.update({
