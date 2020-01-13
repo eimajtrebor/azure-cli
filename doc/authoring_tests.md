@@ -43,7 +43,9 @@ The rationale behind scenario test:
 * Tests __MUST__ be included for **all new command modules** and any new commands to existing test modules. **PRs will be rejected outright if they do not include tests.**
 * Name test methods in the following format: `test_<module>_<feature>`.
 * The scenario test must be able to run repeatedly in live mode. The feature owner is responsible of maintaining their scenario tests.
-* **Please make sure you have test against different profiles when command module support multiapi**
+* **Please make sure you have test against different profiles when command module support multiapi**. e.g.
+![](https://github.com/Juliehzl/azure-cli/blob/authoring/doc/assets/test.png)
+
 * DO NOT try to write all features in one test function
 
 ## Recording Tests
