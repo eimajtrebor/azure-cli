@@ -14,7 +14,7 @@ Azure CLI translates user inputs into Azure Python SDK calls which communicate w
 
 ### Nightly live test run
 
-The scenario tests are run in replayable mode in the Travis CI during pull request verification and branch merge. However, the tests will be run in live mode nightly in internal test infrastructure. See [Test Policies](#test-policies) for more details.
+The scenario tests are run in replayable mode during pull request verification and branch merge. However, the tests will be run in live mode nightly in internal test infrastructure. See [Test Policies](#test-policies) for more details.
 
 The rationale behind the nightly live test:
 
@@ -27,13 +27,13 @@ The rationale behind the nightly live test:
 
 It is a requirement for the command owner to maintain their test in live mode.
 
-Comparision:
-1. Recording
+
+The rationale behind scenario test:
+
 - Live test is too heavy and need many time to run
 - Stable
 - Request URL have API version specified
 - Reduce thedependency of other modules through using Preparers, which will not be recorded in yml
-- Tend to be stale and cannot catch the changes on time
 
 ## Authoring Tests
 
@@ -58,11 +58,11 @@ Comparision:
 
 ### Recording tests for the first time
 
-After the test is executed, a recording file will be generated at `recording/<api_profile_name>/<test_name>.yaml`. The recording file will be created no matter the test pass or not. The behavior makes it easy for you to find issues when a test fails. To re-record the test, you can either delete the existing recording and re-run the test, or simply re-run the test using the `--live` flag (ex: `azdev test example_test --live`.
+After the test is executed, a recording file will be generated at `recording/<api_profile_name>/<test_name>.yaml`. The recording file will be created no matter the test pass or not. The behavior makes it easy for you to find issues when a test fails. To re-record the test, you can **either delete the existing recording and re-run the test, or simply re-run the test using the `--live` flag** (ex: `azdev test example_test --live`.
 
 It is a good practice to add recording file to the local git cache, which makes it easy to diff the different versions of recording to detect issues or changes.
 
-Once the recording file is generated, execute the test again. This time the test will run in playback mode. The execution is offline, and will not act on the Azure subscription.
+Once the recording file is generated, execute the test again. This time the test will run in playback mode. The execution is **offline**, and will not act on the Azure subscription.
 
 If the replay passes, you can commit the tests as well as recordings and submit them as part of your PR.
 
@@ -70,7 +70,8 @@ If the replay passes, you can commit the tests as well as recordings and submit 
 
 When a recording file is missing, the test framework will execute the test in live mode. You can also force tests to run live either by setting the environment variable `AZURE_TEST_RUN_LIVE` or by using the `--live` flag with the `azdev test` command. 
 
-Also, you can author tests which are for live test only by deriving the test class from `LiveScenarioTest`. Since these tests will not be run as part of the CI, you lose much of the automatic regression protection by doing this. However, for certain tests that cannot be re-recorded, cannot be replayed, or fail due to service issues, this is a viable approach.
+Also, **you can author tests which are for live test only by deriving the test class from `LiveScenarioTest`.**
+Since these tests will **not be run as part of the CI**, you lose much of the automatic regression protection by doing this. However, for certain tests that cannot be re-recorded, cannot be replayed, or fail due to service issues, this is a viable approach.
 
 ### Test Run Frequency
 
@@ -86,9 +87,13 @@ Here are some issues that may occur when authoring tests that you should be awar
   1. check if your command makes use of concurrency.
   2. check your parameter aliasing (particularly if it complains that a required parameter is missing that you know is there)
  If your command makes use of concurrency, consider using unit tests, LiveScenarioTest, or, if practical, forcing the test to operate on a single thread for recording and playback.
-* **Paths**: When including paths in your tests as parameter values, always wrap them in double quotes. While this isn't necessary when running from the command line (depending on your shell environment), it will likely cause issues with the test framework.
-* **Defaults**: Ensure you don't have any defaults configured with `az configure` prior to running tests. Defaults can interfere with the expected test flow.
-Note: I will incline to making authors add **full parameters** e.g. -g for test commands.
+* **Paths**: When including paths in your tests as parameter values, always **wrap them in double quotes.** While this isn't necessary when running from the command line (depending on your shell environment), it will likely cause issues with the test framework.
+```Python
+self.storage_cmd('storage blob upload -c {} -f "{}" -n src', source_account_info,
+                 source_container, source_file)
+```
+* **Defaults**: Ensure you don't have any defaults configured with `az configure` prior to running tests. **Defaults can interfere with the expected test flow.**
+Note: I will incline to making authors add **full parameters** e.g. `-g {}` for test commands.
 
 ## Write Scenario Tests
 
@@ -184,7 +189,7 @@ def test_openshift_create_default_service(self, resource_group, resource_group_l
 
 ```
 Note:
-1. The test will be skipped in replay mode and only run in live mode.
+1. The test will be skipped in replay mode and only run in live mode, but will generate recording file.
 
 ```Python
 from azure_devtools.scenario_tests import AllowLargeResponse
