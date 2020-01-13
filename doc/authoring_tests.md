@@ -311,21 +311,21 @@ class StorageAccountTests(ScenarioTest):
 Note:
 
 One of the most important features of `ScenarioTest` is name management.
-For the tests to be able to run in a live environment and avoid name collision
+For the tests to be able to run in a live environment and **avoid name collision**
 a strong name randomization is required.
 On the other hand, for the tests to be recorded and replayed,
-the naming mechanism must be repeatable during playback mode.
+the naming mechanism must be **repeatable during playback mode**.
 The `self.create_random_name` method helps the test achieve both goals.
 
 The method will create a random name during recording,
 and when it is called during playback,
 it returns a name (internally it is called moniker)
-based on the sequence of the name request.
+based on **the sequence of the name request.**
 The order won't change once the test is written.
 Peek into the recording file, and you will find no random name.
 For example, note names like 'clitest.rg000001' in the sample recording below:
 they aren't the names of the resources which are actually created in Azure.
-They're replaced before the requests are recorded.
+**They're replaced before the requests are recorded.** 
 
 ``` Yaml
 - request:
@@ -421,9 +421,10 @@ with self.assertRaisesRegexp(CLIError, "usage error: --vnet NAME --subnet NAME |
             self.cmd('container create -g {rg} -n {container_group_name} --image nginx --vnet {vnet_name}')
 ```
 
-The above syntax is the recommended way to test that a specific error occurs. You must pass the type of the error as well as a string used to match the error message. If the error is encountered, the text will be validated and, if matching, the command will be deemed a success (for testing purposes) and execution will continue. If the command does not yield the expected error, the test will fail.
+**The above syntax is the recommended way to test that a specific error occurs.** You must pass the type of the error as well as a string used to match the error message. If the error is encountered, the text will be validated and, if matching, the command will be deemed a success (for testing purposes) and execution will continue. If the command does not yield the expected error, the test will fail.
 
 ## [RecordingProcessor](https://github.com/Azure/azure-python-devtools/blob/master/src/azure_devtools/scenario_tests/recording_processors.py)
+
 ``` Python
 class ScenarioTest(ReplayableTest, CheckerMixin, unittest.TestCase):
     def __init__(self, method_name, config_file=None, recording_name=None,
