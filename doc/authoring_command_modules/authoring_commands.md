@@ -780,6 +780,24 @@ class MyCommandsLoader(AzCommandsLoader):
                                                                                        recommend_remove=True))
 ```
 
+Example:
+```Python
+    def __init__(self, cli_ctx=None):
+        from azure.cli.core.commands import CliCommandType
+        from azure.cli.core import ModExtensionSuppress
+        resource_custom = CliCommandType(operations_tmpl='azure.cli.command_modules.resource.custom#{}')
+        super(ResourceCommandsLoader, self).__init__(cli_ctx=cli_ctx,
+                                                     custom_command_type=resource_custom,
+                                                     suppress_extension=ModExtensionSuppress(
+                                                         __name__, 'managementgroups', '0.1.0',
+                                                         reason='The management groups commands are now in CLI.',
+                                                         recommend_remove=True))
+```
+Notes:
+1. Users still can install the extension and you can see the extension information when running `az extension list-available`
+2. The following message will be shown up：
+![](https://github.com/Juliehzl/azure-cli/blob/authoring/doc/assets/extensionsupression.png)
+
 ## Deprecating Commands and Arguments
 
 The CLI has built-in support for deprecating the following: commands, command groups, arguments, option values. Deprecated items will appear with a warning in the help system or when invoked. The following keyword arugments are supported when deprecating an item:
