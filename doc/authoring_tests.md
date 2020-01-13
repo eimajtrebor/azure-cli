@@ -10,7 +10,7 @@ For integration tests, we provide the `ScenarioTest` and `LiveScenarioTest` clas
 
 ### About replayable tests
 
-Azure CLI translates user inputs into Azure Python SDK calls which communicate with [Azure REST API](https://docs.microsoft.com/rest/api/). These HTTP communications are captured and recorded so the integration tests can be replayed in an automation environment without making actual HTTP calls. This ensures that the commands actually work against the service when they are recorded (and then can be re-run live to verify) and provides protection against regressions or breaking changes when they are played back.
+Azure CLI translates user inputs into Azure Python SDK calls which communicate with [Azure REST API](https://docs.microsoft.com/rest/api/). **These HTTP communications are captured and recorded so the integration tests can be replayed in an automation environment without making actual HTTP calls**. This ensures that the commands actually work against the service when they are recorded (and then can be re-run live to verify) and provides protection against regressions or breaking changes when they are played back.
 
 ### Nightly live test run
 
@@ -27,15 +27,23 @@ The rationale behind the nightly live test:
 
 It is a requirement for the command owner to maintain their test in live mode.
 
+Comparision:
+1. Recording
+- Live test is too heavy and need many time to run
+- Stable
+- Request URL have API version specified
+- Reduce thedependency of other modules through using Preparers, which will not be recorded in yml
+- Tend to be stale and cannot catch the changes on time
+
 ## Authoring Tests
 
 ### Test Policies
 
-* __DO NOT USE__ hard-coded or otherwise persistent resources. This makes it difficult or impossible to re-record tests or run them live. In general, all resources needed to support the test should be created as part of the test and torn down after the test finishes. The use of `ResourceGroupPreparer` helps to facilitate this.
-* Tests __MUST__ be included for all new command modules and any new commands to existing test modules. PRs will be rejected outright if they do not include tests.
+* __DO NOT USE__ **hard-coded** or otherwise persistent resources. This makes it difficult or impossible to re-record tests or run them live. In general, all resources needed to support the test should be created as part of the test and torn down after the test finishes. The use of `ResourceGroupPreparer` helps to facilitate this.
+* Tests __MUST__ be included for **all new command modules** and any new commands to existing test modules. **PRs will be rejected outright if they do not include tests.**
 * Name test methods in the following format: `test_<module>_<feature>`.
 * The scenario test must be able to run repeatedly in live mode. The feature owner is responsible of maintaining their scenario tests.
-* Please make sure you have test against different profiles when command module support multiapi
+* **Please make sure you have test against different profiles when command module support multiapi**
 * DO NOT try to write all features in one test function
 
 ## Recording Tests
@@ -66,9 +74,9 @@ Also, you can author tests which are for live test only by deriving the test cla
 
 ### Test Run Frequency
 
-Recorded tests are run on TravisCI as part of all pull request validations. Therefore it is important to keep the recordings up-to-date, and to ensure that they can be re-recorded.
+Recorded tests are run on ADO as part of all pull request validations. Therefore it is important to keep the recordings up-to-date, and to ensure that they can be re-recorded.
 
-Live tests run nightly in a separate system and are not tied to pull requests.
+Live tests run nightly in a separate system and are not tied to pull requests.(Now deprecated)
 
 ## Troubleshooting Test Issues
 
@@ -80,7 +88,7 @@ Here are some issues that may occur when authoring tests that you should be awar
  If your command makes use of concurrency, consider using unit tests, LiveScenarioTest, or, if practical, forcing the test to operate on a single thread for recording and playback.
 * **Paths**: When including paths in your tests as parameter values, always wrap them in double quotes. While this isn't necessary when running from the command line (depending on your shell environment), it will likely cause issues with the test framework.
 * **Defaults**: Ensure you don't have any defaults configured with `az configure` prior to running tests. Defaults can interfere with the expected test flow.
-Note: I will incline to making authors add full parameters e.g. -g for test commands.
+Note: I will incline to making authors add **full parameters** e.g. -g for test commands.
 
 ## Write Scenario Tests
 
