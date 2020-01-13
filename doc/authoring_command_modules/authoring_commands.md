@@ -760,9 +760,9 @@ Above are two examples of how this can be used. In the first instance, an Enum m
 
 It is possible for a command module to suppress specific extensions from being loaded.
 
-This is useful for commands that were once extensions that have now moved inside a command module.
+This is useful for commands that were **once extensions that have now moved inside a command module.**
 
-Here, we suppress an extension by name and also by version.
+Here, we suppress an extension by **name** and also by **version**.
 
 This will allow the extension to be published in the future with the same name and a newer version that will not be suppressed.
 
@@ -779,6 +779,25 @@ class MyCommandsLoader(AzCommandsLoader):
                                                                                        reason='These commands are now in the CLI.',
                                                                                        recommend_remove=True))
 ```
+
+Example:
+```Python
+    def __init__(self, cli_ctx=None):
+        from azure.cli.core.commands import CliCommandType
+        from azure.cli.core import ModExtensionSuppress
+        resource_custom = CliCommandType(operations_tmpl='azure.cli.command_modules.resource.custom#{}')
+        super(ResourceCommandsLoader, self).__init__(cli_ctx=cli_ctx,
+                                                     custom_command_type=resource_custom,
+                                                     suppress_extension=ModExtensionSuppress(
+                                                         __name__, 'managementgroups', '0.1.0',
+                                                         reason='The management groups commands are now in CLI.',
+                                                         recommend_remove=True))
+```
+Notes:
+1. Users still can install the extension and you can see the extension information when running `az extension list-available`
+2. it will show up some information to users including extension name, version, reason and recommended action to do, e.g. remove the extension, or update the extension.
+For example: For manegmentgroups extension, the following message will be shown up：
+![](https://github.com/Juliehzl/azure-cli/blob/authoring/doc/assets/extensionsupression.png)
 
 ## Deprecating Commands and Arguments
 
