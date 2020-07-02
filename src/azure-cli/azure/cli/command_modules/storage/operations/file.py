@@ -37,6 +37,16 @@ def create_share_rm(cmd, client, resource_group_name, account_name, share_name, 
                          file_share=file_share)
 
 
+def list_share_rm(client, cmd, resource_group_name, account_name, include_deleted=None):
+
+    ListSharesExpand = cmd.get_models('ListSharesExpand', resource_type=ResourceType.MGMT_STORAGE)
+
+    expand = ListSharesExpand("deleted") if include_deleted is not None else None
+
+    return client.list(resource_group_name=resource_group_name, account_name=account_name,
+                       expand=expand)
+
+
 def update_share_rm(cmd, instance, metadata=None, share_quota=None, root_squash=None):
 
     FileShare = cmd.get_models('FileShare', resource_type=ResourceType.MGMT_STORAGE)
