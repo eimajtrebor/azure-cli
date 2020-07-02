@@ -179,3 +179,39 @@ class StorageFileShareRmScenarios(StorageScenarioMixin, ScenarioTest):
         self.cmd('storage share-rm list --storage-account {sa} -g {rg}', checks={
             JMESPathCheck('length(@)', 0)
         })
+
+    @api_version_constraint(ResourceType.MGMT_STORAGE, min_api='2019-06-01')
+    @ResourceGroupPreparer(name_prefix="cli_nfs", location="eastus")
+    @StorageAccountPreparer(name_prefix="nfs", location="eastus")
+    def test_storage_share_rm_with_soft_deleted(self):
+        self.cmd('storage account file-service-properties update -n {sa} -g {rg} --delete-retention-days 7 --enable-delete-retention',
+                 checks={
+                     JMESPathCheck('shareDeleteRetentionPolicy.days', 7),
+                     JMESPathCheck('shareDeleteRetentionPolicy.enabled', True)
+                 })
+
+        self.kwargs.update(
+            'share', self.create_random_name('share', 24)
+        )
+        self.cmd('storage share-rm create --storage-account {sa} -g {rg} -n {share}', checks={
+            JMESPathCheck('name', self.kwargs['share'])
+        })
+
+        self.cmd('storage share-rm list --storage-account {sa} -g {rg}', checks={
+            JMESPathCheck('length(@)', 1)
+        })
+        self.cmd('storage share-rm delete --storage-account {sa} -g {rg} -n {share} -y')
+        self.cmd('storage share-rm list --storage-account {sa} -g {rg}', checks={
+            JMESPathCheck('length(@)', 0)
+        })
+        self.cmd('storage share-rm list --storage-account {sa} -g {rg} --include-deleted', checks={
+            JMESPathCheck('length(@)', 1)
+        })
+
+        self.cmd('storage share-rm restore --storage-account {sa} -g {rg} -n {share}', checks={
+            JMESPathCheck('name', self.kwargs['share'])
+        })
+
+        self.cmd('storage share-rm list --storage-account {sa} -g {rg}', checks={
+            JMESPathCheck('length(@)', 1)
+        })
